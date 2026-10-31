@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-22T10:38:31.545Z",
+  "passwordRequired": false,
+  "phoneDeviceTested": false,
+  "endpoints": [
+    {
+      "origin": "http://127.0.0.1:4173",
+      "application": true,
+      "passwordForm": false,
+      "connected": true,
+      "crossOriginRejected": true,
+      "model": "qwen2.5:32b"
+    },
+    {
+      "origin": "https://spark-864f.tailfb7e5f.ts.net:8443",
+      "application": true,
+      "passwordForm": false,
+      "connected": true,
+      "crossOriginRejected": true,
+      "model": "qwen2.5:32b"
+    }
+  ],
+  "cases": [
+    {
+      "id": "private-mobile-real-extract",
+      "status": 200,
+      "elapsedSeconds": 23.005257792000002,
+      "input": {
+        "mode": "extract",
+        "intro": "这是虚构验收人物：我22岁，高中毕业，在便利店工作，没有编程经验，只有个人电脑。每周能拿出4小时，希望90天内完成一个Excel自动化服务的试单，不辞职。"
+      },
+      "output": {
+        "profile": {
+          "age": "22",
+          "education": "高中毕业",
+          "role": "便利店工作",
+          "experience": "无编程经验",
+          "resources": "个人电脑",
+          "hours": 4,
+          "constraints": "不辞职",
+          "goal": "90天内完成一个Excel自动化服务的试单",
+          "kind": "custom"
+        },
+        "summary": "用户是一位22岁的便利店员工，希望在90天内完成一个Excel自动化服务的试单，每周可以投入4小时，且不打算辞职。",
+        "questions": [
+          "您希望达到的Excel自动化服务的具体功能是什么？这将帮助我们确定学习路径。",
+          "您是否有任何关于Excel VBA或其他自动化工具的基础知识？这将影响学习计划的设计。"
+        ],
+        "provider": "DGX 私有模型"
+      },
+      "passed": true
+    }
+  ]
+}

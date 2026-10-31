@@ -1,0 +1,11 @@
+import {readFileSync} from 'node:fs';
+import {resolve} from 'node:path';
+import {homedir} from 'node:os';
+import {pathToFileURL} from 'node:url';
+import {createPrivateGateway} from './private-gateway.mjs';
+const state=resolve(homedir(),'.local/state/butterfly-effect');
+const config=JSON.parse(readFileSync(resolve(state,'mobile.json'),'utf8'));
+const password=readFileSync(resolve(state,'password'),'utf8');
+const worker=(await import(pathToFileURL(resolve('worker/index.js')))).default;
+const server=createPrivateGateway(worker,{DGX_APP_PASSWORD:password,DGX_APP_PORT:'8790',AI_MODEL:'qwen2.5:32b'},config);
+server.listen(8790,'127.0.0.1',()=>console.log('Private mobile application ready on loopback.'));

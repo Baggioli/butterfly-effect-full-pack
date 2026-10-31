@@ -1,0 +1,58 @@
+{
+  "at": "2026-10-29T03:07:28.817Z",
+  "base": "https://spark-864f.tailfb7e5f.ts.net:8443",
+  "stamp": "1.4-p1-11b",
+  "phone_masked": "133****1309",
+  "results": {
+    "consent_to_gate": "PASS",
+    "paste_page": "PASS",
+    "strip_name_role": "PASS",
+    "taboo_filled": "PASS",
+    "confirm_to_route": "PASS",
+    "ai_plan_or_skeleton": "PASS",
+    "direct_chat": "PASS",
+    "demo_hide_import": "PASS"
+  },
+  "details": [
+    {
+      "n": "consent_to_gate",
+      "ok": true,
+      "d": ""
+    },
+    {
+      "n": "paste_page",
+      "ok": true,
+      "d": ""
+    },
+    {
+      "n": "strip_name_role",
+      "ok": true,
+      "d": "{\"name\":\"阿凯\",\"role\":\"独立咨询顾问\",\"title\":true}"
+    },
+    {
+      "n": "taboo_filled",
+      "ok": true,
+      "d": "不希望被评价为「不够拼」或用「别人都怎样」施压"
+    },
+    {
+      "n": "confirm_to_route",
+      "ok": true,
+      "d": "modal=; toast=画像已确认，已进入示例故事骨架；正在后台尝试生成定制草案…; snippet=今日 人生剧本 推演 计划 复盘 角色 ⋈ 蝴蝶效应 让每一小步，长成向往 阿 A LIFE IN THE MAKING 你的人生，正在展开。  故事可以改写，"
+    },
+    {
+      "n": "ai_plan_or_skeleton",
+      "ok": true,
+      "d": "toast=画像已确认，已进入示例故事骨架；正在后台尝试生成定制草案…"
+    },
+    {
+      "n": "direct_chat",
+      "ok": true,
+      "d": "{\"leftGate\":true,\"chat\":true}"
+    },
+    {
+      "n": "demo_hide_import",
+      "ok": true,
+      "d": "{\"hasGate\":false,\"textHasImport\":false,\"hasSampleLink\":true}"
+    }
+  ]
+}

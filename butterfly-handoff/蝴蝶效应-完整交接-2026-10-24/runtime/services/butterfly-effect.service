@@ -1,0 +1,19 @@
+# /home/lq/.config/systemd/user/butterfly-effect.service
+# Managed by Butterfly Effect local deployment
+[Unit]
+Description=Butterfly Effect private DGX application
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=%h/apps/butterfly-effect
+ExecStart=%h/.nvm/versions/node/v22.23.3/bin/node scripts/dgx-server.mjs
+Environment=AI_MODEL=qwen2.5:32b
+Environment=DGX_APP_PASSWORD_FILE=%h/.local/state/butterfly-effect/password
+Restart=on-failure
+RestartSec=5
+UMask=0077
+NoNewPrivileges=true
+
+[Install]
+WantedBy=default.target

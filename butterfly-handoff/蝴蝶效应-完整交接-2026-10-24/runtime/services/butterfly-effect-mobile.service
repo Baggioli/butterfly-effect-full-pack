@@ -1,0 +1,15 @@
+# /home/lq/.config/systemd/user/butterfly-effect-mobile.service
+# Managed by Butterfly Effect mobile access
+[Unit]
+Description=Butterfly Effect private mobile access
+After=network.target
+[Service]
+Type=simple
+WorkingDirectory=%h/apps/butterfly-effect
+ExecStart=%h/.nvm/versions/node/v22.23.3/bin/node scripts/mobile-server.mjs
+Restart=on-failure
+RestartSec=5
+UMask=0077
+NoNewPrivileges=true
+[Install]
+WantedBy=default.target

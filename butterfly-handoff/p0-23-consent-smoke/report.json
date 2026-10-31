@@ -1,0 +1,105 @@
+{
+  "startedAt": "2026-10-29T02:42:18.605Z",
+  "base": "https://spark-864f.tailfb7e5f.ts.net:8443",
+  "phone": "13941738605",
+  "criteria": {
+    "c1_disabled_before_check": {
+      "ok": true,
+      "disabled": true,
+      "aria": "true"
+    },
+    "c1b_force_click_stays": {
+      "ok": true,
+      "stillConsent": true
+    },
+    "c2_enabled_after_check": {
+      "ok": true,
+      "disabled": false
+    },
+    "c4_visible_error_on_fail": {
+      "ok": true,
+      "errText": "同意提交失败(冒烟注入)",
+      "errVisible": true,
+      "toastText": "",
+      "stillOnConsentAfterFail": true,
+      "disabledAfterFail": false
+    },
+    "c3_leaves_consent": {
+      "ok": true,
+      "leftConsent": true,
+      "nextHints": 2,
+      "lastConsentRes": {
+        "phase": "res",
+        "status": 200,
+        "url": "https://spark-864f.tailfb7e5f.ts.net:8443/api/auth/sensitive-consent",
+        "body": "{\"ok\":true,\"sensitiveConsent\":true}"
+      },
+      "reqsAfterFail": [
+        {
+          "phase": "req",
+          "method": "POST",
+          "url": "https://spark-864f.tailfb7e5f.ts.net:8443/api/auth/sensitive-consent",
+          "authorization": "Bearer 5875e597aa128…",
+          "xButterflySession": "5875e597aa12…"
+        },
+        {
+          "phase": "res",
+          "status": 200,
+          "url": "https://spark-864f.tailfb7e5f.ts.net:8443/api/auth/sensitive-consent",
+          "body": "{\"ok\":true,\"sensitiveConsent\":true}"
+        }
+      ]
+    },
+    "deploy_markers": {
+      "ok": true,
+      "cacheBust": true,
+      "hasSyncSensitiveInSrc": true
+    }
+  },
+  "notes": [
+    "console:error:Failed to load resource: the server responded with a status of 500 (Internal Server Error)"
+  ],
+  "screenshots": [
+    "01-home.png",
+    "02-login-modal.png",
+    "03-login-filled.png",
+    "04-after-login.png",
+    "05-consent-gated.png",
+    "06-consent-ungated.png",
+    "07-consent-fail-visible.png",
+    "08-after-consent.png"
+  ],
+  "network": [
+    {
+      "phase": "req",
+      "method": "POST",
+      "url": "https://spark-864f.tailfb7e5f.ts.net:8443/api/auth/sensitive-consent",
+      "authorization": "Bearer 5875e597aa128…",
+      "xButterflySession": "5875e597aa12…"
+    },
+    {
+      "phase": "res",
+      "status": 500,
+      "url": "https://spark-864f.tailfb7e5f.ts.net:8443/api/auth/sensitive-consent",
+      "body": "{\"error\":\"同意提交失败(冒烟注入)\",\"code\":\"SMOKE_INJECT\"}"
+    },
+    {
+      "phase": "req",
+      "method": "POST",
+      "url": "https://spark-864f.tailfb7e5f.ts.net:8443/api/auth/sensitive-consent",
+      "authorization": "Bearer 5875e597aa128…",
+      "xButterflySession": "5875e597aa12…"
+    },
+    {
+      "phase": "res",
+      "status": 200,
+      "url": "https://spark-864f.tailfb7e5f.ts.net:8443/api/auth/sensitive-consent",
+      "body": "{\"ok\":true,\"sensitiveConsent\":true}"
+    }
+  ],
+  "passed": true,
+  "cacheBust": true,
+  "stamp23c": true,
+  "hasSyncSensitiveInSrc": true,
+  "finishedAt": "2026-10-29T02:42:31.813Z"
+}

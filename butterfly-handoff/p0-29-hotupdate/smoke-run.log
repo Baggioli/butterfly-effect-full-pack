@@ -1,0 +1,31 @@
+PASS stamp_html 1.4-p0-29
+PASS ai_status_deepseek {"provider":"DeepSeek API","model":"deepseek-chat","depthVersion":"p0-29-s2-isomorphic-v1","onlineReady":true,"hasApiKey":true,"fallbackReason":null}
+PASS login_consent token_len=48
+PASS plan_http status=200 ms=51612 err=
+PASS plan_narr_ge_1500 narr=2045
+PASS plan_quad_visible [{"name":"把时间收进一张表","explicit":true,"hasFields":true,"labels":true},{"name":"把重复动作拆成规则","explicit":true,"hasFields":true,"labels":true},{"name":"在不靠熟人的地方找一次真反馈","explicit":true,"hasFields":true,"label
+PASS plan_provider_deepseek DeepSeek API
+PASS plan_no_raw40 clean
+PASS plan_compliance_no_fortune clean
+PASS plan_nearTerm 今天：用虚构样表建“工时记录”并核对一格合计 / 本周：写一页“样表说明”并自测能否复述
+PASS proj_gap status=200 err=
+PASS proj_skeleton status=200 err= mode=normal story=generating
+{"phase":"proj-poll","i":0,"status":"generating","keys":["schema","version","status","startedAt","badge","pendingText","generatingText","summary","longForm","perNode","progress","error","attempt","continuations","drafts","history","storyVersion"]}
+{"phase":"proj-poll","i":5,"status":"generating","keys":["schema","version","status","startedAt","badge","pendingText","generatingText","summary","longForm","perNode","progress","error","attempt","continuations","drafts","history","storyVersion"]}
+PASS proj_story_generate status=202 ms=26642 storyStatus=ready err=
+PASS proj_nearTerm_match 今天：用虚构样表建“工时记录”并核对一格合计 / 本周：写一页“样表说明”并自测能否复述
+PASS proj_nearTerm_source plan
+PASS proj_no_raw40 clean
+PASS proj_depth_present depthVersion=p0-29-s2-isomorphic-v1 nodes=4
+{
+  "phase": "done",
+  "allPass": true,
+  "criteria": {
+    "stamp": "PASS",
+    "ai_status": "PASS",
+    "login_consent": "PASS",
+    "plan_depth": "PASS",
+    "compliance": "PASS",
+    "proj_same_depth": "PASS"
+  }
+}

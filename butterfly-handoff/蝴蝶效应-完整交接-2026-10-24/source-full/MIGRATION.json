@@ -1,0 +1,19 @@
+{
+  "migration_date_shanghai": "2026-10-22",
+  "canonical_local_path": "/Users/lq/Documents/Codex/butterfly-effect",
+  "cloud_project_id": "appgprj_6ad855d4935c81919d6d9a896d39ce46",
+  "latest_saved_cloud_version_checked": 5,
+  "cloud_source_commit_record": "d6220b53b42dcaf0b48ae29ece34bcc3867dd770",
+  "handoff_zip_sha256": "da3667b8935767d8b786a18e386930cff34a33c95b2428ac9692fcfacf6f9149",
+  "local_history": "Independent local Git repository from the handoff plus subsequent Mac/DGX fixes; cloud Git history was not imported.",
+  "local_preview": "http://127.0.0.1:4173",
+  "dgx_deployment_via_ssh": "http://127.0.0.1:8787",
+  "cloud_site_modified": false,
+  "browser_user_data_migrated": false,
+  "verification_report": "reports/local-preview-verification.json",
+  "current_browser_session_verification": "reports/browser-session-verification.json",
+  "password_required_for_local_preview": false,
+  "private_mobile_url": "https://spark-864f.tailfb7e5f.ts.net:8443",
+  "mobile_access": "Tailscale owner identity; no application password; no public funnel",
+  "current_direct_access_verification": "reports/direct-access-verification.json"
+}

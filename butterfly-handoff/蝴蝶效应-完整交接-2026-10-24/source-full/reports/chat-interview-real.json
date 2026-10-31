@@ -1,0 +1,64 @@
+{
+  "at": "2026-10-22T15:29:32.671Z",
+  "status": 200,
+  "seconds": 7.532,
+  "fixture": "语音标点多字段虚构回答",
+  "profile": {
+    "goal": "我想换工作,我今年35岁,本科学历,现在做会计,擅长Excel,每周4小时,主要困难是加班多。",
+    "role": "会计",
+    "skills": "Excel",
+    "constraints": "加班多",
+    "age": "35",
+    "hours": 4,
+    "education": "本科",
+    "experience": "做会计"
+  },
+  "evidence": {
+    "goal": {
+      "value": "我想换工作,我今年35岁,本科学历,现在做会计,擅长Excel,每周4小时,主要困难是加班多。",
+      "evidence": "我想换工作,我今年35岁,本科学历,现在做会计,擅长Excel,每周4小时,主要困难是加班多。",
+      "source": "user"
+    },
+    "role": {
+      "value": "会计",
+      "evidence": ",现在做会计",
+      "source": "user"
+    },
+    "skills": {
+      "value": "Excel",
+      "evidence": ",擅长Excel",
+      "source": "user"
+    },
+    "constraints": {
+      "value": "加班多",
+      "evidence": "主要困难是加班多",
+      "source": "user"
+    },
+    "age": {
+      "value": "35",
+      "evidence": "我想换工作,我今年35岁,本科学历,现在做会计,擅长Excel,每周4小时,主要困难是加班多。",
+      "source": "user"
+    },
+    "hours": {
+      "value": 4,
+      "evidence": "我想换工作,我今年35岁,本科学历,现在做会计,擅长Excel,每周4小时,主要困难是加班多。",
+      "source": "user"
+    },
+    "education": {
+      "value": "本科",
+      "evidence": "我想换工作,我今年35岁,本科学历,现在做会计,擅长Excel,每周4小时,主要困难是加班多。",
+      "source": "user"
+    },
+    "experience": {
+      "value": "做会计",
+      "evidence": "现在做会计",
+      "source": "user"
+    }
+  },
+  "acknowledgement": "理解您的目标。",
+  "interpretations": [],
+  "nextField": null,
+  "question": null,
+  "ready": true,
+  "provider": "DGX 私有模型"
+}

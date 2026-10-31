@@ -1,0 +1,50 @@
+{
+  "persona": {
+    "name": "虚构便利店试单甲",
+    "age": "22",
+    "education": "高中 / 中专",
+    "role": "便利店店员",
+    "experience": "没有编程经验，刚开始学习Excel",
+    "skills": "基础录入",
+    "resources": "只有个人电脑，没有客户联系人",
+    "budget": 0,
+    "hours": 4,
+    "goal": "90天内完成一个Excel表格自动化服务的付费试单",
+    "constraints": "不辞职，不购买课程，不编造收入与客户",
+    "longGoal": "用表格自动化技能接稳定小单"
+  },
+  "ruleFacts": {
+    "version": "p0-29-c-prime-v1",
+    "goalText": "90天内完成一个Excel表格自动化服务的付费试单",
+    "deadlineDays": 90,
+    "deadlineWeeks": 13,
+    "hoursPerWeek": 4,
+    "stages": [
+      {
+        "key": "near",
+        "label": "近期（今天/本周/本阶段起步）",
+        "weekLo": 0,
+        "weekHi": 2
+      },
+      {
+        "key": "build",
+        "label": "能力与证据积累",
+        "weekLo": 2,
+        "weekHi": 6
+      },
+      {
+        "key": "mid",
+        "label": "中期目标验证前夜",
+        "weekLo": 6,
+        "weekHi": 13
+      },
+      {
+        "key": "verify",
+        "label": "阶段目标验证（不越界）",
+        "weekLo": 10,
+        "weekHi": 13
+      }
+    ],
+    "note": "下列周数/期限仅供叙事对齐；模型不得另编天数、周数、收入或成功概率。期限合计不得越界。"
+  }
+}

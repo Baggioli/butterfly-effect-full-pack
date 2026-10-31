@@ -1,0 +1,23 @@
+{"phase":"secrets","loaded":true,"keys":["BUTTERFLY_LLM_API_KEY","BUTTERFLY_LLM_BASE_URL","BUTTERFLY_LLM_MODEL","BUTTERFLY_LLM_PROVIDER"]}
+{"phase":"plan-start","attempt":1}
+{"phase":"plan-done","attempt":1,"ms":27777,"narr":1591,"quadExplicit":true}
+{"phase":"plan-nearTerm","today":"今天：在Excel建「动销台账」并录满____行虚构样表","week":"本周：做27分钟周检，输出「____周观察小结」"}
+{"phase":"proj-done","ms":28757,"chars":2195,"provider":"deepseek","nodes":4,"maxHi":260,"ruleHorizonWeeks":260,"nearTermSource":"plan","nearTermMatch":true,"validation":true}
+{
+  "done": true,
+  "out": "/workspace/butterfly-handoff/p0-29-grand-goal",
+  "tip": "653dfda",
+  "contractVersion": "p0-29-s2-isomorphic-v1",
+  "hard": {
+    "pass1": true,
+    "pass2": true,
+    "pass3": true,
+    "pass4": true,
+    "pass5": true,
+    "pass6": false,
+    "readyForProductReview": false,
+    "planNarr": 1591,
+    "projChars": 2195,
+    "projMaxHi": 260
+  }
+}

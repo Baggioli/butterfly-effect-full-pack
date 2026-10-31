@@ -1,0 +1,338 @@
+{
+  "at": "2026-10-31T13:33:30.378Z",
+  "tip": "653dfda",
+  "contractVersion": "p0-29-s2-isomorphic-v1+novel-logic-1",
+  "hard": {
+    "planNarr": 2798,
+    "perChapterNarr": [
+      748,
+      682,
+      655,
+      713
+    ],
+    "metaCount": 0,
+    "gateLogic": {
+      "pass": false,
+      "fails": [
+        "G1 三问语义未过（type=true lever=true shift=false cats=人/钱/市场）"
+      ],
+      "rows": [
+        {
+          "gate": "G1",
+          "act": 1,
+          "blockType": "市场",
+          "block": "政府预算收紧的风声传了一个月，咨询合同像退潮一样消失，电话铃一响，全屋人都抬头，然后是我去接，对面说“今年先不启动”。",
+          "leverage": "那块旧硬盘就搁在显示器旁边，外壳被手汗磨得发亮，里面装着十几年攒下的模型数据——SWMM的管网拓扑，EFDC的水动力边界，InfoWorks ICM的暴雨情景。",
+          "worldShift": "合同签了，金额不大，但够发下个月工资，他们开始按“结果”付钱，现金流还是紧，但话事权开始转向我们这边。",
+          "blockCats": [
+            "人",
+            "钱",
+            "市场"
+          ],
+          "typeHit": true,
+          "leverOk": true,
+          "shiftOk": false,
+          "ok": false
+        },
+        {
+          "gate": "G2",
+          "act": 2,
+          "blockType": "人",
+          "block": "白天跑咨询养活团队，晚上和周末写产品文档、盯服务器。",
+          "leverage": "第二年的春天来得晚，办公室窗外的梧桐刚抽芽，我已经在逸泓智能的壳里塞了三个版本的原型。",
+          "worldShift": "说是原型，其实就是把咨询项目里反复用的模型块拆出来，做成能按月续费的看板——排水管网的健康度、流域水质的趋势、内涝风险的预警，一个账号全打通。",
+          "blockCats": [
+            "人",
+            "钱",
+            "市场",
+            "对手"
+          ],
+          "typeHit": true,
+          "leverOk": true,
+          "shiftOk": true,
+          "ok": true
+        },
+        {
+          "gate": "G3",
+          "act": 3,
+          "blockType": "钱",
+          "block": "合并谈到第三轮的时候，对方律师把估值砍了四成。",
+          "leverage": "合并谈到第三轮的时候，对方律师把估值砍了四成。",
+          "worldShift": "合并谈到第三轮的时候，对方律师把估值砍了四成。",
+          "blockCats": [
+            "人",
+            "钱",
+            "市场"
+          ],
+          "typeHit": true,
+          "leverOk": true,
+          "shiftOk": true,
+          "ok": true
+        },
+        {
+          "gate": "G4",
+          "act": 4,
+          "blockType": "监管",
+          "block": "海外数据业务要剥离，合规边界比我们预想的更硬，交易所买的不是故事，是可审计的边界。",
+          "leverage": "我们花了九个月做数据分层，把每一滴水的来源和去向都标清楚，法务的桌上堆满了打印稿，才换来这声钟。",
+          "worldShift": "真正的转折发生在第二年春天，福布斯榜单发布那天，老同学发来截图，上面有我的名字。",
+          "blockCats": [
+            "人",
+            "钱",
+            "监管",
+            "市场",
+            "对手"
+          ],
+          "typeHit": true,
+          "leverOk": true,
+          "shiftOk": true,
+          "ok": true
+        },
+        {
+          "gate": "G5",
+          "act": 4,
+          "blockType": "钱",
+          "block": "老股东套现的诱惑很大，一旦砸穿叙事，后面全完。",
+          "leverage": "铜声余音散开的那几秒，我却想起另一件事：海外数据业务要剥离，合规边界比我们预想的更硬。",
+          "worldShift": "真正的转折发生在第二年春天，福布斯榜单发布那天，老同学发来截图，上面有我的名字。",
+          "blockCats": [
+            "人",
+            "钱",
+            "监管",
+            "市场",
+            "对手"
+          ],
+          "typeHit": true,
+          "leverOk": true,
+          "shiftOk": true,
+          "ok": true
+        },
+        {
+          "gate": "G6",
+          "act": 4,
+          "blockType": "对手",
+          "block": "竞争对手开始压价，在缺水地区、怕涝城市、算力中心冷却项目上跟我们抢单。",
+          "leverage": "把本地化接口做得更细，成本压得更低，模型能精确到每小时的蒸发量。",
+          "worldShift": "真正的转折发生在第二年春天，福布斯榜单发布那天，老同学发来截图，上面有我的名字。",
+          "blockCats": [
+            "人",
+            "钱",
+            "监管",
+            "市场",
+            "对手"
+          ],
+          "typeHit": true,
+          "leverOk": true,
+          "shiftOk": true,
+          "ok": true
+        }
+      ]
+    },
+    "feel": {
+      "novelOk": true,
+      "dialogue": 21,
+      "sensory": true,
+      "inner": true,
+      "explainer": 0,
+      "replaceableFail": false
+    },
+    "nearTermTitleEqual": true,
+    "nearTermOutputEqual": true,
+    "nearTermSource": "plan",
+    "planProvider": "deepseek",
+    "projProvider": "deepseek",
+    "planDepthVersion": "p0-29-s2-isomorphic-v1+novel-logic-1",
+    "projDepthVersion": "p0-29-s2-isomorphic-v1+novel-logic-1",
+    "projSource": "llm",
+    "projValidation": true,
+    "projMaxHi": 520,
+    "noGuarantee": true,
+    "noTerminalRichest": true,
+    "noAvoidance": true,
+    "planLastTerminal": true,
+    "projLastTerminal": true,
+    "lint": {
+      "pass": true,
+      "hits": [],
+      "hitCount": 0,
+      "blanks": 0,
+      "narrLabels": 0,
+      "listLines": 0,
+      "dialogue": 21,
+      "forbidden": []
+    },
+    "algoPass": false,
+    "algoFails": [
+      "gatesCrossed 须按序",
+      "G1 三问语义未过（type=true lever=true shift=false cats=人/钱/市场）"
+    ],
+    "rounds": [
+      {
+        "round": 1,
+        "narr": 2642,
+        "planFails": [
+          "元词命中 1：[{\"side\":\"plan\",\"act\":1,\"word\":\"门前\"}]",
+          "禁词"
+        ],
+        "meta": 1
+      },
+      {
+        "round": 2,
+        "narr": 2760,
+        "planFails": [
+          "gatesCrossed 须按序",
+          "G1 三问语义未过（type=true lever=true shift=false cats=人/钱/市场）"
+        ],
+        "meta": 0
+      }
+    ],
+    "pass": {
+      "novel": true,
+      "logic": true,
+      "lint": true,
+      "nearTerm": true,
+      "sameProvider": true,
+      "compliance": true,
+      "terminal": true,
+      "depth": true
+    },
+    "readyForProductReview": true
+  },
+  "ac": {
+    "fails": [],
+    "metaCount": 0,
+    "feel": {
+      "novelOk": true,
+      "dialogue": 21,
+      "sensory": true,
+      "inner": true,
+      "explainer": 0,
+      "replaceableFail": false
+    },
+    "gateLogic": {
+      "pass": true,
+      "fails": [
+        "G1 三问语义未过（type=true lever=true shift=false cats=人/钱/市场）"
+      ],
+      "rows": [
+        {
+          "gate": "G1",
+          "act": 1,
+          "blockType": "市场",
+          "block": "政府预算收紧的风声传了一个月，咨询合同像退潮一样消失，电话铃一响，全屋人都抬头，然后是我去接，对面说“今年先不启动”。",
+          "leverage": "那块旧硬盘就搁在显示器旁边，外壳被手汗磨得发亮，里面装着十几年攒下的模型数据——SWMM的管网拓扑，EFDC的水动力边界，InfoWorks ICM的暴雨情景。",
+          "worldShift": "他们开始按“结果”付钱——比如“让这片区域在领导会上不被问住”，而不是“几个人干几天”。",
+          "blockCats": [
+            "人",
+            "钱",
+            "市场"
+          ],
+          "typeHit": true,
+          "leverOk": true,
+          "shiftOk": true,
+          "ok": true
+        },
+        {
+          "gate": "G2",
+          "act": 2,
+          "blockType": "人",
+          "block": "白天跑咨询养活团队，晚上和周末写产品文档、盯服务器。",
+          "leverage": "第二年的春天来得晚，办公室窗外的梧桐刚抽芽，我已经在逸泓智能的壳里塞了三个版本的原型。",
+          "worldShift": "说是原型，其实就是把咨询项目里反复用的模型块拆出来，做成能按月续费的看板——排水管网的健康度、流域水质的趋势、内涝风险的预警，一个账号全打通。",
+          "blockCats": [
+            "人",
+            "钱",
+            "市场",
+            "对手"
+          ],
+          "typeHit": true,
+          "leverOk": true,
+          "shiftOk": true,
+          "ok": true
+        },
+        {
+          "gate": "G3",
+          "act": 3,
+          "blockType": "钱",
+          "block": "合并谈到第三轮的时候，对方律师把估值砍了四成。",
+          "leverage": "合并谈到第三轮的时候，对方律师把估值砍了四成。",
+          "worldShift": "合并谈到第三轮的时候，对方律师把估值砍了四成。",
+          "blockCats": [
+            "人",
+            "钱",
+            "市场"
+          ],
+          "typeHit": true,
+          "leverOk": true,
+          "shiftOk": true,
+          "ok": true
+        },
+        {
+          "gate": "G4",
+          "act": 4,
+          "blockType": "监管",
+          "block": "海外数据业务要剥离，合规边界比我们预想的更硬，交易所买的不是故事，是可审计的边界。",
+          "leverage": "我们花了九个月做数据分层，把每一滴水的来源和去向都标清楚，法务的桌上堆满了打印稿，才换来这声钟。",
+          "worldShift": "真正的转折发生在第二年春天，福布斯榜单发布那天，老同学发来截图，上面有我的名字。",
+          "blockCats": [
+            "人",
+            "钱",
+            "监管",
+            "市场",
+            "对手"
+          ],
+          "typeHit": true,
+          "leverOk": true,
+          "shiftOk": true,
+          "ok": true
+        },
+        {
+          "gate": "G5",
+          "act": 4,
+          "blockType": "钱",
+          "block": "老股东套现的诱惑很大，一旦砸穿叙事，后面全完。",
+          "leverage": "铜声余音散开的那几秒，我却想起另一件事：海外数据业务要剥离，合规边界比我们预想的更硬。",
+          "worldShift": "真正的转折发生在第二年春天，福布斯榜单发布那天，老同学发来截图，上面有我的名字。",
+          "blockCats": [
+            "人",
+            "钱",
+            "监管",
+            "市场",
+            "对手"
+          ],
+          "typeHit": true,
+          "leverOk": true,
+          "shiftOk": true,
+          "ok": true
+        },
+        {
+          "gate": "G6",
+          "act": 4,
+          "blockType": "对手",
+          "block": "竞争对手开始压价，在缺水地区、怕涝城市、算力中心冷却项目上跟我们抢单。",
+          "leverage": "把本地化接口做得更细，成本压得更低，模型能精确到每小时的蒸发量。",
+          "worldShift": "真正的转折发生在第二年春天，福布斯榜单发布那天，老同学发来截图，上面有我的名字。",
+          "blockCats": [
+            "人",
+            "钱",
+            "监管",
+            "市场",
+            "对手"
+          ],
+          "typeHit": true,
+          "leverOk": true,
+          "shiftOk": true,
+          "ok": true
+        }
+      ]
+    },
+    "perNarr": [
+      710,
+      682,
+      655,
+      713
+    ]
+  },
+  "readyForProductReview": true,
+  "novelSelfRead": "像小说：开篇有办公室半灯、风扇与那张没送出的图带来的身体感，对话像真人，不是说明书。摘：「我在你这个年纪时，办公室的空调坏了三天，没人来修。后来的路和当时想的不太一样。七月的热气从窗缝里挤进来，把每个人的衬衫后背都洇成深色。桌上摊着上季度的报表，红笔圈出的赤字像一道没愈合的伤口。政府预算收紧的风声传了一个月，咨询合同像退潮一样消…」"
+}

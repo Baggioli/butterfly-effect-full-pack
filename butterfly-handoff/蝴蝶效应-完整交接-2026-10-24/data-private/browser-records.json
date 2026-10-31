@@ -1,0 +1,190 @@
+{
+  "format": "butterfly-full-local-backup",
+  "version": 1,
+  "exportedAt": "2026-10-23T23:19:22.521Z",
+  "origin": "http://127.0.0.1:4173",
+  "storageKey": "butterfly-v1",
+  "rawValue": "{\"active\":null,\"users\":{},\"chatDraft\":{\"version\":1,\"kind\":\"initial\",\"profile\":{\"goal\":\"我希望可以增加公司的营收。我是一个水务环保咨询公司的老板。\",\"role\":\"水务环保咨询公司的老板\",\"constraints\":\"缺乏AI相关人才,政府财政资金缺景,市场价格在变小,但是转型对行业了解不够,需要投入的资金也很大。\",\"education\":\"硕士\",\"skills\":\"水环境机理模型模拟,机理数学模型搭建,然后公司运营有十年的经验,在水务领域也有接近二十年的工作经验。\",\"hours\":80,\"experience\":\"公司运营有十年的经验,在水务领域也有接近二十年的工作经验\",\"name\":\"泉\",\"age\":\"42\"},\"evidence\":{\"goal\":{\"value\":\"我希望可以增加公司的营收。我是一个水务环保咨询公司的老板。\",\"evidence\":\"我希望可以增加公司的营收。我是一个水务环保咨询公司的老板。\",\"source\":\"user\"},\"role\":{\"value\":\"水务环保咨询公司的老板\",\"evidence\":\"我是一个水务环保咨询公司的老板。\",\"source\":\"user\"},\"constraints\":{\"value\":\"缺乏AI相关人才,政府财政资金缺景,市场价格在变小,但是转型对行业了解不够,需要投入的资金也很大。\",\"evidence\":\"缺乏AI相关人才,政府财政资金缺景,市场价格在变小,但是转型对行业了解不够,需要投入的资金也很大。\",\"source\":\"user\"},\"education\":{\"value\":\"硕士\",\"evidence\":\"我是硕士中山大学的本科和硕士环境科学专业。\",\"source\":\"user\"},\"skills\":{\"value\":\"水环境机理模型模拟,机理数学模型搭建,然后公司运营有十年的经验,在水务领域也有接近二十年的工作经验。\",\"evidence\":\"你在角色卡中亲自填写并确认\",\"source\":\"user\"},\"experience\":{\"value\":\"公司运营有十年的经验,在水务领域也有接近二十年的工作经验\",\"evidence\":\"公司运营有十年的经验,在水务领域也有接近二十年的工作经验\",\"source\":\"user\"},\"hours\":{\"value\":80,\"evidence\":\"有80小时。\",\"source\":\"user\"},\"name\":{\"value\":\"泉\",\"evidence\":\"你在角色卡中亲自填写并确认\",\"source\":\"user\"},\"age\":{\"value\":\"42\",\"evidence\":\"你在角色卡中亲自填写并确认\",\"source\":\"user\"}},\"interpretations\":[],\"asked\":[\"goal\",\"constraints\",\"age\",\"education\",\"skills\",\"hours\"],\"skipped\":[],\"messages\":[{\"role\":\"friend\",\"text\":\"最近最想改变的一件事是什么？\",\"archived\":true},{\"role\":\"user\",\"text\":\"字幕by索兰娅\",\"archived\":true},{\"role\":\"friend\",\"text\":\"字幕by索兰娅，这个目标听起来很有创意！\",\"archived\":true},{\"role\":\"friend\",\"text\":\"你现在主要做什么工作或日常事情？\",\"archived\":true},{\"role\":\"friend\",\"text\":\"刚才那句话没听清。最近，你最想改变的一件事是什么？\"},{\"role\":\"user\",\"text\":\"我希望可以增加公司的营收。我是一个水务环保咨询公司的老板。\"},{\"role\":\"friend\",\"text\":\"希望增加公司营收，你是水务环保咨询公司的老板。\"},{\"role\":\"friend\",\"text\":\"朝这个方向走，眼下最卡住你的是什么？\"},{\"role\":\"user\",\"text\":\"缺乏AI相关人才,政府财政资金缺景,市场价格在变小,但是转型对行业了解不够,需要投入的资金也很大。\"},{\"role\":\"friend\",\"text\":\"理解你的挑战，转型确实需要克服多方面的困难。\"},{\"role\":\"friend\",\"text\":\"为了让故事贴合你的现实阶段，你今年多少岁？\"},{\"role\":\"user\",\"text\":\"请不吝点赞 订阅 转发 打赏支持明镜与点点栏目\"},{\"role\":\"friend\",\"text\":\"感谢你的分享，希望你的努力能带来积极的成果。\"},{\"role\":\"friend\",\"text\":\"你目前的最高学历是什么？\"},{\"role\":\"user\",\"text\":\"我是硕士中山大学的本科和硕士环境科学专业。\"},{\"role\":\"friend\",\"text\":\"你硕士毕业于中山大学环境科学专业，这对你从事水务环保咨询很有帮助。\"},{\"role\":\"friend\",\"text\":\"你觉得自己擅长哪些技能，哪怕只是日常的小事？\"},{\"role\":\"user\",\"text\":\"上场基礼模型模拟,基礼数学模型搭建,然后公司运营有十年的经验,在水务领域也有接近二十年的工作经验。\"},{\"role\":\"friend\",\"text\":\"你提到自己在基礼模型和公司运营方面有丰富的经验，希望增加公司营收。\"},{\"role\":\"friend\",\"text\":\"每周真正能留给这件事多少小时？\"},{\"role\":\"user\",\"text\":\"有80小时。\"},{\"role\":\"friend\",\"text\":\"有80小时的工作时间可用。\"}],\"phase\":\"card\",\"startedAt\":\"2026-10-22T15:46:00.227Z\",\"draftInput\":\"\",\"field\":null,\"unconfirmedInputs\":[{\"field\":\"goal\",\"value\":\"字幕by索兰娅\",\"reason\":\"声音识别待重新确认\"}],\"confirmedAt\":\"2026-10-23T02:12:13.568Z\"}}",
+  "data": {
+    "active": null,
+    "users": {},
+    "chatDraft": {
+      "version": 1,
+      "kind": "initial",
+      "profile": {
+        "goal": "我希望可以增加公司的营收。我是一个水务环保咨询公司的老板。",
+        "role": "水务环保咨询公司的老板",
+        "constraints": "缺乏AI相关人才,政府财政资金缺景,市场价格在变小,但是转型对行业了解不够,需要投入的资金也很大。",
+        "education": "硕士",
+        "skills": "水环境机理模型模拟,机理数学模型搭建,然后公司运营有十年的经验,在水务领域也有接近二十年的工作经验。",
+        "hours": 80,
+        "experience": "公司运营有十年的经验,在水务领域也有接近二十年的工作经验",
+        "name": "泉",
+        "age": "42"
+      },
+      "evidence": {
+        "goal": {
+          "value": "我希望可以增加公司的营收。我是一个水务环保咨询公司的老板。",
+          "evidence": "我希望可以增加公司的营收。我是一个水务环保咨询公司的老板。",
+          "source": "user"
+        },
+        "role": {
+          "value": "水务环保咨询公司的老板",
+          "evidence": "我是一个水务环保咨询公司的老板。",
+          "source": "user"
+        },
+        "constraints": {
+          "value": "缺乏AI相关人才,政府财政资金缺景,市场价格在变小,但是转型对行业了解不够,需要投入的资金也很大。",
+          "evidence": "缺乏AI相关人才,政府财政资金缺景,市场价格在变小,但是转型对行业了解不够,需要投入的资金也很大。",
+          "source": "user"
+        },
+        "education": {
+          "value": "硕士",
+          "evidence": "我是硕士中山大学的本科和硕士环境科学专业。",
+          "source": "user"
+        },
+        "skills": {
+          "value": "水环境机理模型模拟,机理数学模型搭建,然后公司运营有十年的经验,在水务领域也有接近二十年的工作经验。",
+          "evidence": "你在角色卡中亲自填写并确认",
+          "source": "user"
+        },
+        "experience": {
+          "value": "公司运营有十年的经验,在水务领域也有接近二十年的工作经验",
+          "evidence": "公司运营有十年的经验,在水务领域也有接近二十年的工作经验",
+          "source": "user"
+        },
+        "hours": {
+          "value": 80,
+          "evidence": "有80小时。",
+          "source": "user"
+        },
+        "name": {
+          "value": "泉",
+          "evidence": "你在角色卡中亲自填写并确认",
+          "source": "user"
+        },
+        "age": {
+          "value": "42",
+          "evidence": "你在角色卡中亲自填写并确认",
+          "source": "user"
+        }
+      },
+      "interpretations": [],
+      "asked": [
+        "goal",
+        "constraints",
+        "age",
+        "education",
+        "skills",
+        "hours"
+      ],
+      "skipped": [],
+      "messages": [
+        {
+          "role": "friend",
+          "text": "最近最想改变的一件事是什么？",
+          "archived": true
+        },
+        {
+          "role": "user",
+          "text": "字幕by索兰娅",
+          "archived": true
+        },
+        {
+          "role": "friend",
+          "text": "字幕by索兰娅，这个目标听起来很有创意！",
+          "archived": true
+        },
+        {
+          "role": "friend",
+          "text": "你现在主要做什么工作或日常事情？",
+          "archived": true
+        },
+        {
+          "role": "friend",
+          "text": "刚才那句话没听清。最近，你最想改变的一件事是什么？"
+        },
+        {
+          "role": "user",
+          "text": "我希望可以增加公司的营收。我是一个水务环保咨询公司的老板。"
+        },
+        {
+          "role": "friend",
+          "text": "希望增加公司营收，你是水务环保咨询公司的老板。"
+        },
+        {
+          "role": "friend",
+          "text": "朝这个方向走，眼下最卡住你的是什么？"
+        },
+        {
+          "role": "user",
+          "text": "缺乏AI相关人才,政府财政资金缺景,市场价格在变小,但是转型对行业了解不够,需要投入的资金也很大。"
+        },
+        {
+          "role": "friend",
+          "text": "理解你的挑战，转型确实需要克服多方面的困难。"
+        },
+        {
+          "role": "friend",
+          "text": "为了让故事贴合你的现实阶段，你今年多少岁？"
+        },
+        {
+          "role": "user",
+          "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+        },
+        {
+          "role": "friend",
+          "text": "感谢你的分享，希望你的努力能带来积极的成果。"
+        },
+        {
+          "role": "friend",
+          "text": "你目前的最高学历是什么？"
+        },
+        {
+          "role": "user",
+          "text": "我是硕士中山大学的本科和硕士环境科学专业。"
+        },
+        {
+          "role": "friend",
+          "text": "你硕士毕业于中山大学环境科学专业，这对你从事水务环保咨询很有帮助。"
+        },
+        {
+          "role": "friend",
+          "text": "你觉得自己擅长哪些技能，哪怕只是日常的小事？"
+        },
+        {
+          "role": "user",
+          "text": "上场基礼模型模拟,基礼数学模型搭建,然后公司运营有十年的经验,在水务领域也有接近二十年的工作经验。"
+        },
+        {
+          "role": "friend",
+          "text": "你提到自己在基礼模型和公司运营方面有丰富的经验，希望增加公司营收。"
+        },
+        {
+          "role": "friend",
+          "text": "每周真正能留给这件事多少小时？"
+        },
+        {
+          "role": "user",
+          "text": "有80小时。"
+        },
+        {
+          "role": "friend",
+          "text": "有80小时的工作时间可用。"
+        }
+      ],
+      "phase": "card",
+      "startedAt": "2026-10-22T15:46:00.227Z",
+      "draftInput": "",
+      "field": null,
+      "unconfirmedInputs": [
+        {
+          "field": "goal",
+          "value": "字幕by索兰娅",
+          "reason": "声音识别待重新确认"
+        }
+      ],
+      "confirmedAt": "2026-10-23T02:12:13.568Z"
+    }
+  }
+}

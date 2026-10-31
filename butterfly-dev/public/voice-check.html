@@ -1,0 +1,19 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>蝴蝶效应 · 语音检查</title><style>body{font:16px/1.8 system-ui;max-width:390px;margin:20px auto;padding:20px;background:#f6f8f3;color:#345e48}button{font:inherit;border:0;border-radius:12px;padding:12px 18px;background:#345e48;color:white;margin:6px}pre{white-space:pre-wrap;overflow-wrap:anywhere;font:14px/1.8 system-ui}meter{width:100%;height:30px}</style><h1>语音检查</h1><p>只查看声音连接和音量，不上传、不保存录音。麦克风检查8秒后自动结束。</p><button id="check">检查麦克风</button><button id="stop">停止</button><meter id="level" min="0" max="1" value="0"></meter><pre id="result" aria-live="polite">尚未检查</pre><script type="module">
+let stream,ctx,source,gain,loop,limit;
+const out=document.querySelector('#result'),meter=document.querySelector('#level');
+function stop(){clearInterval(loop);clearTimeout(limit);stream?.getTracks().forEach(t=>t.stop());source?.disconnect();gain?.disconnect();if(ctx&&ctx.state!=='closed')ctx.close();ctx=null;stream=null}
+document.querySelector('#stop').onclick=()=>{stop();out.textContent+='\n已停止'};
+document.querySelector('#check').onclick=async()=>{stop();out.textContent='正在请求麦克风…';
+try{
+ const Audio=window.AudioContext||window.webkitAudioContext;ctx=new Audio();await ctx.resume();
+ stream=await navigator.mediaDevices.getUserMedia({audio:{echoCancellation:true,noiseSuppression:true,autoGainControl:true}});await ctx.resume();
+ const t=stream.getAudioTracks()[0];out.textContent='麦克风：'+t.label+'\n连接状态：'+t.readyState+'；静音：'+t.muted+'\n声音环境：'+ctx.state;
+ const devices=await navigator.mediaDevices.enumerateDevices();out.textContent+='\n输入设备数：'+devices.filter(d=>d.kind==='audioinput').length;
+ source=ctx.createMediaStreamSource(stream);const analyser=ctx.createAnalyser();analyser.fftSize=2048;gain=ctx.createGain();gain.gain.value=0;source.connect(analyser);analyser.connect(gain);gain.connect(ctx.destination);
+ const data=new Float32Array(analyser.fftSize);let peak=0,count=0;
+ loop=setInterval(()=>{analyser.getFloatTimeDomainData(data);const rms=Math.sqrt(data.reduce((s,x)=>s+x*x,0)/data.length);peak=Math.max(peak,rms);count++;meter.value=Math.min(1,rms*12);if(count%4===0)out.textContent=out.textContent.split('\n当前音量')[0]+'\n当前音量：'+rms.toFixed(5)+'；最高：'+peak.toFixed(5)},80);
+ limit=setTimeout(()=>{stop();out.textContent+='\n检查结束；没有提交录音。'},8000);
+}catch(e){out.textContent='检查失败：'+e.name+'\n'+e.message;stop()}
+};
+document.addEventListener('visibilitychange',()=>{if(document.hidden)stop()});
+</script></html>

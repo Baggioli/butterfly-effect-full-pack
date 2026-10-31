@@ -1,0 +1,15 @@
+# /home/lq/.config/systemd/user/butterfly-effect-natural-asr.service
+[Unit]
+Description=Butterfly private natural asr
+After=network.target
+[Service]
+WorkingDirectory=/home/lq/apps/butterfly-effect
+ExecStart=/home/lq/apps/butterfly-effect/.venv-asr-natural/bin/python /home/lq/apps/butterfly-effect/scripts/natural-speech-server.py asr
+Environment=HF_HUB_OFFLINE=1
+Environment=TRANSFORMERS_OFFLINE=1
+Environment=TOKENIZERS_PARALLELISM=false
+Environment=PYTHONUNBUFFERED=1
+Restart=on-failure
+RestartSec=5
+[Install]
+WantedBy=default.target

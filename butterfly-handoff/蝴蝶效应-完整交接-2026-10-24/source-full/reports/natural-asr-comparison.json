@@ -1,0 +1,118 @@
+{
+  "kind": "Independent Mac system-voice synthetic fixtures; not human recognition accuracy",
+  "samples": [
+    {
+      "expected": "我想让公司的营收更稳定，也想减少加班。",
+      "previous": {
+        "text": "我想让公司的营收更稳定,也想减少加班。",
+        "seconds": 3.476,
+        "edits": 0
+      },
+      "new": {
+        "text": "我想让公司的营收更稳定，也想减少加班。",
+        "seconds": 0.487,
+        "edits": 0
+      }
+    },
+    {
+      "expected": "我是水务环保咨询公司的负责人。",
+      "previous": {
+        "text": "我是水务环保咨询公司的负责人。",
+        "seconds": 3.302,
+        "edits": 0
+      },
+      "new": {
+        "text": "我是水务环保咨询公司的负责人。",
+        "seconds": 0.441,
+        "edits": 0
+      }
+    },
+    {
+      "expected": "我今年四十五岁。",
+      "previous": {
+        "text": "我今年45岁。",
+        "seconds": 2.997,
+        "edits": 3
+      },
+      "new": {
+        "text": "我今年四十五岁。",
+        "seconds": 0.347,
+        "edits": 0
+      }
+    },
+    {
+      "expected": "我本科和硕士都读环境科学专业。",
+      "previous": {
+        "text": "我本科和硕士都读环境科学专业。",
+        "seconds": 3.478,
+        "edits": 0
+      },
+      "new": {
+        "text": "我本科和硕士都读环境科学专业。",
+        "seconds": 0.423,
+        "edits": 0
+      }
+    },
+    {
+      "expected": "我擅长项目管理、客户沟通和数据分析。",
+      "previous": {
+        "text": "我擅长项目管理、客户沟通和数据分析。",
+        "seconds": 3.492,
+        "edits": 0
+      },
+      "new": {
+        "text": "我擅长项目管理、客户沟通和数据分析。",
+        "seconds": 0.435,
+        "edits": 0
+      }
+    },
+    {
+      "expected": "现在主要困难是政府财政资金紧张，转型投入也比较大。",
+      "previous": {
+        "text": "现在主要困难是政府财政资金紧张,转型投入也比较大。",
+        "seconds": 3.593,
+        "edits": 0
+      },
+      "new": {
+        "text": "现在主要困难是政府财政资金紧张，转型投入也比较大。",
+        "seconds": 0.549,
+        "edits": 0
+      }
+    },
+    {
+      "expected": "我每周可以留出六个小时。",
+      "previous": {
+        "text": "我每周可以流出6个小时。",
+        "seconds": 3.338,
+        "edits": 2
+      },
+      "new": {
+        "text": "我每周可以留出六个小时。",
+        "seconds": 0.376,
+        "edits": 0
+      }
+    },
+    {
+      "expected": "我想招聘懂人工智能和数字化的人才。",
+      "previous": {
+        "text": "我想招聘懂人工智能和数字化的人才。",
+        "seconds": 3.46,
+        "edits": 0
+      },
+      "new": {
+        "text": "我想招聘懂人工智能和数字化的人才。",
+        "seconds": 0.453,
+        "edits": 0
+      }
+    }
+  ],
+  "characters": 118,
+  "previous": {
+    "characterErrorRate": 0.0424,
+    "averageSeconds": 3.392
+  },
+  "new": {
+    "characterErrorRate": 0.0,
+    "averageSeconds": 0.439
+  }
+}

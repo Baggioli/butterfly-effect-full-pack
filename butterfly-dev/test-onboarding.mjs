@@ -1,0 +1,55 @@
+import assert from 'node:assert/strict';
+import Core from './public/onboarding-core.js';
+import Chat from './public/onboarding.js';
+import {api} from './worker/api.js';
+assert.equal(Core.next({},[],[]),'goal');
+let r=Core.apply({},'goal','我想转行，我今年三十五岁，本科学历，每周有两小时');
+assert.equal(r.profile.age,'35');assert.equal(r.profile.education,'本科');assert.equal(r.profile.hours,2);
+assert.equal(Core.next(r.profile,['goal'],[]),'role');
+assert.equal(Core.apply({age:'35'},'hours','4').profile.age,'35','小时数字不得覆盖年龄');
+assert.equal(Core.apply({},'goal','孩子8岁，我想换工作').profile.age,undefined,'家人年龄不得录为本人年龄');
+assert.equal(Core.apply({},'skills','不知道').profile.skills,undefined);
+r=Core.apply({},'role','在职工作',[{field:'age',value:'30',evidence:'30岁'},{field:'skills',value:'擅长管理',evidence:'在职工作'}]);
+assert.equal(r.profile.age,undefined);assert.equal(r.profile.skills,undefined,'模型补全必须有原话支持');
+assert.equal(Core.next({goal:'转行',role:'会计',constraints:'时间忙'},['goal','role','constraints'],[]),'hours');
+assert.equal(Core.next({goal:'方向'},['goal'],['role','constraints','age','education','skills','hours']),null);
+assert.equal(Core.due({lastConversationAt:'2026-10-01'},Date.parse('2026-10-16')),true);
+assert.equal(Core.due({lastConversationAt:'2026-10-15'},Date.parse('2026-10-16')),false);
+assert.equal(Core.next({experience:'旧记录'},[],[],'checkin'),'recentUpdate');
+assert.equal(Core.apply({},'goal','我想转行，主要困难是加班多。').profile.constraints,'加班多');
+const real=globalThis.fetch;const origin='http://127.0.0.1:8787';
+const req=(path,body)=>new Request(origin+path,{method:'POST',headers:{origin,'content-type':'application/json','oai-authenticated-user-id':'test'},body:JSON.stringify(body)});
+globalThis.fetch=async(url,options)=> url.endsWith('/api/show')?Response.json({}):Response.json({done:true,message:{content:JSON.stringify({acknowledgement:'谢谢你告诉我',facts:[{field:'skills',value:'写作',evidence:'擅长写作'}],interpretations:['也许更重视自主安排']})}});
+const response=await api(req('/api/ai',{mode:'interview',field:'role',answer:'我是编辑，擅长写作',profile:{goal:'转行'},asked:['goal']}),{AI_PROVIDER:'ollama',OLLAMA_BASE_URL:'http://127.0.0.1:11434'});
+assert.equal(response.status,200);const data=await response.json();assert.equal(data.profile.skills,'写作');assert.equal(data.nextField,'constraints');assert.equal(data.interpretations[0].state,'pending');assert.equal(data.profile.interpretations,undefined);
+const audio=new Request(origin+'/api/speech/transcribe',{method:'POST',headers:{origin,'content-type':'text/plain','oai-authenticated-user-id':'test'},body:'test'});
+assert.equal((await api(audio,{})).status,415);
+globalThis.fetch=async()=>{throw Error('offline')};
+assert.equal((await api(new Request(origin+'/api/speech/status',{headers:{'oai-authenticated-user-id':'test'}}),{})).status,503);
+globalThis.fetch=real;
+console.log('通过：动态单题、多字段证据、跳过未知、禁止家人年龄/时间串字段、推测隔离、14天回访及私有语音故障。');
+
+const oldWindow=globalThis.window,oldDocument=globalThis.document;
+globalThis.window={speechSynthesis:{cancel(){}}};globalThis.document={querySelector:()=>null};
+let saved=null;const chat=new Chat({getDraft:()=>saved,saveDraft:d=>saved=d,toast:()=>{}});
+chat.render=()=>{};chat.speak=()=>{};chat.open();chat.begin();
+assert.equal(chat.s.field,'goal');chat.s.draftInput='尚未发送';chat.persist();chat.beforeClose();chat.open();assert.equal(chat.s.draftInput,'尚未发送','刷新或关闭后保留未发草稿');
+chat.required=true;assert.equal(chat.beforeClose(),false,'到期近况不能直接关闭');chat.required=false;chat.beforeClose();
+const spoken=Core.apply({},'goal','我想换工作,我今年35岁,本科学历,现在做会计,擅长Excel,每周4小时,主要困难是加班多。');
+assert.equal(Core.next(spoken.profile,['goal']),null,'语音标点的多字段回答不重复问');
+globalThis.window=oldWindow;globalThis.document=oldDocument;
+console.log('补充通过：聊天草稿续接、强制近况关闭拦截、语音标点多字段不重问。');
+
+assert.equal(Core.isNoiseTranscript('字幕by索兰娅 字幕by索兰娅'),true);
+assert.equal(Core.isNoiseTranscript('我擅长做字幕设计'),false,'真实职业描述不能被字幕噪声规则误伤');
+const damaged={version:1,kind:'initial',profile:{goal:'字幕by索兰娅',role:'会计'},evidence:{},interpretations:[],asked:['goal'],skipped:[],messages:[{role:'user',text:'字幕by索兰娅'}],phase:'talk',field:'role'};
+const repair=new Chat({getDraft:()=>structuredClone(damaged),saveDraft(){},toast(){}});repair.render=()=>{};repair.open();
+assert.equal(repair.s.field,'goal');assert.equal(repair.s.profile.goal,undefined);assert.equal(repair.s.profile.role,'会计');assert.equal(repair.s.unconfirmedInputs[0].value,'字幕by索兰娅','保留原始误识别以便恢复，不当成事实');
+console.log('补充通过：字幕误识别不会成为事实，未确认草稿重新询问并保留其他真实信息。');
+
+const unpunctuated=Core.apply({},'role','我现在做会计擅长表格整理。');
+assert.equal(unpunctuated.profile.role,'会计');assert.equal(unpunctuated.profile.skills,'表格整理','语音识别无逗号时仍识别已回答技能');
+assert.equal(Core.apply({},'role','我不擅长编程').profile.skills,undefined);
+
+assert.equal(Core.isNoiseTranscript('请不吝点赞 订阅 转发 打赏支持明镜与点点栏目'),true);
+assert.equal(Core.isNoiseTranscript('我擅长为公司做视频，想增加点赞和订阅'),false);

@@ -1,0 +1,324 @@
+{
+  "at": "2026-10-31T02:54:46.405Z",
+  "contractVersion": "p0-29-s2-isomorphic-v1",
+  "alignVersion": "p0-29-s2-align-v1",
+  "persona": {
+    "name": "虚构便利店试单甲",
+    "age": "22",
+    "education": "高中 / 中专",
+    "role": "便利店店员",
+    "experience": "没有编程经验，刚开始学习Excel",
+    "skills": "基础录入",
+    "resources": "只有个人电脑，没有客户联系人",
+    "budget": 0,
+    "hours": 4,
+    "goal": "90天内完成一个Excel表格自动化服务的付费试单",
+    "constraints": "不辞职，不购买课程，不编造收入与客户",
+    "longGoal": "用表格自动化技能接稳定小单"
+  },
+  "ruleFacts": {
+    "version": "p0-29-s2-isomorphic-v1",
+    "goalText": "90天内完成一个Excel表格自动化服务的付费试单",
+    "deadlineDays": 90,
+    "deadlineWeeks": 13,
+    "hoursPerWeek": 4,
+    "stages": [
+      {
+        "key": "<redacted len=4>",
+        "label": "近期（今天/本周/本阶段起步）",
+        "weekLo": 0,
+        "weekHi": 2
+      },
+      {
+        "key": "<redacted len=5>",
+        "label": "能力与证据积累",
+        "weekLo": 2,
+        "weekHi": 6
+      },
+      {
+        "key": "<redacted len=3>",
+        "label": "中期目标验证前夜",
+        "weekLo": 6,
+        "weekHi": 13
+      },
+      {
+        "key": "<redacted len=6>",
+        "label": "阶段目标验证（不越界）",
+        "weekLo": 10,
+        "weekHi": 13
+      }
+    ],
+    "note": "下列周数/期限仅供叙事对齐；模型不得另编天数、周数、收入或成功概率。期限合计不得越界。"
+  },
+  "plan": {
+    "id": "plan-deepseek-s2",
+    "status": 200,
+    "ms": 26429,
+    "provider": "DeepSeek API",
+    "model": "deepseek-chat",
+    "narr": 1966,
+    "quadExplicit": true,
+    "chapterQuads": [
+      {
+        "explicit": true,
+        "hasFields": true,
+        "fieldChars": {
+          "situation": 113,
+          "action": 138,
+          "change": 104,
+          "cost": 89
+        },
+        "narrativeHasLabels": true
+      },
+      {
+        "explicit": true,
+        "hasFields": true,
+        "fieldChars": {
+          "situation": 121,
+          "action": 190,
+          "change": 126,
+          "cost": 90
+        },
+        "narrativeHasLabels": true
+      },
+      {
+        "explicit": true,
+        "hasFields": true,
+        "fieldChars": {
+          "situation": 94,
+          "action": 163,
+          "change": 107,
+          "cost": 103
+        },
+        "narrativeHasLabels": true
+      },
+      {
+        "explicit": true,
+        "hasFields": true,
+        "fieldChars": {
+          "situation": 124,
+          "action": 162,
+          "change": 122,
+          "cost": 88
+        },
+        "narrativeHasLabels": true
+      }
+    ],
+    "weekFirst": {
+      "today": "今天：用虚构便利店样表做出一张可截图的四列表",
+      "week": "本周：把样本整理成一页展示稿并保存",
+      "todayOut": "一份自编虚构数据的xlsx与一张截图；验收标准：四列列名齐全、恰好10行数据、有一次求和结果可见、截图内有“虚构数据”字样。",
+      "weekOut": "一个“试单准备”文件夹，内含展示版xlsx与整页截图；验收标准：列名四列齐全、10行数据、文件名含“虚构数据样本”、截图能看清表头与求和结果。",
+      "gate": "本人可控证据：电脑中存在一份自编虚构数据的xlsx样本，含“日期、班次、销售额、备注”四列与10行数据；含一次筛选与求和操作记录；有一张截图并注明数据虚构。不要求任何他人回复或成交。"
+    },
+    "invokeMeta": {
+      "provider": "DeepSeek API",
+      "model": "deepseek-chat",
+      "via": "deepseek"
+    }
+  },
+  "projection": {
+    "ms": 23637,
+    "provider": "deepseek",
+    "providerKind": "online",
+    "model": "deepseek-chat",
+    "source": "mixed",
+    "chars": 2360,
+    "validation": true,
+    "depth": true,
+    "depthVersion": "p0-29-s2-isomorphic-v1",
+    "depthSpine": true,
+    "ruleHorizonWeeks": 13,
+    "nearTerm": {
+      "today": {
+        "title": "今天：用虚构便利店样表做出一张可截图的四列表",
+        "output": "一份自编虚构数据的xlsx与一张截图；验收标准：四列列名齐全、恰好10行数据、有一次求和结果可见、截图内有“虚构数据”字样。",
+        "minutes": 40
+      },
+      "week": {
+        "title": "本周：把样本整理成一页展示稿并保存",
+        "output": "一个“试单准备”文件夹，内含展示版xlsx与整页截图；验收标准：列名四列齐全、10行数据、文件名含“虚构数据样本”、截图能看清表头与求和结果。",
+        "minutes": 35
+      }
+    },
+    "nearTermSource": "plan",
+    "perNode": [
+      {
+        "nodeId": "d_near",
+        "title": "近期",
+        "tRange": {
+          "lo": 1,
+          "hi": 2
+        },
+        "depthStage": "near",
+        "source": "llm",
+        "situation": "你每天在便利店轮班，站柜台、理货、应对顾客，下班后身体乏，心里却搁着一件想做的事：用表格自动化帮人省下重复劳动的时间。眼下你还没接过付费的活，也不清楚每周能匀出多少精力，只觉得日子被班表推着走，目标悬在那里，落不到具体时段。",
+        "action": "你开始把每周的固定时段写进手机日历，挑班次较松的日子，留出一段不被打扰的时间。先整理自己会用的表格操作，列成简单清单；再找一个身边可能用得上的小场景，试着做出能演示的样例，边做边记下卡住的地方，下次接着补。",
+        "change": "几周下来，你每周有了相对固定的推进时段，不再靠零散念头推动。手头攒出一份能给人看的样例，对表格自动化的流程心里有了底，也知道自己哪块还不熟。想到付费试单时，不再只是空想，而能说清下一步要做什么。",
+        "cost": "排班之外的休息被占去一部分，原本用来刷手机或补觉的晚间变得紧凑，偶尔下班累了仍要按提醒坐下。朋友临时约你时会犹豫，你选择先把手上的练习收尾。也有状态差的时候，坐下了却进展缓慢，只能把当次目标缩小，接受慢一点。",
+        "fieldChars": {
+          "situation": 100,
+          "action": 94,
+          "change": 88,
+          "cost": 95
+        }
+      },
+      {
+        "nodeId": "d_build",
+        "title": "能力与证据积累",
+        "tRange": {
+          "lo": 2,
+          "hi": 6
+        },
+        "depthStage": "build",
+        "source": "mixed",
+        "situation": "第 2–6 周前后，你站在「能力与证据积累」这一段的起点。技能是「基础录入」，这是你已有的底子，但离「90天内完成一个Excel表格自动化服务的付费试单」需要的核心能力还差一段：能做一些零散的操作，还不能独立交出一个完整的小成果。",
+        "action": "每周你固定留出几个晚上，关掉手机通知，坐在桌前按一条线往下走：先跟着教程把表格里的常用操作练熟，再试着用录制和简单脚本把重复动作串起来，然后找一个身边的小场景——比如整理排班或统计进货——从头做一遍。遇到卡住的地方，你把问题记下来，下次先查资料再动手，不急着换方向。每周结束前，你留出一小段时间回看这周做的东西，把不顺手的步骤重新做一遍，直到不用看提示也能完成。",
+        "change": "你开始能独立把一个小需求从头做到尾：知道先问清楚对方要什么，再把步骤拆开，最后交出一个能直接用的表格。遇到报错时，你不再慌，会先看提示、再回头检查哪一步没接上。你手里攒下了几个自己从头做出来的小成果，虽然还不复杂，但每一步都是你自己走通的。你对自己能做什么、还差什么，心里比之前有数，也更能坐得住。",
+        "cost": "这段时间你的休息被切得更碎，轮班后的疲惫常常和练习撞在一起，有几个晚上你只能缩短练习时间。你推掉了一些朋友的邀约，也放弃了原本用来放空的时间。进度不顺的时候，你会怀疑自己是不是把方向想简单了，但你还是把下一次练习排进了日程，没有停下来。",
+        "fieldChars": {
+          "situation": 90,
+          "action": 163,
+          "change": 134,
+          "cost": 109
+        }
+      },
+      {
+        "nodeId": "d_mid",
+        "title": "中期目标验证前夜",
+        "tRange": {
+          "lo": 6,
+          "hi": 13
+        },
+        "depthStage": "mid",
+        "source": "llm",
+        "situation": "你在便利店轮班之余，刚开始接触Excel，会做简单的表格，但面对重复录入、格式整理这类实际需求时，还不太知道怎么把零散的操作串成一套能交付的东西。你手上没有可讲给旁人听的实践经历，也不清楚自己学到的东西离一次真正的付费试单还差在哪里，心里有些没底，却也不想停在原地。",
+        "action": "你把每周固定的投入时间分成几块：一部分用来跟着教程练函数和数据整理，一部分拿来拆解身边能接触到的小需求，比如排班表、库存清单这类表格，试着用自己会的方法重做一遍。每完成一次，你就把过程记下来，写清楚遇到的问题和怎么绕过去的，再回头补上没弄懂的地方。",
+        "change": "你开始能独立把一份杂乱的表格整理成结构清楚、可以交给别人看的样子，遇到不熟悉的操作也知道去哪里找答案。你手上攒下了几段自己动手做过的整理经历，能比较完整地讲出前后过程，对接下来要面对的试单不再只是模糊的想象。",
+        "cost": "固定的休息时间被学习占去不少，轮班后的疲惫里还要坐下来练表格，偶尔会觉得进度慢。有些练手的内容做完就搁下了，没能马上派上用场；遇到卡住的地方，也只能自己反复试，缺少可以随时请教的人。",
+        "fieldChars": {
+          "situation": 118,
+          "action": 114,
+          "change": 98,
+          "cost": 83
+        }
+      },
+      {
+        "nodeId": "d_verify",
+        "title": "阶段目标验证",
+        "tRange": {
+          "lo": 10,
+          "hi": 13
+        },
+        "depthStage": "verify",
+        "source": "llm",
+        "situation": "你在便利店轮班之外，把每周固定的投入时间用来推进那个Excel表格自动化服务的试单。上一段你刚完成中期目标验证前的准备，眼下卡在从练习到真实交付的过渡上：手头有练过的表格场景，但还没接触过付费客户，不确定自己的做法能否对上别人的实际需求，也不清楚该从哪里找到愿意试单的人。",
+        "action": "每周你按固定节奏做几件事：先整理一份能说清楚的表格自动化服务说明，用日常语言写清能帮人处理哪类重复录入和汇总；再在常去的线上社区和熟人圈里留意有表格困扰的人，主动留言询问对方的具体流程；同时把练过的场景重做一遍，记录每一步操作和可能出错的地方，形成自己的检查清单；每周留出时间复盘，把问到的需求归归类，调整说明里的措辞。",
+        "change": "你手里有了一份能拿出手的服务说明和检查清单，遇到别人描述表格问题时能较快判断是否在能力范围内。你开始收到一些具体的询问，有人愿意进一步聊自己的表格流程，你也能够把对方的零散需求转成可执行的步骤。各项差距按计划推进，你具备了检验阶段目标的条件，可以尝试推进到付费试单的沟通。",
+        "cost": "每周的固定投入时间挤占了休息和社交，轮班后的精力需要重新分配，有时会觉得疲惫。主动询问需求可能遇到冷淡回应或对方说不清楚，需要反复沟通；整理说明和检查清单也占去不少原本放松的时段。你放弃了一些随意的闲暇，换来的是对服务边界的反复确认和几次不太顺利的交流。",
+        "fieldChars": {
+          "situation": 123,
+          "action": 149,
+          "change": 128,
+          "cost": 119
+        }
+      }
+    ],
+    "attempts": [
+      {
+        "node": "d_near",
+        "try": 1,
+        "ok": false,
+        "ms": 3552,
+        "via": "online",
+        "rejected": [
+          "cost:cn_count"
+        ]
+      },
+      {
+        "node": "d_near",
+        "try": 2,
+        "ok": true,
+        "ms": 3651,
+        "via": "online"
+      },
+      {
+        "node": "d_build",
+        "try": 1,
+        "ok": false,
+        "ms": 4950,
+        "via": "online",
+        "rejected": [
+          "situation:cn_number"
+        ]
+      },
+      {
+        "node": "d_build",
+        "try": 2,
+        "ok": false,
+        "ms": 3837,
+        "via": "online",
+        "rejected": [
+          "situation:cn_number"
+        ]
+      },
+      {
+        "node": "d_mid",
+        "try": 1,
+        "ok": true,
+        "ms": 3627,
+        "via": "online"
+      },
+      {
+        "node": "d_verify",
+        "try": 1,
+        "ok": true,
+        "ms": 4013,
+        "via": "online"
+      }
+    ]
+  },
+  "hard": {
+    "2_plan_quad_explicit": true,
+    "2_plan_quad_chapters": 4,
+    "5_same_provider": true,
+    "5_plan_provider": "DeepSeek API",
+    "5_proj_provider": "deepseek",
+    "5_same_depth_version": true,
+    "5_proj_within_rule_weeks": true,
+    "5_proj_node_count_4": true,
+    "5_proj_has_near_term": true,
+    "5_plan_has_near_term": true,
+    "5_proj_quad_fields": true,
+    "4_nearTerm_title_equal": true,
+    "4_nearTerm_output_equal": true,
+    "4_nearTerm_source_plan": true,
+    "align_user_visible_no_raw40": true,
+    "1_plan_narr_ge_1500": true,
+    "planNarr": 1966,
+    "projChars": 2360,
+    "projMaxHi": 13,
+    "ruleDeadlineWeeks": 13,
+    "planPeriodMaxDigit": 13,
+    "planNearTerm": {
+      "today": "今天：用虚构便利店样表做出一张可截图的四列表",
+      "week": "本周：把样本整理成一页展示稿并保存"
+    },
+    "projNearTerm": {
+      "today": "今天：用虚构便利店样表做出一张可截图的四列表",
+      "week": "本周：把样本整理成一页展示稿并保存"
+    },
+    "pass5": true,
+    "pass2": true,
+    "pass4_align": true,
+    "pass_raw_strip": true,
+    "readyForProductReview": true
+  },
+  "internal": {
+    "note": "行动线算法 raw horizon，非用户可见产物",
+    "actionLineHorizonRaw": {
+      "lo": 19,
+      "hi": 40
+    }
+  }
+}

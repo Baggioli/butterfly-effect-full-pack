@@ -1,0 +1,55 @@
+{
+  "tip": "653dfda",
+  "contractVersion": "p0-29-s2-isomorphic-v1",
+  "persona": {
+    "name": "虚构便利店试单甲",
+    "age": "22",
+    "education": "高中 / 中专",
+    "role": "便利店店员",
+    "experience": "没有编程经验，刚开始学习Excel",
+    "skills": "基础录入",
+    "resources": "只有个人电脑，没有客户联系人",
+    "budget": 0,
+    "hours": 4,
+    "goal": "成为世界首富",
+    "constraints": "不辞职，不购买课程作默认路径，不编造收入与客户与成功率；近端动作须本人可控",
+    "longGoal": "成为世界首富"
+  },
+  "ruleFacts": {
+    "version": "p0-29-s2-isomorphic-v1",
+    "goalText": "成为世界首富",
+    "deadlineDays": 1825,
+    "deadlineWeeks": 260,
+    "hoursPerWeek": 4,
+    "stages": [
+      {
+        "key": "near",
+        "label": "近端可执行起步（证据与技能苗头）",
+        "weekLo": 0,
+        "weekHi": 4
+      },
+      {
+        "key": "build",
+        "label": "能力与小证据积累（约第1年）",
+        "weekLo": 4,
+        "weekHi": 52
+      },
+      {
+        "key": "mid",
+        "label": "可检验中期证据（约第2–3年：稳定小生意/资产苗头，非首富）",
+        "weekLo": 52,
+        "weekHi": 156
+      },
+      {
+        "key": "verify",
+        "label": "阶段验证点（约第5年：可查证事业/资产规模证据；禁止写成已成首富）",
+        "weekLo": 156,
+        "weekHi": 260
+      }
+    ],
+    "note": "模拟非承诺。下列周数/阶段仅供叙事对齐；模型不得另编收入、成功概率或客户。阶段验证点写可检验中期证据，禁止终局「成为世界首富」完成态。数字只来自本规则层。",
+    "disclaimer": "模拟非承诺",
+    "forbidTerminalRichest": true
+  },
+  "note": "弱起点×宏大终局；规则周界自拟数年，非90天/13周试单硬套"
+}

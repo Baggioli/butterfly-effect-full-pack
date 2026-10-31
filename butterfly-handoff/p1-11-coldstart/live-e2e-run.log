@@ -1,0 +1,40 @@
+PASS stamp_html 1.4-p1-11b
+PASS shot_01-home /workspace/butterfly-handoff/p1-11-coldstart/live-e2e-shots/01-home.png
+PASS shot_02-login /workspace/butterfly-handoff/p1-11-coldstart/live-e2e-shots/02-login.png
+PASS shot_03-login-filled /workspace/butterfly-handoff/p1-11-coldstart/live-e2e-shots/03-login-filled.png
+PASS shot_04-after-login /workspace/butterfly-handoff/p1-11-coldstart/live-e2e-shots/04-after-login.png
+PASS shot_05-consent-gated /workspace/butterfly-handoff/p1-11-coldstart/live-e2e-shots/05-consent-gated.png
+PASS consent_gated_disabled true
+PASS shot_06-consent-ungated /workspace/butterfly-handoff/p1-11-coldstart/live-e2e-shots/06-consent-ungated.png
+PASS consent_ungated true
+PASS shot_07-after-consent /workspace/butterfly-handoff/p1-11-coldstart/live-e2e-shots/07-after-consent.png
+PASS CS1_direct_visible 可见
+PASS CS2_import_entry_visible 可见
+PASS shot_08-coldstart-gate /workspace/butterfly-handoff/p1-11-coldstart/live-e2e-shots/08-coldstart-gate.png
+PASS shot_09-paste-page /workspace/butterfly-handoff/p1-11-coldstart/live-e2e-shots/09-paste-page.png
+PASS shot_10-paste-filled /workspace/butterfly-handoff/p1-11-coldstart/live-e2e-shots/10-paste-filled.png
+PASS shot_11-role-card /workspace/butterfly-handoff/p1-11-coldstart/live-e2e-shots/11-role-card.png
+FAIL CS2_strip_labels_live 身份
+PASS CS2_taboo_aside_live 可见
+PASS shot_12-role-card-edited /workspace/butterfly-handoff/p1-11-coldstart/live-e2e-shots/12-role-card-edited.png
+PASS shot_13-after-confirm /workspace/butterfly-handoff/p1-11-coldstart/live-e2e-shots/13-after-confirm.png
+PASS CS2_confirm_into_story 进故事
+PASS shot_14-after-ai-attempt /workspace/butterfly-handoff/p1-11-coldstart/live-e2e-shots/14-after-ai-attempt.png
+PASS ai_plan_template_fallback_ok 模板/故事仍在
+PASS shot_15-demo-mode /workspace/butterfly-handoff/p1-11-coldstart/live-e2e-shots/15-demo-mode.png
+PASS CS4_demo_no_import_gate 无导入闸
+PASS CS4_demo_query [Function (anonymous)]
+
+SUMMARY {
+  stamp: 'PASS',
+  consent_gate: 'PASS',
+  consent_submit: 'PASS',
+  direct_chat: 'PASS',
+  import_entry: 'PASS',
+  strip_labels: 'FAIL',
+  taboo: 'PASS',
+  confirm_story: 'PASS',
+  ai_plan_fallback: 'PASS',
+  demo_hide: 'PASS'
+}
+passed true

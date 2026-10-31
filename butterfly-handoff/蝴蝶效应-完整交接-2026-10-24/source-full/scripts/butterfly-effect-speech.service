@@ -1,0 +1,14 @@
+[Unit]
+Description=Butterfly private speech transcription
+After=network.target
+[Service]
+WorkingDirectory=/home/lq/apps/butterfly-effect
+ExecStart=/home/lq/apps/butterfly-effect/.venv-speech/bin/python scripts/speech-server.py
+Environment=HF_HUB_OFFLINE=1
+Environment=HF_HUB_DISABLE_TELEMETRY=1
+Restart=on-failure
+RestartSec=5
+UMask=0077
+NoNewPrivileges=true
+[Install]
+WantedBy=default.target

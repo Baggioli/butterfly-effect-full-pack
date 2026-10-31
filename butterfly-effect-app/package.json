@@ -1,0 +1,12 @@
+{
+  "name": "butterfly-effect",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "bash scripts/build.sh",
+    "validate": "node scripts/validate-artifact.mjs",
+    "dev": "node scripts/dev.mjs",
+    "test": "node test.mjs && node test-ai.mjs && node test-dgx.mjs && node test-dev.mjs && node test-browser-session.mjs && node test-direct-access.mjs && node test-onboarding.mjs && node test-voice.mjs && node test-voice-output.mjs",
+    "deploy:dgx": "node scripts/deploy-dgx.mjs"
+  }
+}

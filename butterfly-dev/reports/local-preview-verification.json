@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-22T09:20:38.115Z",
+  "model": "qwen2.5:32b",
+  "productionEndpoint": "http://127.0.0.1:4173",
+  "fictionalData": true,
+  "cases": [
+    {
+      "id": "production-extract",
+      "status": 200,
+      "elapsedSeconds": 24.566868583999998,
+      "input": {
+        "mode": "extract",
+        "intro": "我是虚构测试甲，22岁，高中毕业，在便利店工作，没有编程经验。只有个人电脑，没有客户联系人。目标90天内完成Excel表格自动化服务的一个付费试单，每周4小时。不辞职，不买课程。"
+      },
+      "output": {
+        "profile": {
+          "age": "22",
+          "education": "高中毕业",
+          "role": "便利店工作",
+          "experience": "无编程经验",
+          "resources": "个人电脑",
+          "hours": 4,
+          "constraints": "不辞职，不买课程",
+          "goal": "90天内完成Excel表格自动化服务的一个付费试单",
+          "kind": "custom"
+        },
+        "summary": "用户是一位22岁的便利店工作人员，希望在90天内通过每周投入4小时的时间，利用个人电脑完成一个Excel表格自动化服务的付费试单，但不考虑辞职或购买课程。",
+        "questions": [
+          "您是否有任何关于Excel或编程的基础知识，这将影响学习曲线和实现目标的策略？",
+          "您计划如何获取必要的编程知识来实现Excel表格自动化，而不购买课程？"
+        ],
+        "provider": "DGX 私有模型"
+      },
+      "passed": true
+    }
+  ]
+}

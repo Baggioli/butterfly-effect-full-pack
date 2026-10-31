@@ -1,0 +1,100 @@
+{
+  "tip": "aca18ac",
+  "tip_live_harness": "66810af",
+  "stamp": "1.4-p1-11b",
+  "branch": "feat/p1-11-coldstart-import",
+  "merged_main": false,
+  "at": "2026-10-29T03:08:15.922Z",
+  "at_asia_shanghai": "2026-10-29 11:07:43 CST",
+  "deploy": {
+    "status": "HOT_UPDATED",
+    "target": "spark-864f ~/apps/butterfly-effect-a2 :18887 via a2-host-proxy :18888",
+    "backup": "/home/lq/apps/butterfly-effect-a2/.runtime/backup-p1-11-20261029-110104",
+    "synced": [
+      "public/coldstart-import.js",
+      "public/app.js",
+      "public/style.css",
+      "public/index.html"
+    ],
+    "story_js": "untouched",
+    "embed_build": true,
+    "a2_restart_pid": 2332048,
+    "serve_topology_changed": false,
+    "serve_8443": "https://spark-864f.tailfb7e5f.ts.net:8443 -> http://127.0.0.1:18888 (unchanged)",
+    "html_stamp_live": [
+      "1.4-p1-11b",
+      "1.4-p0-23c (story.js only)"
+    ],
+    "rolled_back": false
+  },
+  "live_regression": {
+    "entry": "https://spark-864f.tailfb7e5f.ts.net:8443/",
+    "report_strict": "/workspace/butterfly-handoff/p1-11-coldstart/live-regression-strict.json",
+    "e2e_report": "/workspace/butterfly-handoff/p1-11-coldstart/live-e2e-report.json",
+    "shots_dir": "/workspace/butterfly-handoff/p1-11-coldstart/live-e2e-shots/",
+    "criteria": {
+      "stamp": "PASS",
+      "consent_gate": "PASS",
+      "direct_chat": "PASS",
+      "import_path": "PASS",
+      "strip_labels": "PASS",
+      "taboo_aside": "PASS",
+      "confirm_to_route": "PASS",
+      "ai_plan_fallback": "PASS",
+      "demo_hide": "PASS"
+    },
+    "strict_results": {
+      "consent_to_gate": "PASS",
+      "paste_page": "PASS",
+      "strip_name_role": "PASS",
+      "taboo_filled": "PASS",
+      "confirm_to_route": "PASS",
+      "ai_plan_or_skeleton": "PASS",
+      "direct_chat": "PASS",
+      "demo_hide_import": "PASS"
+    },
+    "key_shots": {
+      "gate": "/workspace/butterfly-handoff/p1-11-coldstart/live-e2e-shots/S08-gate.png",
+      "direct": "/workspace/butterfly-handoff/p1-11-coldstart/live-e2e-shots/S08b-direct.png",
+      "role_card": "/workspace/butterfly-handoff/p1-11-coldstart/live-e2e-shots/S11-card.png",
+      "route": "/workspace/butterfly-handoff/p1-11-coldstart/live-e2e-shots/S13-route.png",
+      "demo": "/workspace/butterfly-handoff/p1-11-coldstart/live-e2e-shots/S15-demo.png"
+    },
+    "all_shots": [
+      "/workspace/butterfly-handoff/p1-11-coldstart/live-e2e-shots/01-home.png",
+      "/workspace/butterfly-handoff/p1-11-coldstart/live-e2e-shots/02-login.png",
+      "/workspace/butterfly-handoff/p1-11-coldstart/live-e2e-shots/03-login-filled.png",
+      "/workspace/butterfly-handoff/p1-11-coldstart/live-e2e-shots/04-after-login.png",
+      "/workspace/butterfly-handoff/p1-11-coldstart/live-e2e-shots/05-consent-gated.png",
+      "/workspace/butterfly-handoff/p1-11-coldstart/live-e2e-shots/06-consent-ungated.png",
+      "/workspace/butterfly-handoff/p1-11-coldstart/live-e2e-shots/07-after-consent.png",
+      "/workspace/butterfly-handoff/p1-11-coldstart/live-e2e-shots/08-coldstart-gate.png",
+      "/workspace/butterfly-handoff/p1-11-coldstart/live-e2e-shots/09-paste-page.png",
+      "/workspace/butterfly-handoff/p1-11-coldstart/live-e2e-shots/10-paste-filled.png",
+      "/workspace/butterfly-handoff/p1-11-coldstart/live-e2e-shots/11-role-card.png",
+      "/workspace/butterfly-handoff/p1-11-coldstart/live-e2e-shots/12-role-card-edited.png",
+      "/workspace/butterfly-handoff/p1-11-coldstart/live-e2e-shots/13-after-confirm.png",
+      "/workspace/butterfly-handoff/p1-11-coldstart/live-e2e-shots/14-after-ai-attempt.png",
+      "/workspace/butterfly-handoff/p1-11-coldstart/live-e2e-shots/15-demo-mode.png",
+      "/workspace/butterfly-handoff/p1-11-coldstart/live-e2e-shots/R08-gate-direct.png",
+      "/workspace/butterfly-handoff/p1-11-coldstart/live-e2e-shots/R08b-after-direct.png",
+      "/workspace/butterfly-handoff/p1-11-coldstart/live-e2e-shots/R11-role-values.png",
+      "/workspace/butterfly-handoff/p1-11-coldstart/live-e2e-shots/R13-after-confirm.png",
+      "/workspace/butterfly-handoff/p1-11-coldstart/live-e2e-shots/R14-after-ai-wait.png",
+      "/workspace/butterfly-handoff/p1-11-coldstart/live-e2e-shots/R15-demo.png",
+      "/workspace/butterfly-handoff/p1-11-coldstart/live-e2e-shots/S08-gate.png",
+      "/workspace/butterfly-handoff/p1-11-coldstart/live-e2e-shots/S08b-direct.png",
+      "/workspace/butterfly-handoff/p1-11-coldstart/live-e2e-shots/S10-paste.png",
+      "/workspace/butterfly-handoff/p1-11-coldstart/live-e2e-shots/S11-card.png",
+      "/workspace/butterfly-handoff/p1-11-coldstart/live-e2e-shots/S13-route.png",
+      "/workspace/butterfly-handoff/p1-11-coldstart/live-e2e-shots/S14-ai-wait.png",
+      "/workspace/butterfly-handoff/p1-11-coldstart/live-e2e-shots/S15-demo.png"
+    ]
+  },
+  "local_cs": {
+    "CS1": "PASS",
+    "CS2": "PASS",
+    "CS3": "PASS",
+    "CS4": "PASS"
+  }
+}

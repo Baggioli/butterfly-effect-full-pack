@@ -1,0 +1,11 @@
+{
+  "repository": "https://github.com/Baggioli/butterfly-effect-app",
+  "visibility": "private",
+  "branch": "main",
+  "commit": "f53172defd87f86eadd242d1b1c9494e31f8dc1a",
+  "independentFrom": "moongrains",
+  "privateUserDataUploaded": false,
+  "entryDocument": "START_HERE.md",
+  "sourceCommit": "f00320b4ef2acef7d427b34c33007835fcd36af1",
+  "verification": "GitHub Desktop push complete; local main equals origin/main; npm test/build/validate passed"
+}

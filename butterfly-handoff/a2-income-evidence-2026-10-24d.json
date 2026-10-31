@@ -1,0 +1,398 @@
+{
+  "kind": "A2-projection-income-evidence",
+  "at": "2026-10-24T14:12:27.907Z",
+  "base": "http://127.0.0.1:18887",
+  "tableHint": "income-v1-2026-10-24d",
+  "cases": [
+    {
+      "id": "nanjing_l1",
+      "city": "南京",
+      "profile": {
+        "city": "南京",
+        "goal": "转行做前端工程师"
+      },
+      "steps": {
+        "gap": {
+          "status": 200,
+          "mode": "normal",
+          "ms": 3867
+        },
+        "confirm": {
+          "status": 200,
+          "gapId": "gapc_mvmhaabp6szus"
+        },
+        "skeleton": {
+          "status": 200,
+          "reused": false,
+          "ruleMs": 12
+        }
+      },
+      "ms": 3888,
+      "income": {
+        "available": true,
+        "scope": "city",
+        "sourceTier": "L1",
+        "bandKind": "percentile",
+        "bandLabel": "P10–P90（低–高）",
+        "percentileLow": 10,
+        "percentileMid": 50,
+        "percentileHigh": 90,
+        "low": 7000,
+        "high": 16600,
+        "occupation": "计算机程序设计员（软件业细类）",
+        "city": "南京",
+        "tableVersion": "income-v1-2026-10-24d",
+        "sourceCategory": "人社局工资价位",
+        "sourceFull": "来源：南京市人社局《南京市2023年企业薪酬调查信息（职业中类+软件业docx）》（2024），南京×计算机程序设计员（软件业细类），统计口径（税前应发；年薪÷12；低/中/高位数=P10/P50/P90（南京口径，非P25/P75）），分位 P10–P90（低–高）"
+      },
+      "validation": {
+        "R10": {
+          "pass": true,
+          "issues": []
+        },
+        "R17": {
+          "pass": true,
+          "issues": []
+        },
+        "R8": true,
+        "R12": true
+      },
+      "expectIssues": [],
+      "pass": true,
+      "lineKinds": [
+        "plan"
+      ],
+      "shareHasIncome": false,
+      "bannedHits": []
+    },
+    {
+      "id": "beijing_l2_mean",
+      "city": "北京",
+      "profile": {
+        "city": "北京",
+        "goal": "转行做前端工程师"
+      },
+      "steps": {
+        "gap": {
+          "status": 200,
+          "mode": "normal",
+          "ms": 3849
+        },
+        "confirm": {
+          "status": 200,
+          "gapId": "gapc_mvmhadb7l0iva"
+        },
+        "skeleton": {
+          "status": 200,
+          "reused": false,
+          "ruleMs": 5
+        }
+      },
+      "ms": 3870,
+      "income": {
+        "available": true,
+        "scope": "city",
+        "sourceTier": "L2",
+        "bandKind": "industry_mean",
+        "bandLabel": "行业平均",
+        "percentileLow": null,
+        "percentileMid": null,
+        "percentileHigh": null,
+        "industryName": "信息传输、软件和信息技术服务业",
+        "low": 28400,
+        "high": 28400,
+        "occupation": "信息传输、软件和信息技术服务业",
+        "city": "北京",
+        "tableVersion": "income-v1-2026-10-24d",
+        "sourceCategory": "统计局平均工资",
+        "sourceFull": "来源：北京市统计局《北京统计年鉴2025表3-16分行业非私营在岗职工平均工资（职业→行业L2映射）》（2025），北京×信息传输、软件和信息技术服务业，统计口径（税前；年平均；城镇非私营在岗；统计实发；职业→行业映射L2），分位 行业平均，行业 信息传输、软件和信息技术服务业"
+      },
+      "validation": {
+        "R10": {
+          "pass": true,
+          "issues": []
+        },
+        "R17": {
+          "pass": true,
+          "issues": []
+        },
+        "R8": true,
+        "R12": true
+      },
+      "expectIssues": [],
+      "pass": true,
+      "lineKinds": [
+        "plan"
+      ],
+      "shareHasIncome": false,
+      "bannedHits": []
+    },
+    {
+      "id": "wuhan_province",
+      "city": "武汉",
+      "profile": {
+        "city": "武汉",
+        "goal": "转行做前端工程师"
+      },
+      "steps": {
+        "gap": {
+          "status": 200,
+          "mode": "normal",
+          "ms": 3844
+        },
+        "confirm": {
+          "status": 200,
+          "gapId": "gapc_mvmhagaicka2z"
+        },
+        "skeleton": {
+          "status": 200,
+          "reused": false,
+          "ruleMs": 3
+        }
+      },
+      "ms": 3860,
+      "income": {
+        "available": true,
+        "scope": "province",
+        "sourceTier": "L1",
+        "bandKind": "percentile",
+        "bandLabel": "P25–P75",
+        "percentileLow": 25,
+        "percentileMid": 50,
+        "percentileHigh": 75,
+        "sampleLabel": "省级样本 ≠ 单市",
+        "estimateLabel": "省级样本 ≠ 单市",
+        "low": 6300,
+        "high": 9900,
+        "occupation": "计算机程序设计员（数字职业，表3）",
+        "city": "武汉",
+        "tableVersion": "income-v1-2026-10-24d",
+        "sourceCategory": "人社局工资价位",
+        "sourceFull": "来源：湖北省人社厅《湖北省企业薪酬调查信息（2024年）表1/表3图片人工识读》（2025），武汉×计算机程序设计员（数字职业，表3），统计口径（税前应发；年薪万元÷12；P25/P50/P75；湖北省级企业样本（≠武汉单市）），分位 P25–P75，省级样本 ≠ 单市"
+      },
+      "validation": {
+        "R10": {
+          "pass": true,
+          "issues": []
+        },
+        "R17": {
+          "pass": true,
+          "issues": []
+        },
+        "R8": true,
+        "R12": true
+      },
+      "expectIssues": [],
+      "pass": true,
+      "lineKinds": [
+        "plan"
+      ],
+      "shareHasIncome": false,
+      "bannedHits": []
+    },
+    {
+      "id": "chengdu_region",
+      "city": "成都",
+      "profile": {
+        "city": "成都",
+        "goal": "转行做前端工程师"
+      },
+      "steps": {
+        "gap": {
+          "status": 200,
+          "mode": "normal",
+          "ms": 3841
+        },
+        "confirm": {
+          "status": 200,
+          "gapId": "gapc_mvmhaj9onu54r"
+        },
+        "skeleton": {
+          "status": 200,
+          "reused": false,
+          "ruleMs": 4
+        }
+      },
+      "ms": 3860,
+      "income": {
+        "available": true,
+        "scope": "region",
+        "sourceTier": "L1",
+        "bandKind": "percentile",
+        "bandLabel": "P25–P75",
+        "percentileLow": 25,
+        "percentileMid": 50,
+        "percentileHigh": 75,
+        "sampleLabel": "区域样本 ≠ 单市",
+        "estimateLabel": "区域样本 ≠ 单市",
+        "low": 4800,
+        "high": 8900,
+        "occupation": "信息传输、软件和信息技术服务人员",
+        "city": "成都",
+        "tableVersion": "income-v1-2026-10-24d",
+        "sourceCategory": "人社局工资价位",
+        "sourceFull": "来源：重庆人社/四川人社《川渝地区2024联合样本（加深：成都/重庆仍无单列细类）》（2025），成都×信息传输、软件和信息技术服务人员，统计口径（税前应发；年薪÷12；P25/P50/P75；川渝联合企业样本），分位 P25–P75，区域样本 ≠ 单市"
+      },
+      "validation": {
+        "R10": {
+          "pass": true,
+          "issues": []
+        },
+        "R17": {
+          "pass": true,
+          "issues": []
+        },
+        "R8": true,
+        "R12": true
+      },
+      "expectIssues": [],
+      "pass": true,
+      "lineKinds": [
+        "plan"
+      ],
+      "shareHasIncome": false,
+      "bannedHits": []
+    },
+    {
+      "id": "shanghai_sparse",
+      "city": "上海",
+      "profile": {
+        "city": "上海",
+        "goal": "转行做前端工程师"
+      },
+      "steps": {
+        "gap": {
+          "status": 200,
+          "mode": "normal",
+          "ms": 3852
+        },
+        "confirm": {
+          "status": 200,
+          "gapId": "gapc_mvmham99zlhmd"
+        },
+        "skeleton": {
+          "status": 200,
+          "reused": false,
+          "ruleMs": 3
+        }
+      },
+      "ms": 3871,
+      "income": {
+        "available": true,
+        "scope": "city",
+        "sourceTier": "L3",
+        "bandKind": "percentile",
+        "bandLabel": "P50–P75（应届起薪）",
+        "percentileLow": 50,
+        "percentileMid": 50,
+        "percentileHigh": 75,
+        "low": 6800,
+        "high": 7400,
+        "occupation": "2025届应届生起薪（城市混合）",
+        "city": "上海",
+        "tableVersion": "income-v1-2026-10-24d",
+        "sourceCategory": "招聘平台公开报告",
+        "sourceFull": "来源：前程无忧《2025人力资源白皮书（第二阶段城市平均月薪/应届/层级）》（2026），上海×2025届应届生起薪（城市混合），统计口径（分位数；招聘调研月薪；应届生起薪），分位 P50–P75（应届起薪）"
+      },
+      "validation": {
+        "R10": {
+          "pass": true,
+          "issues": []
+        },
+        "R17": {
+          "pass": true,
+          "issues": []
+        },
+        "R8": true,
+        "R12": true
+      },
+      "expectIssues": [],
+      "pass": true,
+      "lineKinds": [
+        "plan"
+      ],
+      "shareHasIncome": false,
+      "bannedHits": []
+    },
+    {
+      "id": "xian_l1",
+      "city": "西安",
+      "profile": {
+        "city": "西安",
+        "goal": "转行做前端工程师"
+      },
+      "steps": {
+        "gap": {
+          "status": 200,
+          "mode": "normal",
+          "ms": 3845
+        },
+        "confirm": {
+          "status": 200,
+          "gapId": "gapc_mvmhap8kcekw5"
+        },
+        "skeleton": {
+          "status": 200,
+          "reused": false,
+          "ruleMs": 4
+        }
+      },
+      "ms": 3865,
+      "income": {
+        "available": true,
+        "scope": "city",
+        "sourceTier": "L1",
+        "bandKind": "percentile",
+        "bandLabel": "P25–P75",
+        "percentileLow": 25,
+        "percentileMid": 50,
+        "percentileHigh": 75,
+        "low": 4300,
+        "high": 9400,
+        "occupation": "软件和信息技术服务人员",
+        "city": "西安",
+        "tableVersion": "income-v1-2026-10-24d",
+        "sourceCategory": "人社局工资价位",
+        "sourceFull": "来源：西安市人社局《西安市2025企业薪酬调查信息》（2025），西安×软件和信息技术服务人员，统计口径（企业在岗职工全年应发工资（税前）；月薪=年值÷12；P25–P75），分位 P25–P75"
+      },
+      "validation": {
+        "R10": {
+          "pass": true,
+          "issues": []
+        },
+        "R17": {
+          "pass": true,
+          "issues": []
+        },
+        "R8": true,
+        "R12": true
+      },
+      "expectIssues": [],
+      "pass": true,
+      "lineKinds": [
+        "plan"
+      ],
+      "shareHasIncome": false,
+      "bannedHits": []
+    }
+  ],
+  "params": {
+    "status": 200,
+    "incomeFallback": null,
+    "version": "pt-v0.1-2026-10-24"
+  },
+  "auth": {
+    "send": 200,
+    "verify": 200,
+    "hasToken": true,
+    "consent": 200
+  },
+  "summary": {
+    "pass": 6,
+    "total": 6,
+    "allPass": true,
+    "tableVersions": [
+      "income-v1-2026-10-24d"
+    ]
+  }
+}

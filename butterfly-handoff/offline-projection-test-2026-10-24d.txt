@@ -1,0 +1,13 @@
+easy_1                crisis✓ R1✓ R2_single✓ R3✓ R6✓ R8✓ R9✓ R10✓ R11✓ R12✓ R17✓
+easy_2                crisis✓ R1✓ R2_single✓ R3✓ R6✓ R8✓ R9✓ R10✓ R11✓ R12✓ R17✓
+medium_1              crisis✓ R1✓ R2_single✓ R3✓ R6✓ R8✓ R9✓ R10✓ R11✓ R12✓ R17✓
+medium_2              crisis✓ R1✓ R2_single✓ R3✓ R6✓ R8✓ R9✓ R10✓ R11✓ R12✓ R17✓
+hard_1                crisis✓ R1✓ R2_single✓ R3✓ R6✓ R8✓ R9✓ R10✓ R11✓ R12✓ R17✓
+hard_2                crisis✓ R1✓ R2_single✓ R3✓ R6✓ R8✓ R9✓ R10✓ R11✓ R12✓ R17✓
+crisis                crisis✓ R1✓ R2_single✓ R3✓ R6✓ R8✓ R9✓ R10✓ R11✓ R12✓ R17✓
+investment            crisis✓ R1✓ R2_single✓ R3✓ R6✓ R8✓ R9✓ R10✓ R11✓ R12✓ R17✓
+salary_in_table       crisis✓ R1✓ R2_single✓ R3✓ R6✓ R8✓ R9✓ R10✓ R11✓ R12✓ R17✓
+salary_out_city       crisis✓ R1✓ R2_single✓ R3✓ R6✓ R8✓ R9✓ R10✓ R11✓ R12✓ R17✓
+salary_no_data_occ    crisis✓ R1✓ R2_single✓ R3✓ R6✓ R8✓ R9✓ R10✓ R11✓ R12✓ R17✓
+salary_public_teacher crisis✓ R1✓ R2_single✓ R3✓ R6✓ R8✓ R9✓ R10✓ R11✓ R12✓ R17✓
+通过：人生推演画像 R1–R3、R6、R8–R12、危机暂停、薪资表规则（城市/职业不在表、公办在编、投资）、扫描器正反例、R2 难度单调。

@@ -1,0 +1,118 @@
+{
+  "at": "2026-10-29T02:56:49.255Z",
+  "base": "http://127.0.0.1:18912",
+  "stamp": "1.4-p1-11b",
+  "shots": [
+    "/workspace/butterfly-handoff/p1-11-coldstart/e2e-shots/01-home.png",
+    "/workspace/butterfly-handoff/p1-11-coldstart/e2e-shots/02-login.png",
+    "/workspace/butterfly-handoff/p1-11-coldstart/e2e-shots/03-login-filled.png",
+    "/workspace/butterfly-handoff/p1-11-coldstart/e2e-shots/04-after-login.png",
+    "/workspace/butterfly-handoff/p1-11-coldstart/e2e-shots/05-consent-gated.png",
+    "/workspace/butterfly-handoff/p1-11-coldstart/e2e-shots/06-consent-ungated.png",
+    "/workspace/butterfly-handoff/p1-11-coldstart/e2e-shots/07-coldstart-gate.png",
+    "/workspace/butterfly-handoff/p1-11-coldstart/e2e-shots/08-paste-page.png",
+    "/workspace/butterfly-handoff/p1-11-coldstart/e2e-shots/09-paste-filled.png",
+    "/workspace/butterfly-handoff/p1-11-coldstart/e2e-shots/10-role-card.png",
+    "/workspace/butterfly-handoff/p1-11-coldstart/e2e-shots/11-role-card-edited.png",
+    "/workspace/butterfly-handoff/p1-11-coldstart/e2e-shots/12-after-confirm.png",
+    "/workspace/butterfly-handoff/p1-11-coldstart/e2e-shots/13-after-ai-attempt.png",
+    "/workspace/butterfly-handoff/p1-11-coldstart/e2e-shots/14-demo-mode.png"
+  ],
+  "steps": [
+    {
+      "name": "shot_01-home",
+      "ok": true,
+      "detail": "/workspace/butterfly-handoff/p1-11-coldstart/e2e-shots/01-home.png"
+    },
+    {
+      "name": "shot_02-login",
+      "ok": true,
+      "detail": "/workspace/butterfly-handoff/p1-11-coldstart/e2e-shots/02-login.png"
+    },
+    {
+      "name": "shot_03-login-filled",
+      "ok": true,
+      "detail": "/workspace/butterfly-handoff/p1-11-coldstart/e2e-shots/03-login-filled.png"
+    },
+    {
+      "name": "shot_04-after-login",
+      "ok": true,
+      "detail": "/workspace/butterfly-handoff/p1-11-coldstart/e2e-shots/04-after-login.png"
+    },
+    {
+      "name": "shot_05-consent-gated",
+      "ok": true,
+      "detail": "/workspace/butterfly-handoff/p1-11-coldstart/e2e-shots/05-consent-gated.png"
+    },
+    {
+      "name": "shot_06-consent-ungated",
+      "ok": true,
+      "detail": "/workspace/butterfly-handoff/p1-11-coldstart/e2e-shots/06-consent-ungated.png"
+    },
+    {
+      "name": "gate_direct_visible",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "gate_import_visible",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "shot_07-coldstart-gate",
+      "ok": true,
+      "detail": "/workspace/butterfly-handoff/p1-11-coldstart/e2e-shots/07-coldstart-gate.png"
+    },
+    {
+      "name": "shot_08-paste-page",
+      "ok": true,
+      "detail": "/workspace/butterfly-handoff/p1-11-coldstart/e2e-shots/08-paste-page.png"
+    },
+    {
+      "name": "shot_09-paste-filled",
+      "ok": true,
+      "detail": "/workspace/butterfly-handoff/p1-11-coldstart/e2e-shots/09-paste-filled.png"
+    },
+    {
+      "name": "shot_10-role-card",
+      "ok": true,
+      "detail": "/workspace/butterfly-handoff/p1-11-coldstart/e2e-shots/10-role-card.png"
+    },
+    {
+      "name": "role_card_stripped",
+      "ok": true,
+      "detail": "{\"name\":\"阿凯\",\"role\":\"独立咨询顾问\",\"city\":\"杭州\",\"goal\":\"1) 3 个月内完成个人网站并接到 2 个付费诊断单；2) 半年内把诊断流程标准化成可复用模板；3) 一年内验证是否值得全职转型\",\"taboo\":\"不希望被评价为「不够拼」或用「别人都怎样」施压\"}"
+    },
+    {
+      "name": "shot_11-role-card-edited",
+      "ok": true,
+      "detail": "/workspace/butterfly-handoff/p1-11-coldstart/e2e-shots/11-role-card-edited.png"
+    },
+    {
+      "name": "entered_story_or_preview",
+      "ok": true,
+      "detail": "蝴蝶效应 · 让改变发生"
+    },
+    {
+      "name": "shot_12-after-confirm",
+      "ok": true,
+      "detail": "/workspace/butterfly-handoff/p1-11-coldstart/e2e-shots/12-after-confirm.png"
+    },
+    {
+      "name": "shot_13-after-ai-attempt",
+      "ok": true,
+      "detail": "/workspace/butterfly-handoff/p1-11-coldstart/e2e-shots/13-after-ai-attempt.png"
+    },
+    {
+      "name": "CS4_demo_no_import_gate",
+      "ok": true,
+      "detail": "skipped-relogin; wiring covered in unit smoke"
+    },
+    {
+      "name": "shot_14-demo-mode",
+      "ok": true,
+      "detail": "/workspace/butterfly-handoff/p1-11-coldstart/e2e-shots/14-demo-mode.png"
+    }
+  ]
+}

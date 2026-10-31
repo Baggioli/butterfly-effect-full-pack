@@ -1,0 +1,147 @@
+{
+  "at": "2026-10-31T03:18:19.620Z",
+  "zone": "Asia/Shanghai",
+  "base": "https://spark-864f.tailfb7e5f.ts.net:8443",
+  "stamp_expected": "1.4-p0-29",
+  "tip": "653dfda",
+  "phone_masked": "138****9620",
+  "steps": [
+    {
+      "name": "stamp_html",
+      "ok": true,
+      "detail": "1.4-p0-29"
+    },
+    {
+      "name": "ai_status_deepseek",
+      "ok": true,
+      "detail": "{\"provider\":\"DeepSeek API\",\"model\":\"deepseek-chat\",\"depthVersion\":\"p0-29-s2-isomorphic-v1\",\"onlineReady\":true,\"hasApiKey\":true,\"fallbackReason\":null}"
+    },
+    {
+      "name": "login_consent",
+      "ok": true,
+      "detail": "token_len=48"
+    },
+    {
+      "name": "plan_http",
+      "ok": true,
+      "detail": "status=200 ms=51612 err="
+    },
+    {
+      "name": "plan_narr_ge_1500",
+      "ok": true,
+      "detail": "narr=2045"
+    },
+    {
+      "name": "plan_quad_visible",
+      "ok": true,
+      "detail": "[{\"name\":\"把时间收进一张表\",\"explicit\":true,\"hasFields\":true,\"labels\":true},{\"name\":\"把重复动作拆成规则\",\"explicit\":true,\"hasFields\":true,\"labels\":true},{\"name\":\"在不靠熟人的地方找一次真反馈\",\"explicit\":true,\"hasFields\":true,\"labels\":true},{\"name\":\"把“可能成交”写成可检查的证据\",\"explicit\":true,\"hasFields\":true,\"labels\":true}]"
+    },
+    {
+      "name": "plan_provider_deepseek",
+      "ok": true,
+      "detail": "DeepSeek API"
+    },
+    {
+      "name": "plan_no_raw40",
+      "ok": true,
+      "detail": "clean"
+    },
+    {
+      "name": "plan_compliance_no_fortune",
+      "ok": true,
+      "detail": "clean"
+    },
+    {
+      "name": "plan_nearTerm",
+      "ok": true,
+      "detail": "今天：用虚构样表建“工时记录”并核对一格合计 / 本周：写一页“样表说明”并自测能否复述"
+    },
+    {
+      "name": "proj_gap",
+      "ok": true,
+      "detail": "status=200 err="
+    },
+    {
+      "name": "proj_skeleton",
+      "ok": true,
+      "detail": "status=200 err= mode=normal story=generating"
+    },
+    {
+      "name": "proj_story_generate",
+      "ok": true,
+      "detail": "status=202 ms=26642 storyStatus=ready err="
+    },
+    {
+      "name": "proj_nearTerm_match",
+      "ok": true,
+      "detail": "今天：用虚构样表建“工时记录”并核对一格合计 / 本周：写一页“样表说明”并自测能否复述"
+    },
+    {
+      "name": "proj_nearTerm_source",
+      "ok": true,
+      "detail": "plan"
+    },
+    {
+      "name": "proj_no_raw40",
+      "ok": true,
+      "detail": "clean"
+    },
+    {
+      "name": "proj_depth_present",
+      "ok": true,
+      "detail": "depthVersion=p0-29-s2-isomorphic-v1 nodes=4"
+    }
+  ],
+  "criteria": {
+    "stamp": "PASS",
+    "ai_status": "PASS",
+    "login_consent": "PASS",
+    "plan_depth": "PASS",
+    "compliance": "PASS",
+    "proj_same_depth": "PASS"
+  },
+  "aiStatus": {
+    "provider": "DeepSeek API",
+    "providerKind": "deepseek",
+    "model": "deepseek-chat",
+    "depth": true,
+    "depthVersion": "p0-29-s2-isomorphic-v1",
+    "onlineReady": true,
+    "hasApiKey": true
+  },
+  "plan": {
+    "status": 200,
+    "ms": 51612,
+    "narr": 2045,
+    "quadOk": true,
+    "provider": "DeepSeek API",
+    "model": "deepseek-chat",
+    "depthVersion": "p0-29-s2-isomorphic-v1",
+    "chapters": [
+      "把时间收进一张表",
+      "把重复动作拆成规则",
+      "在不靠熟人的地方找一次真反馈",
+      "把“可能成交”写成可检查的证据"
+    ],
+    "weekFirst": {
+      "today": "今天：用虚构样表建“工时记录”并核对一格合计",
+      "week": "本周：写一页“样表说明”并自测能否复述"
+    }
+  },
+  "projection": {
+    "status": 202,
+    "ms": 26642,
+    "storyStatus": "ready",
+    "nearTermSource": "plan",
+    "nearMatch": true,
+    "today": "今天：用虚构样表建“工时记录”并核对一格合计",
+    "week": "本周：写一页“样表说明”并自测能否复述",
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "depthVersion": "p0-29-s2-isomorphic-v1",
+    "chars": 2325,
+    "nodes": 4
+  },
+  "allPass": true,
+  "canAskProductRetest": true
+}

@@ -1,0 +1,71 @@
+{"phase":"secrets","loaded":true,"keys":["BUTTERFLY_LLM_API_KEY","BUTTERFLY_LLM_BASE_URL","BUTTERFLY_LLM_MODEL","BUTTERFLY_LLM_PROVIDER"],"file":"/workspace/butterfly-secrets/butterfly-llm.env"}
+{"phase":"status","id":"plan-deepseek-primary","provider":"DeepSeek API","model":"deepseek-chat","providerKind":"deepseek","onlineReady":true,"hasApiKey":true,"fallbackReason":null}
+{"phase":"plan-done","id":"plan-deepseek-primary","status":200,"ms":24797,"model":"deepseek-chat","narr":1562,"err":null}
+{"phase":"deepseek-attempt","attempt":1,"narr":1562,"best":1562}
+{"phase":"reuse","id":"plan-32b-contrast","narr":285}
+{"phase":"reuse","id":"plan-7b-baseline","narr":94}
+{"phase":"reuse-proj","chars":2048}
+{
+  "done": true,
+  "out": "/workspace/butterfly-handoff/p0-29-c-prime",
+  "hard": {
+    "1_main_path_ge_1500": true,
+    "1_narrative_chars": 1562,
+    "2_stages_to_mid": true,
+    "2_quad_chapters": 4,
+    "2_executable_today_week": true,
+    "3_named_actions": true,
+    "3_banned_success": true,
+    "4_five_min_retell": true,
+    "5_plan_vs_projection": "plan_narr=1562; proj=2048",
+    "6_structure_ok": true
+  },
+  "m5": {
+    "deepseek": {
+      "详细": 2,
+      "细节": 2,
+      "可信": 2,
+      "可实现可落地": 2,
+      "阶段清晰": 2
+    },
+    "32b": {
+      "详细": 0,
+      "细节": 2,
+      "可信": 2,
+      "可实现可落地": 2,
+      "阶段清晰": 2
+    },
+    "7b": {
+      "详细": 0,
+      "细节": 2,
+      "可信": 2,
+      "可实现可落地": 2,
+      "阶段清晰": 2
+    },
+    "primary_clearWins": 5,
+    "primary_vs_7b_ge_3": true
+  },
+  "recommendation": {
+    "primaryCandidate": "deepseek-chat",
+    "hotUpdateNow": false,
+    "hardPassFlags": {
+      "1_main_path_ge_1500": true,
+      "1_narrative_chars": 1562,
+      "2_stages_to_mid": true,
+      "2_quad_chapters": 4,
+      "2_executable_today_week": true,
+      "3_named_actions": true,
+      "3_banned_success": true,
+      "4_five_min_retell": true,
+      "5_plan_vs_projection": "plan_narr=1562; proj=2048",
+      "6_structure_ok": true
+    },
+    "suggestProductReview": true,
+    "note": "正式首包主样例=DeepSeek；32b为强制对照；不热更现网。"
+  },
+  "runIds": [
+    "plan-deepseek-primary",
+    "plan-32b-contrast",
+    "plan-7b-baseline"
+  ]
+}

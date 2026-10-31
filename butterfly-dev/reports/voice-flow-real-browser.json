@@ -1,0 +1,7 @@
+{
+  "date": "2026-10-23",
+  "input": "合成声音，经真实浏览器MediaStream/MediaRecorder；非真人麦克风",
+  "result": "测试完成：PASS\n系统播报了3轮，用时52秒\n真实浏览器录音并识别了2轮\n我想换一份少加班的工作。\n我现在做会计擅长表格整理。\n角色：{\"goal\":\"我想换一份少加班的工作。\",\"role\":\"会计\",\"skills\":\"表格整理\",\"name\":\"\"}",
+  "recognitionModel": "large-v3-turbo",
+  "durationSeconds": 52
+}

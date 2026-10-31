@@ -1,0 +1,104 @@
+{
+  "startedAt": "2026-10-25T14:25:49.325Z",
+  "base": "http://100.65.242.127:18888",
+  "phone": "13938349325",
+  "criteria": {
+    "c1_disabled_before_check": {
+      "ok": true,
+      "disabled": true,
+      "aria": "true"
+    },
+    "c1b_force_click_stays": {
+      "ok": true,
+      "stillConsent": true
+    },
+    "c2_enabled_after_check": {
+      "ok": true,
+      "disabled": false
+    },
+    "c4_visible_error_on_fail": {
+      "ok": true,
+      "errText": "同意提交失败(冒烟注入)",
+      "errVisible": true,
+      "toastText": "",
+      "stillOnConsentAfterFail": true,
+      "disabledAfterFail": false
+    },
+    "c3_leaves_consent": {
+      "ok": true,
+      "leftConsent": true,
+      "nextHints": 2,
+      "lastConsentRes": {
+        "phase": "res",
+        "status": 200,
+        "url": "http://100.65.242.127:18888/api/auth/sensitive-consent",
+        "body": "{\"ok\":true,\"sensitiveConsent\":true}"
+      },
+      "reqsAfterFail": [
+        {
+          "phase": "req",
+          "method": "POST",
+          "url": "http://100.65.242.127:18888/api/auth/sensitive-consent",
+          "authorization": "Bearer ca1b793a3f7c4…",
+          "xButterflySession": "ca1b793a3f7c…"
+        },
+        {
+          "phase": "res",
+          "status": 200,
+          "url": "http://100.65.242.127:18888/api/auth/sensitive-consent",
+          "body": "{\"ok\":true,\"sensitiveConsent\":true}"
+        }
+      ]
+    },
+    "deploy_markers": {
+      "ok": true,
+      "cacheBust": true,
+      "hasSyncSensitiveInSrc": true
+    }
+  },
+  "notes": [
+    "console:error:Failed to load resource: the server responded with a status of 500 (Internal Server Error)"
+  ],
+  "screenshots": [
+    "01-home.png",
+    "02-login-modal.png",
+    "03-login-filled.png",
+    "04-after-login.png",
+    "05-consent-gated.png",
+    "06-consent-ungated.png",
+    "07-consent-fail-visible.png",
+    "08-after-consent.png"
+  ],
+  "network": [
+    {
+      "phase": "req",
+      "method": "POST",
+      "url": "http://100.65.242.127:18888/api/auth/sensitive-consent",
+      "authorization": "Bearer ca1b793a3f7c4…",
+      "xButterflySession": "ca1b793a3f7c…"
+    },
+    {
+      "phase": "res",
+      "status": 500,
+      "url": "http://100.65.242.127:18888/api/auth/sensitive-consent",
+      "body": "{\"error\":\"同意提交失败(冒烟注入)\",\"code\":\"SMOKE_INJECT\"}"
+    },
+    {
+      "phase": "req",
+      "method": "POST",
+      "url": "http://100.65.242.127:18888/api/auth/sensitive-consent",
+      "authorization": "Bearer ca1b793a3f7c4…",
+      "xButterflySession": "ca1b793a3f7c…"
+    },
+    {
+      "phase": "res",
+      "status": 200,
+      "url": "http://100.65.242.127:18888/api/auth/sensitive-consent",
+      "body": "{\"ok\":true,\"sensitiveConsent\":true}"
+    }
+  ],
+  "passed": true,
+  "cacheBust": true,
+  "hasSyncSensitiveInSrc": true,
+  "finishedAt": "2026-10-25T14:25:58.811Z"
+}

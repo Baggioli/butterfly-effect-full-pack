@@ -1,0 +1,22 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>语音全链路验证</title><link rel="stylesheet" href="/style.css"><style>body{max-width:430px;margin:auto;padding:12px}#log{white-space:pre-wrap;font:14px/1.8 system-ui;padding:12px;background:#edf3e7}#surface{max-height:460px;overflow:auto}#surface footer{padding:12px}#surface .chat-options{display:none}</style><h2>两轮语音链路验证</h2><p>使用合成测试声音，不访问真实麦克风。测试录制、停顿、识别、模型回应、播报及下一轮。</p><button id="run" class="btn">运行两轮测试</button><pre id="log" role="status">尚未开始</pre><div id="surface"></div><script type="module">
+import Chat from '/onboarding.js';
+const log=document.querySelector('#log'),surface=document.querySelector('#surface');let chat,buffers=[],destination,turn=0,completed=false,resultText="",started=0,spoken=new Set();
+const show=(title,body,foot)=>{if(chat?.speaking)spoken.add(chat.spoken);surface.innerHTML='<main id="home-conversation"><h3>'+title+'</h3><div class="modalbody">'+body+'</div><footer>'+foot+'</footer></main>';const answers=chat?.s?.messages.filter(m=>m.role==='user')||[];if(completed){log.textContent=resultText;return}log.textContent='已录制轮次：'+turn+'\n已识别回答：'+answers.map(m=>m.text).join('\n')+'\n当前阶段：'+(chat?.s.field||'准备中')};
+chat=new Chat({getDraft:()=>null,saveDraft(){},home:show,modal:show,viewport(){},toast:message=>log.textContent+=message,close(){},getMicrophone:async()=>{destination??=chat.audioContext.createMediaStreamDestination();return destination.stream},onListening:()=>{
+ if(turn>=2){completed=true;chat.action('pause-voice');const answers=chat.s.messages.filter(m=>m.role==='user');log.textContent=resultText='测试完成：'+(answers.length===2&&/换.*工作/.test(chat.s.profile.goal||'')&&/会计/.test(chat.s.profile.role||'')&&/表格/.test(chat.s.profile.skills||'')&&spoken.size>=3?'PASS':'FAIL')+'\n系统播报了'+spoken.size+'轮，用时'+Math.round((performance.now()-started)/1000)+'秒\n真实浏览器录音并识别了'+answers.length+'轮\n'+answers.map(m=>m.text).join('\n')+'\n角色：'+JSON.stringify(chat.s.profile);document.querySelector('#run').disabled=false;return}
+ const source=chat.audioContext.createBufferSource();source.buffer=buffers[turn++];source.connect(destination);source.start();
+}});
+document.querySelector('#run').onclick=async()=>{
+ document.querySelector('#run').disabled=true;turn=0;completed=false;resultText='';spoken=new Set();started=performance.now();destination=null;log.textContent='正在准备合成测试回答…';
+ try{
+ chat.audioContext=new (window.AudioContext||window.webkitAudioContext)();await chat.audioContext.resume();
+ buffers=[];
+ for(const text of ['我想换一份少加班的工作。','我现在做会计，擅长表格整理。']){
+  const r=await fetch('/api/speech/speak',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({text})});
+  if(!r.ok)throw Error('测试声音生成失败（'+r.status+'）');
+  buffers.push(await chat.audioContext.decodeAudioData(await r.arrayBuffer()));
+ }
+ chat.open();await chat.startVoice();
+ }catch(e){log.textContent='测试失败：'+e.message;document.querySelector('#run').disabled=false}
+};
+</script></html>

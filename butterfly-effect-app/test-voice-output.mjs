@@ -1,0 +1,38 @@
+import assert from 'node:assert/strict';
+import {api} from './worker/api.js';
+import VoiceOutput,{speechChunks} from './public/voice-output.js';
+const longSpeech='我把你刚才说的整理好了。'+('这是你希望改变的事情，值得慢慢说清楚。'.repeat(30));
+const speechParts=speechChunks(longSpeech);assert.equal(speechParts.join(''),longSpeech);assert.ok(speechParts.every(part=>part.length<=60));
+const previous={fetch:globalThis.fetch,window:globalThis.window};
+const origin='https://private.example',text='你好呀。最近最想改变的一件事是什么？';
+const request=(body,headers={})=>new Request(origin+'/api/speech/speak',{method:'POST',headers:{origin,'content-type':'application/json','oai-authenticated-user-id':'test',...headers},body:JSON.stringify(body)});
+const wave=new Uint8Array(64);wave.set(new TextEncoder().encode('RIFF'),0);wave.set(new TextEncoder().encode('WAVE'),8);
+let seen;
+globalThis.fetch=async(url,options)=>{seen={url,options};return new Response(wave,{headers:{'Content-Type':'audio/wav'}})};
+let r=await api(request({text}),{});assert.equal(r.status,200);assert.equal(r.headers.get('content-type'),'audio/wav');assert.equal(r.headers.get('cache-control'),'no-store');assert.equal(seen.url,'http://127.0.0.1:8791/speak');assert.equal(JSON.parse(seen.options.body).text,text);
+assert.equal((await api(request({text},{origin:'https://elsewhere.example'}),{})).status,403);
+assert.equal((await api(request({text:'x'.repeat(1201)}),{})).status,400);
+assert.equal((await api(request({text},{'content-type':'text/plain'}),{})).status,415);
+assert.equal((await api(new Request(origin+'/api/speech/speak',{method:'POST',body:'{}'}),{})).status,401);
+// The preferred path must work without any installed browser voice.
+globalThis.window={};let played=0,ended=0,source;
+const context={state:'running',destination:{},decodeAudioData:async bytes=>{assert.equal(bytes.byteLength,64);return {duration:3}},createBufferSource:()=>source={connect(){},disconnect(){},start(){played++},stop(){}}};
+globalThis.fetch=async()=>new Response(wave,{headers:{'Content-Type':'audio/wav'}});
+const output=new VoiceOutput();
+await output.speak(text,context,{onStart:mode=>assert.equal(mode,'private'),onEnd:()=>ended++,onError:()=>assert.fail('no device voice should be required')});
+assert.equal(played,1);assert.equal(ended,0,'不能在播报开始时就让用户回答');source.onended();assert.equal(ended,1,'音频实际结束才接下一轮');
+// Prefetch another natural sentence while playing, but never open the microphone between chunks.
+let multiEnded=0;const beforePlayed=played;
+await output.speak('第一句。'.repeat(20),context,{onStart(){},onEnd(){multiEnded++},onError:()=>assert.fail('chunk playback failed')});
+source.onended();await new Promise(resolve=>setImmediate(resolve));assert.equal(multiEnded,0);assert.equal(played,beforePlayed+2);source.onended();assert.equal(multiEnded,1);
+const playedBeforeCancel=played;
+let resolve;globalThis.fetch=()=>new Promise(r=>resolve=r);
+const cancelled=output.speak(text,context,{onStart:()=>assert.fail('cancelled audio started'),onEnd:()=>assert.fail('cancelled audio ended'),onError:()=>assert.fail('cancelled audio fell back')});output.stop();resolve(new Response(wave,{headers:{'Content-Type':'audio/wav'}}));await cancelled;assert.equal(played,playedBeforeCancel);
+globalThis.fetch=async()=>Response.json({error:'offline'});let failed=false;
+await output.speak(text,context,{onStart:()=>assert.fail(),onEnd:()=>assert.fail('无声音不能假装问完'),onError:()=>failed=true});assert.equal(failed,true);output.stop();
+globalThis.fetch=async()=>new Response(wave,{headers:{'Content-Type':'audio/wav'}});
+const beforeQueueCancel=played;
+await output.speak('分句取消测试。'.repeat(20),context,{onStart(){},onEnd:()=>assert.fail('取消后不能打开麦克风'),onError:()=>assert.fail('取消不是播放失败')});
+const staleSegmentEnd=source.onended;output.stop();staleSegmentEnd();await new Promise(resolve=>setImmediate(resolve));assert.equal(played,beforeQueueCancel+1,'取消时丢弃预取音频，不能播放下一段');
+globalThis.fetch=previous.fetch;globalThis.window=previous.window;
+console.log('通过：私有中文音频接口、鉴权与来源、输入限制、无浏览器声音仍能播报、播放结束才接话、取消旧播放、失败不得假装已问。');

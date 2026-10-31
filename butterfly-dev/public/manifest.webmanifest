@@ -1,0 +1,17 @@
+{
+  "name": "蝴蝶效应",
+  "short_name": "蝴蝶效应",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "theme_color": "#315d48",
+  "background_color": "#f7f8f2",
+  "icons": [
+    {
+      "src": "/butterfly-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

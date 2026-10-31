@@ -1,0 +1,6 @@
+**/.env
+**/butterfly-llm.env
+**/node_modules/
+**/.runtime/
+**/*.gguf
+**/secrets/

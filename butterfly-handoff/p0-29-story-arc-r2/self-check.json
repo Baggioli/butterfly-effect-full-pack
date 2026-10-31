@@ -1,0 +1,419 @@
+{
+  "at": "2026-10-31T12:36:19.690Z",
+  "tip": "653dfda",
+  "contractVersion": "p0-29-s2-isomorphic-v1+story-arc-3",
+  "option": "b",
+  "hard": {
+    "planNarr": 2807,
+    "perChapterNarr": [
+      668,
+      573,
+      589,
+      977
+    ],
+    "retain": [
+      {
+        "act": 1,
+        "changedFields": [],
+        "narrativeHanBefore": 668,
+        "narrativeHanAfter": 668
+      },
+      {
+        "act": 2,
+        "changedFields": [
+          "narrative"
+        ],
+        "narrativeHanBefore": 570,
+        "narrativeHanAfter": 573
+      },
+      {
+        "act": 3,
+        "changedFields": [
+          "narrative",
+          "dip"
+        ],
+        "narrativeHanBefore": 569,
+        "narrativeHanAfter": 589
+      }
+    ],
+    "patchLog": [
+      {
+        "act": 2,
+        "field": "narrative",
+        "from": "第一道门开了以后，麻烦也跟着来了。",
+        "to": "那位业主在会上讲完以后，麻烦也跟着来了。",
+        "why": "元词「第一道门」",
+        "applied": true,
+        "occurrences": 1
+      },
+      {
+        "act": 3,
+        "field": "narrative",
+        "from": "低谷里换来了什么？换来了我看清谁是真愿意一起走的人。",
+        "to": "那几个月换来的，是我看清了谁是真愿意一起走的人：有人开始不接我的电话，也有人半夜还在群里改模型。",
+        "why": "元词设问「低谷里换来了什么？」→场面",
+        "applied": true,
+        "occurrences": 1
+      },
+      {
+        "act": 3,
+        "field": "dip.payoff",
+        "from": "低谷里换来了什么？换来了我看清谁是真愿意一起走的人。",
+        "to": "那几个月换来的，是我看清了谁是真愿意一起走的人：有人开始不接我的电话，也有人半夜还在群里改模型。",
+        "why": "dip.payoff 同步正文",
+        "applied": true
+      }
+    ],
+    "appValid": true,
+    "appValidError": null,
+    "nearTermTitleEqual": true,
+    "nearTermOutputEqual": true,
+    "nearTermSource": "plan",
+    "planProvider": "deepseek",
+    "projProvider": "deepseek",
+    "planDepthVersion": "p0-29-s2-isomorphic-v1+story-arc-3",
+    "projDepthVersion": "p0-29-s2-isomorphic-v1+story-arc-3",
+    "projSource": "llm",
+    "projValidation": true,
+    "projMaxHi": 520,
+    "noGuarantee": true,
+    "noTerminalRichest": true,
+    "noAvoidance": true,
+    "noRaw40": true,
+    "planLastTerminal": true,
+    "projLastTerminal": true,
+    "lint": {
+      "pass": true,
+      "hits": [],
+      "hitCount": 0,
+      "blanks": 0,
+      "narrLabels": 0,
+      "listLines": 0,
+      "dialogue": 1,
+      "forbidden": []
+    },
+    "algoPass": true,
+    "algoFails": [],
+    "fix": {
+      "f1_meta": {
+        "pass": true,
+        "metaCount": 0,
+        "dipPayoff": "那几个月换来的，是我看清了谁是真愿意一起走的人：有人开始不接我的电话，也有人半夜还在群里改模型。",
+        "dipPayoffIsScene": true
+      },
+      "f2_act4": {
+        "pass": true,
+        "option": "b",
+        "act4Han": 977,
+        "gates": [
+          {
+            "gate": "G4",
+            "obstacle": "挡路的是监管：交易所的问询函一轮接一轮，最要命的一条，是要求我们说明数据合规的边界——那些跑在业主服务器上的模型，到底归谁，出境怎么算。",
+            "category": [
+              "监管"
+            ],
+            "move": "我带着小陈和法务跑了一趟接一趟，最后我自己飞到交易所所在的城市，在会议室里把数据分层的方案一页页翻给对方看，说得很直白：该留在本地的，我们绝不带走；能出去的，只是脱敏后的算法参数。",
+            "scene": "敲钟那天，小陈站在我旁边，他后来说，他看见我抬手的时候，手其实有点抖。台下有人鼓掌，我听见的却是自己心跳。那就是上市那天的场面，旁人看着我们敲，我让别人替我按下了按钮。",
+            "verbatim": true,
+            "ordered": true,
+            "noDigit": true,
+            "moveByMe": true,
+            "ok": true
+          },
+          {
+            "gate": "G5",
+            "obstacle": "挡路的是钱：有几个早年的老股东想套现，股价被外面质疑说撑不住，说我们的水数据资产讲得太满。",
+            "category": [
+              "人",
+              "钱"
+            ],
+            "move": "我没法拦着人卖，只能一趟趟去见他们，把回购的节奏和锁定的安排谈下来，让出一部分我自己的份额去接。",
+            "scene": "榜单发布那天，一个多年不联系的老同学发来截图，什么也没多说，就一句：在上面看见你了。我回了个笑脸。后来老业主也发来一张，说小区群里在转。我把手机扣在桌上，没有回。",
+            "verbatim": true,
+            "ordered": true,
+            "noDigit": true,
+            "moveByMe": true,
+            "ok": true
+          },
+          {
+            "gate": "G6",
+            "obstacle": "再往前走，是海外巨头压价围堵，跨境数据审查也收紧了。对手在几个大项目上把价压到我们算不过来的地步，审查那边则要求我们重新报备冷却水的数据接口。",
+            "category": [
+              "监管",
+              "对手"
+            ],
+            "move": "我亲自飞了一趟，跟对方的技术负责人坐在一张桌子上，把接口规范一条条对完，回来又让团队把能本地化的部分全部本地化，把成本压下去。",
+            "scene": "真正让我停了一下的是财经媒体第一次把我和榜首放在同一张对比图里，图旁边写着差距，也写着增速。小陈把那张图转给我，我看了很久，没说话。",
+            "verbatim": true,
+            "ordered": true,
+            "noDigit": true,
+            "moveByMe": true,
+            "ok": true
+          }
+        ]
+      },
+      "f3_firstStep": {
+        "pass": true,
+        "rows": [
+          {
+            "seg": 1,
+            "verbatim": true,
+            "projFirstStep": "今天把大家叫到白板前，说出那句“从明天起，我们先不卖人天，卖一个业主一眼能看懂的结果”。",
+            "planFirstStep": "今天把大家叫到白板前，说出那句“从明天起，我们先不卖人天，卖一个业主一眼能看懂的结果”。",
+            "bytesProj": 132,
+            "bytesPlan": 132
+          },
+          {
+            "seg": 2,
+            "verbatim": true,
+            "projFirstStep": "今天晚上把排水、水环境、流域、环评这四块，在白纸上画成一条线，看它们能不能串成一套会自己跑的东西。",
+            "planFirstStep": "今天晚上把排水、水环境、流域、环评这四块，在白纸上画成一条线，看它们能不能串成一套会自己跑的东西。",
+            "bytesProj": 147,
+            "bytesPlan": 147
+          },
+          {
+            "seg": 3,
+            "verbatim": true,
+            "projFirstStep": "今晚把老团队和新同事叫到一起，只说一句实话——我可能给不了你们安稳，但我保证每一分钱都先花在把水做明白上。",
+            "planFirstStep": "今晚把老团队和新同事叫到一起，只说一句实话——我可能给不了你们安稳，但我保证每一分钱都先花在把水做明白上。",
+            "bytesProj": 159,
+            "bytesPlan": 159
+          },
+          {
+            "seg": 4,
+            "verbatim": true,
+            "projFirstStep": "今晚给自己倒杯水，慢慢喝完再睡。",
+            "planFirstStep": "今晚给自己倒杯水，慢慢喝完再睡。",
+            "bytesProj": 48,
+            "bytesPlan": 48
+          }
+        ],
+        "todayComposite": "今天把大家叫到白板前，说出那句“从明天起，我们先不卖人天，卖一个业主一眼能看懂的结果”。",
+        "todayCardSame": true,
+        "seg1Today": true
+      },
+      "f4_residue": {
+        "pass": true,
+        "weekly": 0,
+        "weeklyPlan": 0,
+        "cbPer": [
+          1,
+          0,
+          1,
+          1
+        ],
+        "cbTotal": 3,
+        "tuCount": 7,
+        "dipSegs": [
+          3
+        ],
+        "planDipActs": [
+          3
+        ],
+        "person": [
+          {
+            "seg": 1,
+            "ok": true,
+            "hits": [],
+            "transition": "那时的处境，跟今天的你几乎一样。"
+          },
+          {
+            "seg": 2,
+            "ok": true,
+            "hits": [],
+            "transition": null
+          },
+          {
+            "seg": 3,
+            "ok": true,
+            "hits": [],
+            "transition": null
+          },
+          {
+            "seg": 4,
+            "ok": true,
+            "hits": [],
+            "transition": null
+          }
+        ]
+      },
+      "f5_emotion": {
+        "pass": true,
+        "emotions": [
+          -1,
+          1,
+          -2,
+          3
+        ],
+        "emotionEnd": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "source": "rule-layer",
+        "highlights": [
+          "敲钟那天，小陈站在我旁边，他后来说，他看见我抬手的时候，手其实有点抖。台下有人鼓掌，我听见的却是自己心跳。那就是上市那天的场面，旁人看着我们敲，我让别人替我按下了按钮。",
+          "真正让我停了一下的是财经媒体第一次把我和榜首放在同一张对比图里，图旁边写着差距，也写着增速。小陈把那张图转给我，我看了很久，没说话。"
+        ],
+        "terminalDoor": "可离世界首富还差一步的那个场面，其实很安静。那天晚上办公室只剩我一个人，我把桌上那张没送出去的图拿起来，边角早就毛了，图上的退水口还是当年那个样子。窗外城市亮着，我想起很多年前盯着它发堵的那个晚上。差的那一步，不是靠想就能跨过去的，我知道。我把图放回原处，关了灯。"
+      },
+      "f6_rates": {
+        "act4FirstDraft": {
+          "n": 3,
+          "pass": 1,
+          "rows": [
+            {
+              "run": 1,
+              "pass": false,
+              "han": 744,
+              "fails": [
+                "第四幕须≥900汉字（当前744）",
+                "末句须“这一幕的第一步：”且与 firstStep 一致、不含图/数字"
+              ]
+            },
+            {
+              "run": 2,
+              "pass": false,
+              "han": 984,
+              "fails": [
+                "第四幕元词：第三幕,门前",
+                "回扣物件须在第四幕末尾400字内原样出现",
+                "第四幕不编汉字数量：两趟"
+              ]
+            },
+            {
+              "run": 3,
+              "pass": true,
+              "han": 977,
+              "fails": []
+            }
+          ]
+        },
+        "fullPlanFirstDraft": {
+          "n": 3,
+          "pass": 0,
+          "rows": [
+            {
+              "tag": "full-1",
+              "pass": false,
+              "fails": [
+                "[第四幕] 第四幕须≥900汉字（当前588）",
+                "[第四幕] G4 须有逐字的挡路现实(人/钱/监管/对手)→我的动作→场面，按序（verbatim=true ordered=true cat=监管 me=false）",
+                "[第四幕] G5 须有逐字的挡路现实(人/钱/监管/对手)→我的动作→场面，按序（verbatim=true ordered=false cat=人/钱 me=false）",
+                "[第四幕] G6 须有逐字的挡路现实(人/钱/监管/对手)→我的动作→场面，按序（verbatim=true ordered=false cat=监管/对手 me=true）",
+                "[第四幕] 第四幕须正面写富豪榜/首富",
+                "[第四幕] 四元提要各≥40汉字",
+                "低谷须只在第三幕、payoff 为场面非设问；plan 低谷所在幕=",
+                "高光 1–2 处",
+                "幕深度 533/461/452/588",
+                "元词命中 1：[{\"side\":\"plan\",\"act\":1,\"word\":\"第一道门\"}]"
+              ],
+              "perNarr": [
+                533,
+                461,
+                452,
+                588
+              ],
+              "metaCount": 1,
+              "act4Han": 588,
+              "ms": 29007
+            },
+            {
+              "tag": "full-2",
+              "pass": false,
+              "fails": [
+                "[第四幕] 第四幕须≥900汉字（当前558）",
+                "[第四幕] G5 须有逐字的挡路现实(人/钱/监管/对手)→我的动作→场面，按序（verbatim=true ordered=false cat=人/钱 me=true）",
+                "[第四幕] G6 须有逐字的挡路现实(人/钱/监管/对手)→我的动作→场面，按序（verbatim=false ordered=false cat=监管/对手 me=true）",
+                "[第四幕] 第四幕元词：门前",
+                "[第四幕] 第四幕不得重复“后来的路…”",
+                "[第四幕] 四元提要各≥40汉字",
+                "[第四幕] 任务须1个且3步，标题以今天：/本周：开头",
+                "“后来的路…”须1次（2）",
+                "幕深度 603/428/431/558",
+                "元词命中 1：[{\"side\":\"plan\",\"act\":4,\"word\":\"门前\"}]"
+              ],
+              "perNarr": [
+                603,
+                428,
+                431,
+                558
+              ],
+              "metaCount": 1,
+              "act4Han": 558,
+              "ms": 29178
+            },
+            {
+              "tag": "full-3",
+              "pass": false,
+              "fails": [
+                "[第四幕] 第四幕须≥900汉字（当前581）",
+                "[第四幕] G5 须有逐字的挡路现实(人/钱/监管/对手)→我的动作→场面，按序（verbatim=true ordered=false cat=人/钱 me=true）",
+                "[第四幕] 高光须1–2处且逐字在正文，终局安静场面在最后一处高光之后（无感叹）",
+                "[第四幕] 第四幕须正面写富豪榜/首富",
+                "[第四幕] 第四幕不编汉字数量：两个",
+                "低谷须只在第三幕、payoff 为场面非设问；plan 低谷所在幕=",
+                "幕深度 615/578/542/581",
+                "元词命中 1：[{\"side\":\"plan\",\"act\":3,\"word\":\"换来了什么？\"}]"
+              ],
+              "perNarr": [
+                615,
+                578,
+                542,
+                581
+              ],
+              "metaCount": 1,
+              "act4Han": 581,
+              "ms": 34005
+            }
+          ]
+        },
+        "proj": {
+          "n": 3,
+          "pass": 1,
+          "rows": [
+            {
+              "run": 1,
+              "pass": true,
+              "source": "llm",
+              "validation": true,
+              "fails": []
+            },
+            {
+              "run": 2,
+              "pass": false,
+              "source": "mixed",
+              "validation": true,
+              "fails": []
+            },
+            {
+              "run": 3,
+              "pass": false,
+              "source": "mixed",
+              "validation": true,
+              "fails": [
+                "proj 状态句残留"
+              ]
+            }
+          ]
+        },
+        "act4Route": "first-draft",
+        "projChosenRun": 1
+      }
+    },
+    "pass": {
+      "fixes": true,
+      "nearTerm": true,
+      "sameProvider": true,
+      "compliance": true,
+      "terminal": true,
+      "lint": true,
+      "algo": true,
+      "acts13Kept": true,
+      "appValid": true
+    },
+    "readyForProductReview": true
+  },
+  "readyForProductReview": true
+}

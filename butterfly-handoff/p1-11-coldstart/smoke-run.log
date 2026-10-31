@@ -1,0 +1,25 @@
+PASS module_exists 
+PASS stamp_index 1.4-p1-11b
+PASS consent_markers_intact 
+PASS gate_after_consent 
+PASS CS1_wiring_direct_chat 
+PASS CS4_wiring_demo_hide 
+PASS css_present 
+PASS prompt_main_version 
+PASS CS3_empty_garbage empty/garbage/garbage
+PASS CS2_structured_map covered=name,age,city,role,family,hours,experience,resources,constraints,goal,dream,obstacles,preference,interests,taboo
+PASS CS2_strip_labels name=阿凯;role=独立咨询顾问
+PASS CS2_taboo_aside 不希望被评价为「不够拼」或用「别人都怎样」施压
+PASS CS2_free_note_fallback structured=false
+PASS CS2_hours_map 8
+PASS CS2_no_auto_budget 
+PASS CS4_no_paste_in_events {"event":"submit_paste","at":"2026-10-29T02:57:10.106Z","chars":351}
+PASS CS4_demo_flag 
+PASS CS2_confirm_apply_path 
+PASS CS2_optional_ai_plan_wiring 
+PASS static_index 200
+PASS static_appjs 
+PASS static_coldstart_module 
+PASS static_demo_query 
+
+SUMMARY { CS1: 'PASS', CS2: 'PASS', CS3: 'PASS', CS4: 'PASS' }

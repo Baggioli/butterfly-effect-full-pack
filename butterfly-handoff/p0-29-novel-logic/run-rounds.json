@@ -1,0 +1,23 @@
+{
+  "rounds": [
+    {
+      "round": 1,
+      "narr": 2642,
+      "planFails": [
+        "元词命中 1：[{\"side\":\"plan\",\"act\":1,\"word\":\"门前\"}]",
+        "禁词"
+      ],
+      "meta": 1
+    },
+    {
+      "round": 2,
+      "narr": 2760,
+      "planFails": [
+        "gatesCrossed 须按序",
+        "G1 三问语义未过（type=true lever=true shift=false cats=人/钱/市场）"
+      ],
+      "meta": 0
+    }
+  ],
+  "chosenRound": 2
+}

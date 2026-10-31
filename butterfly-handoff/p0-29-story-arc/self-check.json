@@ -1,0 +1,315 @@
+{
+  "at": "2026-10-31T11:58:37.698Z",
+  "tip": "653dfda",
+  "contractVersion": "p0-29-s2-isomorphic-v1+story-arc-2",
+  "hard": {
+    "planNarr": 2430,
+    "perChapterNarr": [
+      668,
+      570,
+      569,
+      623
+    ],
+    "2_plan_quad_chapters": 4,
+    "2_rule_weeks_multi_year": 520,
+    "terminal": {
+      "pass": true,
+      "stageLabelsOk": true,
+      "ruleLastGateTerminal": true,
+      "planLastTerminal": true,
+      "planLastGateTerminal": true,
+      "leapChapters": 2,
+      "ledgerHitsLate": 0,
+      "projTerminal": true,
+      "noAvoidance": true,
+      "planLastGate": "公开可查的门槛阶梯：个人净资产进入福布斯全球亿万富豪榜（入榜门槛约10亿美元）；进入彭博亿万富翁指数前500→前100；进入全球富豪榜前10；全球富豪榜第1（世界首富）——这是10年轴上的冲击方向，模拟非承诺。",
+      "projLastTitle": "资本与全球杠杆→冲击全球富豪榜与世界首富"
+    },
+    "4_nearTerm_title_equal": true,
+    "4_nearTerm_output_equal": true,
+    "4_nearTerm_source_plan": true,
+    "5_plan_provider": "deepseek",
+    "5_proj_provider": "deepseek",
+    "5_plan_depthVersion": "p0-29-s2-isomorphic-v1+story-arc-2",
+    "5_proj_depthVersion": "p0-29-s2-isomorphic-v1+story-arc-2",
+    "5_proj_source": "llm",
+    "5_proj_quad_fields": true,
+    "6_no_guarantee_success": true,
+    "6_no_terminal_richest": true,
+    "align_user_visible_no_raw40": true,
+    "7_lint": {
+      "pass": true,
+      "hits": [],
+      "hitCount": 0,
+      "blanks": 0,
+      "narrLabels": 0,
+      "listLines": 0,
+      "dialogue": 1,
+      "forbidden": [],
+      "algo": {
+        "pass": true,
+        "fails": [],
+        "laterRoadCount": 1,
+        "perNarr": [
+          668,
+          570,
+          569,
+          623
+        ],
+        "depthOk": true,
+        "projOpenerCount": 1,
+        "projFirstStepOk": true,
+        "projResidue": [],
+        "projOk": true,
+        "gateCount": 7,
+        "crossed": [
+          "G1",
+          "G2",
+          "G3",
+          "G4",
+          "G5",
+          "G6"
+        ],
+        "gateCountOk": true,
+        "gatesInOrder": true,
+        "actOk": true,
+        "scenesOk": true,
+        "sceneRows": [
+          {
+            "gate": "G1",
+            "scene": "过了些天，他真在他自己的会上，用我那段演示讲给了他的领导听。",
+            "inAct": true,
+            "ordered": true
+          },
+          {
+            "gate": "G2",
+            "scene": "那位老业主当着我们一位刚来的同事，说了一句：这东西我们离不开它了。",
+            "inAct": true,
+            "ordered": true
+          },
+          {
+            "gate": "G3",
+            "scene": "合并后的第一次全员大会，老团队和新同事坐在同一间屋子里。",
+            "inAct": true,
+            "ordered": true
+          },
+          {
+            "gate": "G4",
+            "scene": "上市那天，会场很亮，我让别人去敲钟，自己站在台下看着。",
+            "inAct": true,
+            "ordered": true
+          },
+          {
+            "gate": "G5",
+            "scene": "福布斯发布那天，我正在开会，手机震了一下，一位老同学发来一张截图，问我是不是上面那个人。",
+            "inAct": true,
+            "ordered": true
+          },
+          {
+            "gate": "G6",
+            "scene": "财经媒体第一次把我和榜首放在同一张对比图里。",
+            "inAct": true,
+            "ordered": true
+          }
+        ],
+        "terminalDoor": "站到那道门前，是个很安静的场面。没有记者，没有掌声，只有我一个人在办公室里，桌上放着那张早就泛黄的图——就是当年桌上那张没送出去的图。",
+        "terminalDoorOk": true,
+        "emotions": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "dipChapter": 3,
+        "dip": {
+          "scene": "我盯着它，第一次觉得自己可能撑不住。",
+          "payoff": "低谷里换来了什么？换来了我看清谁是真愿意一起走的人。"
+        },
+        "dipOk": true,
+        "highlights": [
+          "上市那天，会场很亮，我让别人去敲钟，自己站在台下看着。",
+          "财经媒体第一次把我和榜首放在同一张对比图里。"
+        ],
+        "tierHighlightChapters": 0,
+        "highlightsOk": true,
+        "callbackObject": "桌上那张没送出去的图",
+        "callbackOk": true,
+        "openingOk": true,
+        "laterRoadOk": true,
+        "firstSteps": [
+          "这一幕的第一步：今天把大家叫到白板前，说出那句“从明天起，我们先不卖人天，卖一个业主一眼能看懂的结果”。",
+          "这一幕的第一步：今天晚上把排水、水环境、流域、环评这四块，在白纸上画成一条线，看它们能不能串成一套会自己跑的东西。",
+          "这一幕的第一步：今晚把老团队和新同事叫到一起，只说一句实话——我可能给不了你们安稳，但我保证每一分钱都先花在把水做明白上。",
+          "这一幕的第一步：今天把那张没送出去的图找出来，压在桌上，提醒自己我们卖的从来不是图，是别人能接住的结果。"
+        ],
+        "firstStepOk": true,
+        "sameSource": true,
+        "structureNounHits": 0,
+        "forbiddenHits": [],
+        "bannedOk": true
+      }
+    },
+    "projChars": 2944,
+    "projMaxHi": 520,
+    "ruleDeadlineWeeks": 520,
+    "planNearTerm": {
+      "today": "今天：把大家叫到白板前，说出那句转向的话",
+      "week": "本周：带着手机里的演示去见一位老业主，先问一句他最怕哪里",
+      "todayOut": "你说完了那句话，至少有一个人当场点头，并说出他愿意先做哪一段。",
+      "weekOut": "你记住了他的一句原话，并真的把演示放给了他看。"
+    },
+    "projNearTerm": {
+      "today": "今天：把大家叫到白板前，说出那句转向的话",
+      "week": "本周：带着手机里的演示去见一位老业主，先问一句他最怕哪里",
+      "todayOut": "你说完了那句话，至少有一个人当场点头，并说出他愿意先做哪一段。",
+      "weekOut": "你记住了他的一句原话，并真的把演示放给了他看。"
+    },
+    "nearTermBytes": {
+      "planToday": 60,
+      "projToday": 60,
+      "planWeek": 84,
+      "projWeek": 84,
+      "planTodayOut": 93,
+      "projTodayOut": 93,
+      "planWeekOut": 69,
+      "projWeekOut": 69
+    },
+    "rounds": [
+      {
+        "round": 1,
+        "narr": 2430,
+        "lint": {
+          "pass": true,
+          "hits": [],
+          "hitCount": 0,
+          "blanks": 0,
+          "narrLabels": 0,
+          "listLines": 0,
+          "dialogue": 1,
+          "forbidden": [],
+          "algo": {
+            "pass": true,
+            "fails": []
+          }
+        },
+        "quad": true,
+        "projChars": 2944,
+        "projSource": "llm",
+        "adopted": true
+      }
+    ],
+    "pass1": true,
+    "pass2": true,
+    "pass3": true,
+    "pass4": true,
+    "pass5": true,
+    "pass6": true,
+    "passTerminal": true,
+    "algo": {
+      "pass": true,
+      "fails": [],
+      "laterRoadCount": 1,
+      "perNarr": [
+        668,
+        570,
+        569,
+        623
+      ],
+      "depthOk": true,
+      "projOpenerCount": 1,
+      "projFirstStepOk": true,
+      "projResidue": [],
+      "projOk": true,
+      "gateCount": 7,
+      "crossed": [
+        "G1",
+        "G2",
+        "G3",
+        "G4",
+        "G5",
+        "G6"
+      ],
+      "gateCountOk": true,
+      "gatesInOrder": true,
+      "actOk": true,
+      "scenesOk": true,
+      "sceneRows": [
+        {
+          "gate": "G1",
+          "scene": "过了些天，他真在他自己的会上，用我那段演示讲给了他的领导听。",
+          "inAct": true,
+          "ordered": true
+        },
+        {
+          "gate": "G2",
+          "scene": "那位老业主当着我们一位刚来的同事，说了一句：这东西我们离不开它了。",
+          "inAct": true,
+          "ordered": true
+        },
+        {
+          "gate": "G3",
+          "scene": "合并后的第一次全员大会，老团队和新同事坐在同一间屋子里。",
+          "inAct": true,
+          "ordered": true
+        },
+        {
+          "gate": "G4",
+          "scene": "上市那天，会场很亮，我让别人去敲钟，自己站在台下看着。",
+          "inAct": true,
+          "ordered": true
+        },
+        {
+          "gate": "G5",
+          "scene": "福布斯发布那天，我正在开会，手机震了一下，一位老同学发来一张截图，问我是不是上面那个人。",
+          "inAct": true,
+          "ordered": true
+        },
+        {
+          "gate": "G6",
+          "scene": "财经媒体第一次把我和榜首放在同一张对比图里。",
+          "inAct": true,
+          "ordered": true
+        }
+      ],
+      "terminalDoor": "站到那道门前，是个很安静的场面。没有记者，没有掌声，只有我一个人在办公室里，桌上放着那张早就泛黄的图——就是当年桌上那张没送出去的图。",
+      "terminalDoorOk": true,
+      "emotions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "dipChapter": 3,
+      "dip": {
+        "scene": "我盯着它，第一次觉得自己可能撑不住。",
+        "payoff": "低谷里换来了什么？换来了我看清谁是真愿意一起走的人。"
+      },
+      "dipOk": true,
+      "highlights": [
+        "上市那天，会场很亮，我让别人去敲钟，自己站在台下看着。",
+        "财经媒体第一次把我和榜首放在同一张对比图里。"
+      ],
+      "tierHighlightChapters": 0,
+      "highlightsOk": true,
+      "callbackObject": "桌上那张没送出去的图",
+      "callbackOk": true,
+      "openingOk": true,
+      "laterRoadOk": true,
+      "firstSteps": [
+        "这一幕的第一步：今天把大家叫到白板前，说出那句“从明天起，我们先不卖人天，卖一个业主一眼能看懂的结果”。",
+        "这一幕的第一步：今天晚上把排水、水环境、流域、环评这四块，在白纸上画成一条线，看它们能不能串成一套会自己跑的东西。",
+        "这一幕的第一步：今晚把老团队和新同事叫到一起，只说一句实话——我可能给不了你们安稳，但我保证每一分钱都先花在把水做明白上。",
+        "这一幕的第一步：今天把那张没送出去的图找出来，压在桌上，提醒自己我们卖的从来不是图，是别人能接住的结果。"
+      ],
+      "firstStepOk": true,
+      "sameSource": true,
+      "structureNounHits": 0,
+      "forbiddenHits": [],
+      "bannedOk": true
+    },
+    "pass7": true,
+    "passAlgo": true,
+    "readyForProductReview": true
+  },
+  "readyForProductReview": true
+}

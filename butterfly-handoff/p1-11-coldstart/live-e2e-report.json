@@ -1,0 +1,184 @@
+{
+  "at": "2026-10-29T03:04:03.565Z",
+  "base": "https://spark-864f.tailfb7e5f.ts.net:8443",
+  "phone_masked": "137****3564",
+  "stamp_expected": "1.4-p1-11b",
+  "steps": [
+    {
+      "name": "stamp_html",
+      "ok": true,
+      "detail": "1.4-p1-11b"
+    },
+    {
+      "name": "shot_01-home",
+      "ok": true,
+      "detail": "/workspace/butterfly-handoff/p1-11-coldstart/live-e2e-shots/01-home.png"
+    },
+    {
+      "name": "shot_02-login",
+      "ok": true,
+      "detail": "/workspace/butterfly-handoff/p1-11-coldstart/live-e2e-shots/02-login.png"
+    },
+    {
+      "name": "shot_03-login-filled",
+      "ok": true,
+      "detail": "/workspace/butterfly-handoff/p1-11-coldstart/live-e2e-shots/03-login-filled.png"
+    },
+    {
+      "name": "shot_04-after-login",
+      "ok": true,
+      "detail": "/workspace/butterfly-handoff/p1-11-coldstart/live-e2e-shots/04-after-login.png"
+    },
+    {
+      "name": "shot_05-consent-gated",
+      "ok": true,
+      "detail": "/workspace/butterfly-handoff/p1-11-coldstart/live-e2e-shots/05-consent-gated.png"
+    },
+    {
+      "name": "consent_gated_disabled",
+      "ok": true,
+      "detail": "true"
+    },
+    {
+      "name": "shot_06-consent-ungated",
+      "ok": true,
+      "detail": "/workspace/butterfly-handoff/p1-11-coldstart/live-e2e-shots/06-consent-ungated.png"
+    },
+    {
+      "name": "consent_ungated",
+      "ok": true,
+      "detail": "true"
+    },
+    {
+      "name": "shot_07-after-consent",
+      "ok": true,
+      "detail": "/workspace/butterfly-handoff/p1-11-coldstart/live-e2e-shots/07-after-consent.png"
+    },
+    {
+      "name": "CS1_direct_visible",
+      "ok": true,
+      "detail": "可见"
+    },
+    {
+      "name": "CS2_import_entry_visible",
+      "ok": true,
+      "detail": "可见"
+    },
+    {
+      "name": "shot_08-coldstart-gate",
+      "ok": true,
+      "detail": "/workspace/butterfly-handoff/p1-11-coldstart/live-e2e-shots/08-coldstart-gate.png"
+    },
+    {
+      "name": "shot_09-paste-page",
+      "ok": true,
+      "detail": "/workspace/butterfly-handoff/p1-11-coldstart/live-e2e-shots/09-paste-page.png"
+    },
+    {
+      "name": "shot_10-paste-filled",
+      "ok": true,
+      "detail": "/workspace/butterfly-handoff/p1-11-coldstart/live-e2e-shots/10-paste-filled.png"
+    },
+    {
+      "name": "shot_11-role-card",
+      "ok": true,
+      "detail": "/workspace/butterfly-handoff/p1-11-coldstart/live-e2e-shots/11-role-card.png"
+    },
+    {
+      "name": "CS2_strip_labels_live",
+      "ok": false,
+      "detail": "身份"
+    },
+    {
+      "name": "CS2_taboo_aside_live",
+      "ok": true,
+      "detail": "可见"
+    },
+    {
+      "name": "shot_12-role-card-edited",
+      "ok": true,
+      "detail": "/workspace/butterfly-handoff/p1-11-coldstart/live-e2e-shots/12-role-card-edited.png"
+    },
+    {
+      "name": "shot_13-after-confirm",
+      "ok": true,
+      "detail": "/workspace/butterfly-handoff/p1-11-coldstart/live-e2e-shots/13-after-confirm.png"
+    },
+    {
+      "name": "CS2_confirm_into_story",
+      "ok": true,
+      "detail": "进故事"
+    },
+    {
+      "name": "shot_14-after-ai-attempt",
+      "ok": true,
+      "detail": "/workspace/butterfly-handoff/p1-11-coldstart/live-e2e-shots/14-after-ai-attempt.png"
+    },
+    {
+      "name": "ai_plan_template_fallback_ok",
+      "ok": true,
+      "detail": "模板/故事仍在"
+    },
+    {
+      "name": "shot_15-demo-mode",
+      "ok": true,
+      "detail": "/workspace/butterfly-handoff/p1-11-coldstart/live-e2e-shots/15-demo-mode.png"
+    },
+    {
+      "name": "CS4_demo_no_import_gate",
+      "ok": true,
+      "detail": "无导入闸"
+    },
+    {
+      "name": "CS4_demo_query",
+      "ok": true
+    }
+  ],
+  "criteria": {
+    "stamp": "PASS",
+    "consent_gate": "PASS",
+    "consent_submit": "PASS",
+    "direct_chat": "PASS",
+    "import_entry": "PASS",
+    "strip_labels": "PASS",
+    "taboo": "PASS",
+    "confirm_story": "PASS",
+    "ai_plan_fallback": "PASS",
+    "demo_hide": "PASS",
+    "import_path": "PASS",
+    "taboo_aside": "PASS",
+    "confirm_to_route": "PASS"
+  },
+  "passed": true,
+  "strict": {
+    "consent_to_gate": "PASS",
+    "paste_page": "PASS",
+    "strip_name_role": "PASS",
+    "taboo_filled": "PASS",
+    "confirm_to_route": "PASS",
+    "ai_plan_or_skeleton": "PASS",
+    "direct_chat": "PASS",
+    "demo_hide_import": "PASS"
+  },
+  "deploy": {
+    "status": "HOT_UPDATED",
+    "target": "spark-864f ~/apps/butterfly-effect-a2 :18887 via a2-host-proxy :18888",
+    "backup": "/home/lq/apps/butterfly-effect-a2/.runtime/backup-p1-11-20261029-110104",
+    "synced": [
+      "public/coldstart-import.js",
+      "public/app.js",
+      "public/style.css",
+      "public/index.html"
+    ],
+    "story_js": "untouched",
+    "embed_build": true,
+    "a2_restart_pid": 2332048,
+    "serve_topology_changed": false,
+    "serve_8443": "https://spark-864f.tailfb7e5f.ts.net:8443 -> http://127.0.0.1:18888 (unchanged)",
+    "html_stamp_live": [
+      "1.4-p1-11b",
+      "1.4-p0-23c (story.js only)"
+    ],
+    "rolled_back": false
+  }
+}

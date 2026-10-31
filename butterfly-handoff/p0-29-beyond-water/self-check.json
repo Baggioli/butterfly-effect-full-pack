@@ -1,0 +1,311 @@
+{
+  "at": "2026-10-31T14:08:51.024Z",
+  "tip": "653dfda",
+  "contractVersion": "p0-29-s2-isomorphic-v1+beyond-water-1",
+  "hard": {
+    "planNarr": 2883,
+    "perChapterNarr": [
+      783,
+      693,
+      668,
+      739
+    ],
+    "metaCount": 0,
+    "gateLogic": {
+      "pass": true,
+      "fails": [],
+      "rows": [
+        {
+          "gate": "G1",
+          "act": 1,
+          "blockType": "市场",
+          "block": "城南那个业主原本只想买一份“排水防涝技术咨询”，按人天算，压价压到我们连模型电费都不够。",
+          "leverage": "它搁在逸泓水务那张会议桌的右上角，数字键磨得发白，按“7”得使点劲。",
+          "worldShift": "后来的路和当时想的不太一样，但那个晚上我至少明白了一件事：这张图是我们的跳板，不是我们的终点。",
+          "blockCats": [
+            "人",
+            "钱",
+            "市场",
+            "对手"
+          ],
+          "typeHit": true,
+          "leverOk": true,
+          "shiftOk": true,
+          "ok": true
+        },
+        {
+          "gate": "G2",
+          "act": 2,
+          "blockType": "人",
+          "block": "团队从五个人变成七个，多了一个专职做产品的年轻人。",
+          "leverage": "第二年开春，逸泓智能终于有了第一个续费客户。",
+          "worldShift": "第二年开春，逸泓智能终于有了第一个续费客户。",
+          "blockCats": [
+            "人",
+            "市场",
+            "对手"
+          ],
+          "typeHit": true,
+          "leverOk": true,
+          "shiftOk": true,
+          "ok": true
+        },
+        {
+          "gate": "G3",
+          "act": 3,
+          "blockType": "钱",
+          "block": "最难的那一年，账上现金只够发两个月工资。",
+          "leverage": "咨询项目回款慢，产品还没长成，数据中心那条线烧钱却看不到头。",
+          "worldShift": "一家算力基础设施公司要建新园区，冷却水取排、热排放、极端降雨内涝、周边水体影响，四件事被监管和资方同时盯着。",
+          "blockCats": [
+            "人",
+            "钱",
+            "监管"
+          ],
+          "typeHit": true,
+          "leverOk": true,
+          "shiftOk": true,
+          "ok": true
+        },
+        {
+          "gate": "G4",
+          "act": 4,
+          "blockType": "监管",
+          "block": "控股平台交割那天，会议室里摆着三样东西：一份开曼控股架构图、一摞全球基础设施资产的尽调报告，还有那台旧计算器。",
+          "leverage": "控股平台交割那天，会议室里摆着三样东西：一份开曼控股架构图、一摞全球基础设施资产的尽调报告，还有那台旧计算器。",
+          "worldShift": "控股平台交割那天，会议室里摆着三样东西：一份开曼控股架构图、一摞全球基础设施资产的尽调报告，还有那台旧计算器。",
+          "blockCats": [
+            "人",
+            "钱",
+            "监管",
+            "对手"
+          ],
+          "typeHit": true,
+          "leverOk": true,
+          "shiftOk": true,
+          "ok": true
+        },
+        {
+          "gate": "G5",
+          "act": 4,
+          "blockType": "钱",
+          "block": "控股平台交割那天，会议室里摆着三样东西：一份开曼控股架构图、一摞全球基础设施资产的尽调报告，还有那台旧计算器。",
+          "leverage": "控股平台交割那天，会议室里摆着三样东西：一份开曼控股架构图、一摞全球基础设施资产的尽调报告，还有那台旧计算器。",
+          "worldShift": "”我说，那是出身，不是主业。",
+          "blockCats": [
+            "人",
+            "钱",
+            "监管",
+            "对手"
+          ],
+          "typeHit": true,
+          "leverOk": true,
+          "shiftOk": true,
+          "ok": true
+        },
+        {
+          "gate": "G6",
+          "act": 4,
+          "blockType": "对手",
+          "block": "进前10的那周，财经媒体把我和榜首放进同一张对比图。",
+          "leverage": "控股平台交割那天，会议室里摆着三样东西：一份开曼控股架构图、一摞全球基础设施资产的尽调报告，还有那台旧计算器。",
+          "worldShift": "那天公开披露的主叙事已经换成科技控股与主权级基础设施运营：算力园区的能源冷却、气候适应型市政系统、跨区域的物理世界数据平台。",
+          "blockCats": [
+            "人",
+            "钱",
+            "监管",
+            "对手"
+          ],
+          "typeHit": true,
+          "leverOk": true,
+          "shiftOk": true,
+          "ok": true
+        }
+      ]
+    },
+    "feel": {
+      "novelOk": true,
+      "dialogue": 13,
+      "sensory": true,
+      "inner": true,
+      "explainer": 0,
+      "replaceableFail": false
+    },
+    "nearTermTitleEqual": true,
+    "nearTermOutputEqual": true,
+    "nearTermSource": "plan",
+    "planProvider": "deepseek",
+    "projProvider": "deepseek",
+    "planDepthVersion": "p0-29-s2-isomorphic-v1+beyond-water-1",
+    "projDepthVersion": "p0-29-s2-isomorphic-v1+beyond-water-1",
+    "projSource": "llm",
+    "projValidation": true,
+    "projMaxHi": 520,
+    "noGuarantee": true,
+    "noTerminalRichest": true,
+    "noAvoidance": true,
+    "planLastTerminal": true,
+    "projLastTerminal": true,
+    "lint": {
+      "pass": true,
+      "hits": [],
+      "hitCount": 0,
+      "blanks": 0,
+      "narrLabels": 0,
+      "listLines": 0,
+      "dialogue": 13,
+      "forbidden": []
+    },
+    "algoPass": true,
+    "algoFails": [],
+    "rounds": [
+      {
+        "reprocess": true
+      }
+    ],
+    "pass": {
+      "novel": true,
+      "logic": true,
+      "lint": true,
+      "nearTerm": true,
+      "sameProvider": true,
+      "compliance": true,
+      "terminal": true,
+      "depth": true,
+      "beyondWater": true
+    },
+    "readyForProductReview": true
+  },
+  "ac": {
+    "fails": [],
+    "metaCount": 0,
+    "feel": {
+      "novelOk": true,
+      "dialogue": 13,
+      "sensory": true,
+      "inner": true,
+      "explainer": 0,
+      "replaceableFail": false
+    },
+    "gateLogic": {
+      "pass": true,
+      "fails": [],
+      "rows": [
+        {
+          "gate": "G1",
+          "act": 1,
+          "blockType": "市场",
+          "block": "城南那个业主原本只想买一份“排水防涝技术咨询”，按人天算，压价压到我们连模型电费都不够。",
+          "leverage": "它搁在逸泓水务那张会议桌的右上角，数字键磨得发白，按“7”得使点劲。",
+          "worldShift": "后来的路和当时想的不太一样，但那个晚上我至少明白了一件事：这张图是我们的跳板，不是我们的终点。",
+          "blockCats": [
+            "人",
+            "钱",
+            "市场",
+            "对手"
+          ],
+          "typeHit": true,
+          "leverOk": true,
+          "shiftOk": true,
+          "ok": true
+        },
+        {
+          "gate": "G2",
+          "act": 2,
+          "blockType": "人",
+          "block": "团队从五个人变成七个，多了一个专职做产品的年轻人。",
+          "leverage": "第二年开春，逸泓智能终于有了第一个续费客户。",
+          "worldShift": "第二年开春，逸泓智能终于有了第一个续费客户。",
+          "blockCats": [
+            "人",
+            "市场",
+            "对手"
+          ],
+          "typeHit": true,
+          "leverOk": true,
+          "shiftOk": true,
+          "ok": true
+        },
+        {
+          "gate": "G3",
+          "act": 3,
+          "blockType": "钱",
+          "block": "最难的那一年，账上现金只够发两个月工资。",
+          "leverage": "咨询项目回款慢，产品还没长成，数据中心那条线烧钱却看不到头。",
+          "worldShift": "一家算力基础设施公司要建新园区，冷却水取排、热排放、极端降雨内涝、周边水体影响，四件事被监管和资方同时盯着。",
+          "blockCats": [
+            "人",
+            "钱",
+            "监管"
+          ],
+          "typeHit": true,
+          "leverOk": true,
+          "shiftOk": true,
+          "ok": true
+        },
+        {
+          "gate": "G4",
+          "act": 4,
+          "blockType": "监管",
+          "block": "控股平台交割那天，会议室里摆着三样东西：一份开曼控股架构图、一摞全球基础设施资产的尽调报告，还有那台旧计算器。",
+          "leverage": "控股平台交割那天，会议室里摆着三样东西：一份开曼控股架构图、一摞全球基础设施资产的尽调报告，还有那台旧计算器。",
+          "worldShift": "控股平台交割那天，会议室里摆着三样东西：一份开曼控股架构图、一摞全球基础设施资产的尽调报告，还有那台旧计算器。",
+          "blockCats": [
+            "人",
+            "钱",
+            "监管",
+            "对手"
+          ],
+          "typeHit": true,
+          "leverOk": true,
+          "shiftOk": true,
+          "ok": true
+        },
+        {
+          "gate": "G5",
+          "act": 4,
+          "blockType": "钱",
+          "block": "控股平台交割那天，会议室里摆着三样东西：一份开曼控股架构图、一摞全球基础设施资产的尽调报告，还有那台旧计算器。",
+          "leverage": "控股平台交割那天，会议室里摆着三样东西：一份开曼控股架构图、一摞全球基础设施资产的尽调报告，还有那台旧计算器。",
+          "worldShift": "”我说，那是出身，不是主业。",
+          "blockCats": [
+            "人",
+            "钱",
+            "监管",
+            "对手"
+          ],
+          "typeHit": true,
+          "leverOk": true,
+          "shiftOk": true,
+          "ok": true
+        },
+        {
+          "gate": "G6",
+          "act": 4,
+          "blockType": "对手",
+          "block": "进前10的那周，财经媒体把我和榜首放进同一张对比图。",
+          "leverage": "控股平台交割那天，会议室里摆着三样东西：一份开曼控股架构图、一摞全球基础设施资产的尽调报告，还有那台旧计算器。",
+          "worldShift": "那天公开披露的主叙事已经换成科技控股与主权级基础设施运营：算力园区的能源冷却、气候适应型市政系统、跨区域的物理世界数据平台。",
+          "blockCats": [
+            "人",
+            "钱",
+            "监管",
+            "对手"
+          ],
+          "typeHit": true,
+          "leverOk": true,
+          "shiftOk": true,
+          "ok": true
+        }
+      ]
+    },
+    "perNarr": [
+      783,
+      693,
+      668,
+      739
+    ]
+  },
+  "readyForProductReview": true,
+  "novelSelfRead": "像小说：本样开篇有身体感与对话，不是说明书。摘：「我在你这个年纪时，办公室里最值钱的东西是一台掉漆的计算器。它搁在逸泓水务那张会议桌的右上角，数字键磨得发白，按“7”得使点劲。那年入秋，政府预算收紧，两个说好要启动的咨询包被压了回去，电话里的客气话比合同厚。五个人围桌坐着，水利、供排水、环保各管一摊，谁都不提“下个月工资怎么办”…」"
+}

@@ -1,0 +1,127 @@
+{
+  "at": "2026-10-31T06:24:44.185Z",
+  "tip": "653dfda",
+  "contractVersion": "p0-29-s2-isomorphic-v1",
+  "ruleFacts": {
+    "version": "p0-29-s2-isomorphic-v1",
+    "goalText": "成为世界首富",
+    "deadlineDays": 1825,
+    "deadlineWeeks": 260,
+    "hoursPerWeek": 4,
+    "stages": [
+      {
+        "key": "near",
+        "label": "近端可执行起步（证据与技能苗头）",
+        "weekLo": 0,
+        "weekHi": 4
+      },
+      {
+        "key": "build",
+        "label": "能力与小证据积累（约第1年）",
+        "weekLo": 4,
+        "weekHi": 52
+      },
+      {
+        "key": "mid",
+        "label": "可检验中期证据（约第2–3年：稳定小生意/资产苗头，非首富）",
+        "weekLo": 52,
+        "weekHi": 156
+      },
+      {
+        "key": "verify",
+        "label": "阶段验证点（约第5年：可查证事业/资产规模证据；禁止写成已成首富）",
+        "weekLo": 156,
+        "weekHi": 260
+      }
+    ],
+    "note": "模拟非承诺。下列周数/阶段仅供叙事对齐；模型不得另编收入、成功概率或客户。阶段验证点写可检验中期证据，禁止终局「成为世界首富」完成态。数字只来自本规则层。",
+    "disclaimer": "模拟非承诺",
+    "forbidTerminalRichest": true
+  },
+  "hard": {
+    "1_plan_narr_ge_1500": true,
+    "planNarr": 1591,
+    "2_plan_quad_explicit": true,
+    "2_plan_quad_chapters": 4,
+    "2_stages_midterm_not_terminal": true,
+    "2_rule_weeks_multi_year": 260,
+    "2_stages": [
+      {
+        "key": "near",
+        "label": "近端可执行起步（证据与技能苗头）",
+        "weekLo": 0,
+        "weekHi": 4
+      },
+      {
+        "key": "build",
+        "label": "能力与小证据积累（约第1年）",
+        "weekLo": 4,
+        "weekHi": 52
+      },
+      {
+        "key": "mid",
+        "label": "可检验中期证据（约第2–3年：稳定小生意/资产苗头，非首富）",
+        "weekLo": 52,
+        "weekHi": 156
+      },
+      {
+        "key": "verify",
+        "label": "阶段验证点（约第5年：可查证事业/资产规模证据；禁止写成已成首富）",
+        "weekLo": 156,
+        "weekHi": 260
+      }
+    ],
+    "3_named_actions_near": true,
+    "4_near_term_retellable": true,
+    "5_same_provider": true,
+    "5_plan_provider": "deepseek",
+    "5_proj_provider": "deepseek",
+    "5_same_depth_version": true,
+    "5_proj_within_rule_weeks": true,
+    "5_proj_node_count_4": true,
+    "5_proj_has_near_term": true,
+    "5_plan_has_near_term": true,
+    "5_proj_quad_fields": true,
+    "4_nearTerm_title_equal": true,
+    "4_nearTerm_output_equal": true,
+    "4_nearTerm_source_plan": true,
+    "align_user_visible_no_raw40": true,
+    "6_no_guarantee_success": true,
+    "6_no_terminal_richest": true,
+    "6_disclaimer_sim": true,
+    "projChars": 2195,
+    "projMaxHi": 260,
+    "ruleDeadlineWeeks": 260,
+    "planNearTerm": {
+      "today": "今天：在Excel建「动销台账」并录满____行虚构样表",
+      "week": "本周：做27分钟周检，输出「____周观察小结」",
+      "todayOut": "一个可打开的Excel文件「____动销台账」：六列齐全、____行虚构样表、能复述每列含义；验收看文件存在且列名不缺失。",
+      "weekOut": "「____周观察小结」短文：含品项次数小表、三句小结、三问自检一行结论；验收看小结里是否只有一列待改。"
+    },
+    "projNearTerm": {
+      "today": "今天：在Excel建「动销台账」并录满____行虚构样表",
+      "week": "本周：做27分钟周检，输出「____周观察小结」",
+      "todayOut": "一个可打开的Excel文件「____动销台账」：六列齐全、____行虚构样表、能复述每列含义；验收看文件存在且列名不缺失。",
+      "weekOut": "「____周观察小结」短文：含品项次数小表、三句小结、三问自检一行结论；验收看小结里是否只有一列待改。"
+    },
+    "nearTermBytes": {
+      "planToday": 66,
+      "projToday": 66,
+      "planWeek": 60,
+      "projWeek": 60,
+      "planTodayOut": 157,
+      "projTodayOut": 157,
+      "planWeekOut": 145,
+      "projWeekOut": 145
+    },
+    "guaranteeScanNote": "negated「不保证成功」等合规否定已排除，不记 FAIL",
+    "pass1": true,
+    "pass2": true,
+    "pass3": true,
+    "pass4": true,
+    "pass5": true,
+    "pass6": true,
+    "readyForProductReview": true
+  },
+  "readyForProductReview": true
+}

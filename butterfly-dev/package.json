@@ -1,0 +1,13 @@
+{
+  "name": "butterfly-effect",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "bash scripts/build.sh",
+    "validate": "node scripts/validate-artifact.mjs",
+    "dev": "node scripts/dev.mjs",
+    "test": "node test.mjs && node test-ai.mjs && node test-plan-story.mjs && node test-dgx.mjs && node test-dev.mjs && node test-browser-session.mjs && node test-direct-access.mjs && node test-onboarding.mjs && node test-voice.mjs && node test-voice-output.mjs && node test-auth.mjs && node scripts/test-projection.mjs && node scripts/test-projection-actual.mjs && node scripts/test-projection-pp3-r18.mjs && node scripts/test-projection-story.mjs && node test-projection-api.mjs",
+    "demo": "node scripts/demo-preview.mjs",
+    "deploy:dgx": "node scripts/deploy-dgx.mjs"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "note": "交付样的来源（Asia/Shanghai，UTC+8）",
+  "plan": "19:55 那次运行的第 2 轮 DeepSeek 规划（第 1 轮 fetch failed）；首稿未过 3 项算法检查（低谷缺、回扣物件缺、后来的路×2），同稿定点修补 1 次后全部通过；备份 /tmp/sa-r4-plan.json",
+  "proj": "19:58 用 P0_29_REUSE_PLAN 复用该规划，只重跑推演；DeepSeek 第 1 次即全过（source=llm）",
+  "earlierFailedRuns": "19:4x 第3次运行全部 3 轮未过；19:54 一次运行 3 轮均为网络 fetch failed；19:55 运行规划已过但推演未过（第一步落位/中文数量词导致回退模板）"
+}

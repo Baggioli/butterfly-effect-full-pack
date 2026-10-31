@@ -1,0 +1,116 @@
+{
+  "at": "2026-10-31T13:40:05.601Z",
+  "tip": "653dfda",
+  "contractVersion": "p0-29-s2-isomorphic-v1+novel-logic-2",
+  "ac": {
+    "fails": [],
+    "pass": false,
+    "perNarr": [
+      710,
+      682,
+      669,
+      965
+    ],
+    "narr": 3026,
+    "metaPlan": 0,
+    "metaProj": 0,
+    "labelLeak": false,
+    "banHits": [],
+    "gl": {
+      "pass": true,
+      "rows": [
+        {
+          "gate": "G1",
+          "act": 1,
+          "blockType": "市场",
+          "block": "政府预算收紧的风声传了一个月，咨询合同像退潮一样消失，电话铃一响，全屋人都抬头，然后是我去接，对面说“今年先不启动”。",
+          "leverage": "那块旧硬盘就搁在显示器旁边，外壳被手汗磨得发亮，里面装着十几年攒下的模型数据——SWMM的管网拓扑，EFDC的水动力边界，InfoWorks ICM的暴雨情景。",
+          "worldShift": "他们开始按“结果”付钱——比如“让这片区域在领导会上不被问住”，而不是“几个人干几天”。",
+          "typeHit": true,
+          "leverOk": true,
+          "shiftOk": true,
+          "distinct": true,
+          "ok": true
+        },
+        {
+          "gate": "G2",
+          "act": 2,
+          "blockType": "人",
+          "block": "白天跑咨询养活团队，晚上和周末写产品文档、盯服务器。",
+          "leverage": "第二年的春天来得晚，办公室窗外的梧桐刚抽芽，我已经在逸泓智能的壳里塞了三个版本的原型。",
+          "worldShift": "说是原型，其实就是把咨询项目里反复用的模型块拆出来，做成能按月续费的看板——排水管网的健康度、流域水质的趋势、内涝风险的预警，一个账号全打通。",
+          "typeHit": true,
+          "leverOk": true,
+          "shiftOk": true,
+          "distinct": true,
+          "ok": true
+        },
+        {
+          "gate": "G3",
+          "act": 3,
+          "blockType": "钱",
+          "block": "合并谈到第三轮的时候，对方律师把估值砍了四成。",
+          "leverage": "我想起几年前那个做动画的下午，那时候只需要让一个局长看懂，现在要让一屋子投资人相信水数据能复制到全国。",
+          "worldShift": "融资条款里有一条：合并后老团队必须留任三年。",
+          "typeHit": true,
+          "leverOk": true,
+          "shiftOk": true,
+          "distinct": true,
+          "ok": true
+        },
+        {
+          "gate": "G4",
+          "act": 4,
+          "blockType": "监管",
+          "block": "海外数据业务要剥离，合规边界比我们预想的更硬。",
+          "leverage": "逸泓水务咨询的现金流养着逸泓智能的产品，一个接一个的漏损控制项目，把水循环模型喂出了精度。",
+          "worldShift": "我们花了九个月做数据分层，把每一滴水的来源和去向都标清楚，法务的桌上堆满了打印稿，才换来这声钟。",
+          "typeHit": true,
+          "leverOk": true,
+          "shiftOk": true,
+          "distinct": true,
+          "ok": true
+        },
+        {
+          "gate": "G5",
+          "act": 4,
+          "blockType": "钱",
+          "block": "上市稀释之后，我手里的投票权刚好卡在临界线上，而水基础设施和水数据资产的估值跃迁，把我的个人净资产推向了公开入榜的门槛——量级上够了，关系上却悬。",
+          "leverage": "真正让我坐直的是另一件事：控股权。",
+          "worldShift": "回购和锁定是入榜后的守榜动作，节奏不能乱。",
+          "typeHit": true,
+          "leverOk": true,
+          "shiftOk": true,
+          "distinct": true,
+          "ok": true
+        },
+        {
+          "gate": "G6",
+          "act": 4,
+          "blockType": "对手",
+          "block": "竞争对手在缺水地区、怕涝城市、算力中心冷却项目上跟我们抢单，报价压得狠。",
+          "leverage": "我们的办法是把本地化接口做得更细，成本压得更低，模型能精确到每小时的蒸发量。",
+          "worldShift": "那单之后，我们的表扩了一块，估值也跟着抬了一截。",
+          "typeHit": true,
+          "leverOk": true,
+          "shiftOk": true,
+          "distinct": true,
+          "ok": true
+        }
+      ],
+      "passCount": 6,
+      "total": 6,
+      "allOk": true
+    },
+    "g5": true,
+    "g4g6": true,
+    "nearOk": true,
+    "novelOk": true,
+    "dialogue": 21,
+    "maxHi": 520,
+    "readyForProductReview": true
+  },
+  "readyForProductReview": true,
+  "novelSelfRead": "像小说：本样以旧硬盘为回扣，开篇有热气、衬衫后背与合同退潮的身体感，对话像真人。摘：「那块旧硬盘就搁在显示器旁边，外壳被手汗磨得发亮，里面装着十几年攒下的模型数据——SWMM的管网拓扑，EFDC的水动力边界，InfoWorks ICM的暴雨情景。」",
+  "generatedAt": "2026/10/31 21:40:57"
+}

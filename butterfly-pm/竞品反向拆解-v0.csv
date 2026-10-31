@@ -1,0 +1,19 @@
+﻿分组,产品,一句话定位,目标人群,叙事/推演呈现,时间线,分支/对照,人群细分/数据壁垒,收费（公开）,可抄,不可抄/雷区,主要来源,获取日期
+A1,Finch,照顾自己=照顾宠物的自我关怀App,压力/焦虑/低动力人群,宠物每日冒险短叙事,无,无,心情/测验Insights；壁垒=情感陪伴+社区；无人群参数,免费+Finch Plus $5.99–69.99（商店未写周期）,执行→角色成长→晚间叙事回传；不惩罚未完成；季节活动,IP美术；心理量表/诊断,https://apps.apple.com/us/app/finch-self-care-pet/id1528595748,2026-10-25
+A2,Fabulous,习惯→教练+心理健康平台,晨间例行/ADHD自管人群,Journey分章教练叙事,阶段推进,无,按主题分Journey；科学依据无公开,免费+Premium $16.99–59.99（含年$49.99）,选旅程→极小第一步→按天解锁；限制并行数,科学证明类话术,https://apps.apple.com/us/app/fabulous-daily-habit-tracker/id1203637303,2026-10-25
+A3,Habitica,待办习惯RPG化,游戏爱好者/拖延者,奇幻Quest剧情,无,无,无；壁垒=社交问责+开源社区,订阅$5/月，$48/年；不pay-to-win,小队问责；订阅只卖装饰,惩罚掉血机制与反焦虑语气冲突,https://habitica.com/static/features ; https://habitica.fandom.com/wiki/Subscription,2026-10-25
+A4,Rosebud,AI对话式日记与个人成长,个人成长/情绪处理人群,回顾型模式叙事+周报,回顾,无,可选AI persona；壁垒=长期日记记忆,免费；Bloom $12.99/月或$107.99/年,周报钩子；行动项一键转任务,治疗替代式宣传,https://www.rosebud.app/,2026-10-25
+A5,Teal,AI简历+求职追踪,北美白领求职者,无叙事；求职漏斗看板,漏斗阶段,无,2000+简历示例内容资产；薪资数据来源无公开,免费永久；Teal+ $13/7天、$29/30天、$79/90天,按阶段期计价；目标→看板,从招聘站收藏职位（国内即爬取）,https://www.tealhq.com/pricing,2026-10-25
+A6,Rocky.ai,AI教练+角色扮演（C端）/白标教练平台（B端）,职场人/销售/面试准备,无长叙事；场景角色扮演预演,发展计划/自测时间线,无,自测画像推荐；壁垒=方法论内容,C端 周$4.99/月$19.99/90天$44.99/年$99.99；B端$29–199/月,节点场景预演；承诺跟进记忆,商业量表授权（DISC）,https://apps.apple.com/us/app/rocky-ai-coach-roleplay/id1492680249 ; https://www.rocky.ai/,2026-10-25
+A6-附,BetterUp,真人+AI教练，转向企业,企业员工,—,—,—,—,个人订阅据报道2026-01-31停止新购、2027-01-31终止；旧档$89/$149/$279月（报道）,C端真人教练毛利薄的警示,官方帮助中心需登录，未直接核验,https://thecoaching-times.com/story/betterup-raised-570-million-in-110-days-it-stops-selling-coaching-to-individuals,2026-10-25
+A7,人生重开模拟器,文字网页人生模拟（随机型）,泛娱乐网民,逐岁随机事件；总评+回放图,有（逐岁）,无分支；靠重开形成对照,4属性+天赋；无真实数据；壁垒=梗事件库,网页免费无广告；手游看广告抽天赋,属性分配仪式；回放分享图；反内卷语气,事件文案版权；三观争议事件,https://news.qq.com/rain/a/20210908A05TXD00 ; https://www.huxiu.com/article/460578.html,2026-10-25
+A7+,BitLife（新增）,文字人生模拟（选择型）,18+泛娱乐,逐年选择后果叙事,有（逐年）,有分支,无真实数据,免费+广告；Bitizenship $7.99–9.99、God Mode $9.99、Time Machine $0.99/次等,按次'回到过去重选'付费点,18+内容,https://apps.apple.com/us/app/bitlife-life-simulator/id1374403536,2026-10-25
+A8,滴答清单 AI 助手,任务数据上的AI规划/拆解/复盘,现有滴答用户,无叙事；目标→阶段→周计划,阶段,无,仅用户自有数据；无人群参数,高级会员专享+月额度（会员价无公开）,先展示→确认→写入；渐进拆解,与其正面拼任务管理,https://help.dida365.com/articles/7502990612036059136,2026-10-25
+A8,番茄ToDo（番茄·人生）,AI效能报告+MBTI差异化建议,番茄钟用户,无叙事；日/周/月报告,报告周期,无,用户自设MBTI→差异化建议,无公开,性格标签只做语气差异,MBTI进数值层（无效度）,https://www.tomatolist.com/show_blog_page.html?no=ba835915-0b15-4001-a94d-ad8357d32baa,2026-10-25
+A9,FutureMe,写信给未来的自己,泛人群,用户自写书信,送达日期,无,无,文字免费；App内一次性Premium $2.99–119,延迟送达回访；公开信后记,—,https://www.futureme.org/ ; https://apps.apple.com/us/app/futureme/id1607047236,2026-10-25
+A9+,MIT Future You（新增·研究）,与AI生成的60岁自己对话,18–30岁,个性化'未来记忆'背景故事,现在→60岁,无,自传问卷；N=344预注册实验显示焦虑下降、未来自我连续性上升,非商业,贯穿性未来叙事的价值论据（内部）,不可对外宣称疗效,https://arxiv.org/html/2405.12514v4,2026-10-25
+A10,灯塔舍 LiteHaus,职业测评+AI求职,18–25岁大学生,测评报告+四步路径,无,无,宣称大数据；来源无公开,无公开,—,—,https://lh-career.com/,2026-10-25
+A10,学信网·学职平台,官方职业测评,学生,测评报告,无,无,本土化量表（宣称）；列表无公开,免费（官方）,测评非付费壁垒,—,https://xz.chsi.com.cn/survey/index.action?menu_id=13893,2026-10-25
+B1,The Sims 4,娱乐人生沙盒,游戏玩家,玩家操控他人人生,有,有,无,本体2022-10-18起免费+DLC付费,免费主线+付费场景包,荒诞失控事件,https://www.ea.com/games/the-sims/the-sims-4/news/play-the-sims-4-for-free-beginning-october-18,2026-10-25
+B2,Notion Life OS 模板,自搭人生管理系统,高自律工具用户,无,无,无,无,模板免费/付费不等；示例模板免费且无内置AI,领域→目标→习惯分层,—,https://www.notion.com/templates/ai-life-os,2026-10-25
+B3,得到 / 帆书,知识付费+AI学习助手/日记回顾,终身学习者,小步AI日记周/月回顾,回顾,无,内容资产,得到：听书VIP包月¥35、电子书包月¥21；帆书2023年卡¥365（>2年）,学习计划+周月回顾,自动续费争议需显著提示,https://apps.apple.com/cn/app/%E5%BE%97%E5%88%B0-%E8%AF%BE%E7%A8%8B%E5%90%AC%E4%B9%A6%E7%94%B5%E5%AD%90%E4%B9%A6/id1016323413,2026-10-25

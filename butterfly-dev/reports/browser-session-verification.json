@@ -1,0 +1,219 @@
+{
+  "date": "2026-10-22T10:06:31.038Z",
+  "endpoint": "http://127.0.0.1:4173",
+  "authentication": "page form + HttpOnly session cookie",
+  "fictionalData": true,
+  "checks": {
+    "loginPageWithoutNativeChallenge": true,
+    "currentLocalInterface": true,
+    "liveConnectionProbe": true
+  },
+  "cases": [
+    {
+      "id": "extract-through-browser-session",
+      "status": 200,
+      "elapsedSeconds": 23.547021375,
+      "input": {
+        "mode": "extract",
+        "intro": "以下是虚构测试人物：我22岁，高中毕业，在便利店工作，没有编程经验。只有个人电脑，没有客户联系人。希望90天内完成一个Excel表格自动化服务的付费试单，每周4小时，不辞职，不买课程。"
+      },
+      "output": {
+        "profile": {
+          "age": "22",
+          "education": "高中毕业",
+          "role": "便利店工作",
+          "experience": "无编程经验",
+          "resources": "个人电脑",
+          "hours": 4,
+          "constraints": "不辞职，不买课程",
+          "goal": "90天内完成一个Excel表格自动化服务的付费试单",
+          "kind": "custom"
+        },
+        "summary": "该用户希望在90天内完成一个Excel表格自动化服务的付费试单，每周投入4小时，但没有编程经验，只有个人电脑可用，且不打算辞职或购买课程。",
+        "questions": [
+          "您是否有任何自学编程或Excel自动化资源的计划？",
+          "您如何计划在没有编程经验和不购买课程的情况下实现自动化服务？"
+        ],
+        "provider": "DGX 私有模型"
+      },
+      "passed": true
+    },
+    {
+      "id": "plan-through-browser-session",
+      "status": 200,
+      "elapsedSeconds": 101.25312016599999,
+      "input": {
+        "mode": "plan",
+        "profile": {
+          "name": "虚构验收人物",
+          "age": "22",
+          "education": "高中 / 中专",
+          "role": "便利店店员",
+          "experience": "没有编程经验",
+          "skills": "基础录入",
+          "resources": "个人电脑，没有客户联系人",
+          "hours": 4,
+          "constraints": "不辞职，不购买课程，不使用单位真实数据",
+          "goal": "90天内完成一个Excel表格自动化服务的付费试单"
+        }
+      },
+      "output": {
+        "story": {
+          "title": "从基础录入到自动化服务",
+          "baseline": "基于22岁的便利店店员身份，利用个人电脑和基础录入技能，在不辞职、不购买课程、不使用单位真实数据的前提下，90天内完成一个Excel表格自动化服务的付费试单。",
+          "chapters": [
+            {
+              "name": "学习VBA基础",
+              "scene": "起点小屋",
+              "period": "第1-2周",
+              "narrative": "利用个人电脑和网络资源，开始学习VBA的基础知识，为后续的自动化服务打下基础。",
+              "gate": "能够编写简单的VBA代码",
+              "branches": [
+                {
+                  "label": "获得支持性反馈",
+                  "text": "保留证据，由你确认推进。"
+                },
+                {
+                  "label": "执行了，效果不理想",
+                  "text": "检验路径与方法。"
+                },
+                {
+                  "label": "时间或条件变了",
+                  "text": "先调整节奏，再审核路线。"
+                }
+              ],
+              "quests": [
+                {
+                  "title": "学习VBA基础语法",
+                  "steps": [
+                    "第一步：在线搜索VBA基础教程，选择适合初学者的视频或文章。",
+                    "第二步：观看前3个视频或阅读前3篇文章，记录关键概念和语法。",
+                    "第三步：在Excel中打开VBA编辑器，尝试输入并运行简单的VBA代码，如MsgBox \"Hello, World!\"。"
+                  ],
+                  "output": "能够编写并运行简单的VBA代码，如弹出消息框。",
+                  "example": "Sub HelloWorld() \n MsgBox \"Hello, World!\" \n End Sub",
+                  "tool": "个人电脑、网络资源",
+                  "minutes": 30,
+                  "why": "通过学习基础语法，为后续的自动化服务打下基础。"
+                }
+              ]
+            },
+            {
+              "name": "设计自动化服务方案",
+              "scene": "交流街角",
+              "period": "第3-4周",
+              "narrative": "基于已掌握的VBA基础，设计一个简单的自动化服务方案，如自动填充表格。",
+              "gate": "设计出一个简单的自动化服务方案",
+              "branches": [
+                {
+                  "label": "获得支持性反馈",
+                  "text": "保留证据，由你确认推进。"
+                },
+                {
+                  "label": "执行了，效果不理想",
+                  "text": "检验路径与方法。"
+                },
+                {
+                  "label": "时间或条件变了",
+                  "text": "先调整节奏，再审核路线。"
+                }
+              ],
+              "quests": [
+                {
+                  "title": "设计自动化服务方案",
+                  "steps": [
+                    "第一步：确定自动化服务的目标，如自动填充表格。",
+                    "第二步：设计表格的结构，包括列名和示例数据。",
+                    "第三步：编写VBA代码，实现自动填充表格的功能。"
+                  ],
+                  "output": "设计出一个简单的自动化服务方案，包括表格结构和VBA代码。",
+                  "example": "Sub AutoFillTable() \n Dim ws As Worksheet \n Set ws = ThisWorkbook.Sheets(\"Sheet1\") \n ws.Range(\"A1\").Value = \"Name\" \n ws.Range(\"B1\").Value = \"Age\" \n ws.Range(\"A2\").Value = \"Alice\" \n ws.Range(\"B2\").Value = 25 \n End Sub",
+                  "tool": "个人电脑、Excel",
+                  "minutes": 45,
+                  "why": "通过设计自动化服务方案，为后续的试单打下基础。"
+                }
+              ]
+            },
+            {
+              "name": "寻找潜在客户",
+              "scene": "创作工坊",
+              "period": "第5-6周",
+              "narrative": "通过网络和社交媒体寻找潜在客户，介绍自己的自动化服务方案。",
+              "gate": "找到至少1个潜在客户",
+              "branches": [
+                {
+                  "label": "获得支持性反馈",
+                  "text": "保留证据，由你确认推进。"
+                },
+                {
+                  "label": "执行了，效果不理想",
+                  "text": "检验路径与方法。"
+                },
+                {
+                  "label": "时间或条件变了",
+                  "text": "先调整节奏，再审核路线。"
+                }
+              ],
+              "quests": [
+                {
+                  "title": "寻找潜在客户",
+                  "steps": [
+                    "第一步：在社交媒体上发布介绍自己的自动化服务方案的帖子。",
+                    "第二步：加入相关的在线社区，如Excel论坛，发布自己的服务方案。",
+                    "第三步：通过邮件或社交媒体私信潜在客户，介绍自己的服务方案。"
+                  ],
+                  "output": "找到至少1个潜在客户，愿意了解自己的服务方案。",
+                  "example": "邮件示例：尊敬的客户，您好！我是XXX，可以提供Excel表格自动化服务，如自动填充表格。如有需要，请联系我。",
+                  "tool": "社交媒体、邮件",
+                  "minutes": 30,
+                  "why": "通过寻找潜在客户，为后续的试单打下基础。"
+                }
+              ]
+            },
+            {
+              "name": "完成付费试单",
+              "scene": "远方花园",
+              "period": "第7-9周",
+              "narrative": "与潜在客户沟通，完成一个付费试单。",
+              "gate": "完成一个付费试单",
+              "branches": [
+                {
+                  "label": "获得支持性反馈",
+                  "text": "保留证据，由你确认推进。"
+                },
+                {
+                  "label": "执行了，效果不理想",
+                  "text": "检验路径与方法。"
+                },
+                {
+                  "label": "时间或条件变了",
+                  "text": "先调整节奏，再审核路线。"
+                }
+              ],
+              "quests": [
+                {
+                  "title": "完成付费试单",
+                  "steps": [
+                    "第一步：与潜在客户沟通，了解他们的具体需求。",
+                    "第二步：根据客户需求，调整并完善自己的自动化服务方案。",
+                    "第三步：与客户签订试单合同，完成试单。"
+                  ],
+                  "output": "完成一个付费试单，获得客户的反馈。",
+                  "example": "合同示例：客户XXX同意支付XXX元，由我提供Excel表格自动化服务，如自动填充表格。",
+                  "tool": "邮件、合同",
+                  "minutes": 45,
+                  "why": "通过完成付费试单，验证自己的服务方案，并获得客户的反馈。"
+                }
+              ]
+            }
+          ],
+          "generatedAt": "2026-10-22T10:08:36.030Z",
+          "provider": "DGX 私有模型"
+        },
+        "provider": "DGX 私有模型"
+      },
+      "passed": true
+    }
+  ],
+  "model": "qwen2.5:32b"
+}

@@ -1,0 +1,219 @@
+{
+  "at": "2026-10-29T08:41:35.000Z",
+  "base": "https://spark-864f.tailfb7e5f.ts.net:8443",
+  "phone_masked": "137****4999",
+  "stamp_expected": "1.4-p0-28",
+  "steps": [
+    {
+      "name": "stamp_html",
+      "ok": true,
+      "detail": "1.4-p0-28"
+    },
+    {
+      "name": "shot_01-home",
+      "ok": true,
+      "detail": "/workspace/butterfly-handoff/p0-28-plan-load-failed/live-e2e-shots/01-home.png"
+    },
+    {
+      "name": "shot_02-login",
+      "ok": true,
+      "detail": "/workspace/butterfly-handoff/p0-28-plan-load-failed/live-e2e-shots/02-login.png"
+    },
+    {
+      "name": "shot_03-login-filled",
+      "ok": true,
+      "detail": "/workspace/butterfly-handoff/p0-28-plan-load-failed/live-e2e-shots/03-login-filled.png"
+    },
+    {
+      "name": "shot_04-after-login",
+      "ok": true,
+      "detail": "/workspace/butterfly-handoff/p0-28-plan-load-failed/live-e2e-shots/04-after-login.png"
+    },
+    {
+      "name": "shot_05-consent-gated",
+      "ok": true,
+      "detail": "/workspace/butterfly-handoff/p0-28-plan-load-failed/live-e2e-shots/05-consent-gated.png"
+    },
+    {
+      "name": "consent_gated_disabled",
+      "ok": true,
+      "detail": "true"
+    },
+    {
+      "name": "shot_06-consent-ungated",
+      "ok": true,
+      "detail": "/workspace/butterfly-handoff/p0-28-plan-load-failed/live-e2e-shots/06-consent-ungated.png"
+    },
+    {
+      "name": "consent_ungated",
+      "ok": true,
+      "detail": "true"
+    },
+    {
+      "name": "shot_07-after-consent",
+      "ok": true,
+      "detail": "/workspace/butterfly-handoff/p0-28-plan-load-failed/live-e2e-shots/07-after-consent.png"
+    },
+    {
+      "name": "CS1_direct_visible",
+      "ok": true,
+      "detail": "可见"
+    },
+    {
+      "name": "CS2_import_entry_visible",
+      "ok": true,
+      "detail": "可见"
+    },
+    {
+      "name": "shot_08-coldstart-gate",
+      "ok": true,
+      "detail": "/workspace/butterfly-handoff/p0-28-plan-load-failed/live-e2e-shots/08-coldstart-gate.png"
+    },
+    {
+      "name": "shot_09-paste-page",
+      "ok": true,
+      "detail": "/workspace/butterfly-handoff/p0-28-plan-load-failed/live-e2e-shots/09-paste-page.png"
+    },
+    {
+      "name": "shot_10-paste-filled",
+      "ok": true,
+      "detail": "/workspace/butterfly-handoff/p0-28-plan-load-failed/live-e2e-shots/10-paste-filled.png"
+    },
+    {
+      "name": "shot_11-role-card",
+      "ok": true,
+      "detail": "/workspace/butterfly-handoff/p0-28-plan-load-failed/live-e2e-shots/11-role-card.png"
+    },
+    {
+      "name": "CS2_strip_labels_live",
+      "ok": false,
+      "detail": "身份"
+    },
+    {
+      "name": "CS2_taboo_aside_live",
+      "ok": true,
+      "detail": "可见"
+    },
+    {
+      "name": "shot_12-role-card-edited",
+      "ok": true,
+      "detail": "/workspace/butterfly-handoff/p0-28-plan-load-failed/live-e2e-shots/12-role-card-edited.png"
+    },
+    {
+      "name": "shot_13-after-confirm",
+      "ok": true,
+      "detail": "/workspace/butterfly-handoff/p0-28-plan-load-failed/live-e2e-shots/13-after-confirm.png"
+    },
+    {
+      "name": "CS2_confirm_into_story",
+      "ok": true,
+      "detail": "进故事"
+    },
+    {
+      "name": "shot_14-after-ai-attempt",
+      "ok": true,
+      "detail": "/workspace/butterfly-handoff/p0-28-plan-load-failed/live-e2e-shots/14-after-ai-attempt.png"
+    },
+    {
+      "name": "ai_plan_template_fallback_ok",
+      "ok": true,
+      "detail": "模板/故事仍在"
+    },
+    {
+      "name": "shot_P28-01-plan-modal-open",
+      "ok": true,
+      "detail": "/workspace/butterfly-handoff/p0-28-plan-load-failed/live-e2e-shots/P28-01-plan-modal-open.png"
+    },
+    {
+      "name": "P0-28_open_no_load_failed",
+      "ok": true,
+      "detail": "规划你的下一步\n×\n\n将发送当前确认的档案、最近12条任务反馈及有效观察，在私人服务中规划路线。已确认的信息与未知内容分别保留；草案先由你审核。\n\n取消\n同意并生成草案"
+    },
+    {
+      "name": "shot_P28-00-auto-plan-result",
+      "ok": true,
+      "detail": "/workspace/butterfly-handoff/p0-28-plan-load-failed/live-e2e-shots/P28-00-auto-plan-result.png"
+    },
+    {
+      "name": "shot_P28-02-generating",
+      "ok": true,
+      "detail": "/workspace/butterfly-handoff/p0-28-plan-load-failed/live-e2e-shots/P28-02-generating.png"
+    },
+    {
+      "name": "shot_P28-03-generate-result",
+      "ok": true,
+      "detail": "/workspace/butterfly-handoff/p0-28-plan-load-failed/live-e2e-shots/P28-03-generate-result.png"
+    },
+    {
+      "name": "P0-28_generate",
+      "ok": true,
+      "detail": "draft 35s"
+    },
+    {
+      "name": "shot_P28-04-offline-open",
+      "ok": true,
+      "detail": "/workspace/butterfly-handoff/p0-28-plan-load-failed/live-e2e-shots/P28-04-offline-open.png"
+    },
+    {
+      "name": "shot_P28-05-offline-generate",
+      "ok": true,
+      "detail": "/workspace/butterfly-handoff/p0-28-plan-load-failed/live-e2e-shots/P28-05-offline-generate.png"
+    },
+    {
+      "name": "P0-28_offline_chinese_retry",
+      "ok": true,
+      "detail": "open=暂时连不上私人规划服务（网络中断，或手机 Tailscale 未连接）。请确认已连上后点「同意并生成草案」重试；资料已保留。 | click=暂时连不上私人规划服务（网络中断，或手机 Tailscale 未连接）。请确认已连上后点「同意并生成草案」重试；资料已保留。"
+    },
+    {
+      "name": "shot_15-demo-mode",
+      "ok": true,
+      "detail": "/workspace/butterfly-handoff/p0-28-plan-load-failed/live-e2e-shots/15-demo-mode.png"
+    },
+    {
+      "name": "CS4_demo_no_import_gate",
+      "ok": true,
+      "detail": "无导入闸"
+    },
+    {
+      "name": "CS4_demo_query",
+      "ok": true
+    }
+  ],
+  "criteria": {
+    "stamp": "PASS",
+    "consent_gate": "PASS",
+    "consent_submit": "PASS",
+    "direct_chat": "PASS",
+    "import_entry": "PASS",
+    "strip_labels": "FAIL",
+    "taboo": "PASS",
+    "confirm_story": "PASS",
+    "ai_plan_fallback": "PASS",
+    "p28_open": "PASS",
+    "p28_generate": "PASS",
+    "p28_offline": "PASS",
+    "demo_hide": "PASS"
+  },
+  "p28_auto_plan": {
+    "waited_s": 30,
+    "log": [
+      {
+        "at": 1793263310864,
+        "ev": "req",
+        "m": "POST"
+      },
+      {
+        "at": 1793263348134,
+        "ev": "fin",
+        "status": 200
+      }
+    ],
+    "modal": "审核你的人生故事\n×\n定制草案 · 尚未采用\n阿凯·测的数字化转型之路\n\n阿凯·测，32岁，独立咨询顾问，预算有限，精力一般，反复出现的困难：开场拖延、容易被客户临时需求打断；容易放弃的触发点：连续两周没有外部反馈。目标：3个月内完成个人网站并接到2个付费诊断单；半年内把诊断流程标准化成可复用模板；一年内验证是否值得全职转型。\n\n第1幕 · 今天\n今天：启动个人网站\n\n阿凯决定今天开始启动个人网站，尽管他之前有过拖延，但这次他决定先从小事做起。\n\n推进证据：完成个人网站的初步设计并发布。\n\n今天：启动个人网站 · 20分钟\n本周：制定初步营销计划 · 20分钟\n第2幕 · 本周\n本周：优化网站"
+  },
+  "p28_generate": {
+    "outcome": "draft",
+    "secs": 35,
+    "text": "审核你的人生故事\n×\n定制草案 · 尚未采用\n阿凯·测：从独立咨询顾问到个人品牌的初步构建\n\n阿凯·测希望在3个月内完成个人网站并接到2个付费诊断单，同时在半年内将诊断流程标准化成可复用模板，一年内验证是否值得全职转型。他预算有限，精力一般，容易被客户临时需求打断，容易放弃的触发点是连续两周没有外部反馈。他喜欢先小步验证再加码，不喜欢鸡汤式的提醒。\n\n第1幕 · 今天\n看清此刻的起点\n\n阿凯·测意识到自己需要先完成个人网站的初步设计，以便展示自己的专业能力和服务范围。\n\n推进证据：完成个人网站的初步设计并获得初步反馈\n\n今天：设计个人网站的初步框架 · 20分钟\n本周：列出实现目标最缺的一个条件 · 20分钟\n第2幕 · 接下来7天\n迈出第一步\n\n阿凯·测将开始初步设计个人网站，并制定初步行动计划。\n\n推进证据：完成初步网站设计并获得伴侣的初步反馈\n\n第3幕 · 接下来15天\n验证需求\n\n"
+  },
+  "passed": true
+}

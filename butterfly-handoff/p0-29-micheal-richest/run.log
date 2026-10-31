@@ -1,0 +1,43 @@
+# run1 (superseded: proj 终节点标题未显式含首富，改 stage4 label 后重跑)
+{"phase":"plan-start","attempt":1}
+{"phase":"plan-done","attempt":1,"ms":32767,"narr":2149,"quadExplicit":true}
+{"phase":"plan-nearTerm","today":"今天：把跨水循环建模能力压成一页可报价服务卡","week":"本周：用自编虚构样表做出样例报告目录与验收清单"}
+{"phase":"proj-done","ms":16870,"chars":2608,"provider":"deepseek","nodes":4,"maxHi":520,"ruleHorizonWeeks":520,"nearTermSource":"plan","nearTermMatch":true,"validation":true}
+# run2 (adopted)
+{"phase":"secrets","loaded":true,"keys":"<redacted-names>"}
+{"phase":"plan-start","attempt":1}
+{"phase":"plan-done","attempt":1,"ms":35544,"narr":2376,"quadExplicit":true}
+{"phase":"plan-nearTerm","today":"今天：把跨水循环建模能力压成一页《服务清单v0》和一个空白报价模板","week":"本周：把清单变成《样例报告框架+报价单v1》并发出第一条需求澄清邀请"}
+{"phase":"proj-done","ms":25423,"chars":2566,"provider":"deepseek","nodes":4,"maxHi":520,"ruleHorizonWeeks":520,"nearTermSource":"plan","nearTermMatch":true,"validation":true}
+{
+  "done": true,
+  "out": "/tmp/mr2",
+  "tip": "653dfda",
+  "contractVersion": "p0-29-s2-isomorphic-v1",
+  "hard": {
+    "pass1": true,
+    "pass2": true,
+    "pass3": true,
+    "pass4": true,
+    "pass5": true,
+    "pass6": true,
+    "passTerminal": true,
+    "readyForProductReview": true,
+    "planNarr": 2376,
+    "projChars": 2566,
+    "projMaxHi": 520,
+    "terminal": {
+      "pass": true,
+      "stageLabelsOk": true,
+      "ruleLastGateTerminal": true,
+      "planLastTerminal": true,
+      "planLastGateTerminal": true,
+      "leapChapters": 3,
+      "ledgerHitsLate": 0,
+      "projTerminal": true,
+      "noAvoidance": true,
+      "planLastGate": "公开可查门槛对齐规则层terminalGates：①个人净资产进入福布斯全球亿万富豪榜（公开入榜门槛约10亿美元）②进入彭博亿万富翁指数前500→前100（公开排名可查）③进入全球富豪榜前10 ④全球富豪榜第1（世界首富）——终局冲击方向，模拟非承诺。",
+      "projLastTitle": "资本与全球杠杆→冲击全球富豪榜与世界首富"
+    }
+  }
+}

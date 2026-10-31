@@ -1,0 +1,32 @@
+import assert from 'node:assert/strict';
+import {api,modelConfig} from './worker/api.js';
+import {createDGXServer} from './scripts/dgx-server.mjs';
+const origin='https://example.test';
+const req=()=>new Request(origin+'/api/ai',{method:'POST',headers:{Origin:origin,'Content-Type':'application/json','oai-authenticated-user-id':'owner'},body:JSON.stringify({mode:'extract',intro:'虚构顾问，35岁，本科，行业经验10年'})});
+const env={AI_PROVIDER:'ollama',OLLAMA_BASE_URL:'http://127.0.0.1:11434',AI_MODEL:'qwen2.5:7b'};
+assert.equal(modelConfig({DEEPSEEK_API_KEY:'not-used'}).configured,false,'默认私有模式不得因存在外部密钥切换');
+assert.equal(modelConfig({...env,OLLAMA_BASE_URL:'https://ollama.com'}).configured,false);
+assert.equal(modelConfig({...env,AI_MODEL:'some:cloud'}).configured,false);
+assert.equal(modelConfig({...env,OLLAMA_BASE_URL:'http://127.0.0.1:11434@evil.example'}).configured,false);
+assert.ok(modelConfig({...env,OLLAMA_BASE_URL:'http://100.123.134.103:11434'}).configured);
+const realFetch=globalThis.fetch;let calls=[];
+globalThis.fetch=async(url,opts)=>{calls.push(url);assert.ok(url.startsWith('http://127.0.0.1:11434/'));const body=JSON.parse(opts.body);if(url.endsWith('/api/show'))return Response.json({details:{family:'qwen2'}});assert.equal(body.stream,false);assert.equal(body.format.type,'object');assert.deepEqual(body.format.required,['profile','summary','questions']);assert.deepEqual(body.format.properties.profile.properties.hours.type,['number','null']);for(const k of ['age','education','goal','hours','role','experience','skills','resources','constraints'])assert.ok(body.format.properties.profile.required.includes(k));return Response.json({done:true,message:{content:JSON.stringify({profile:{age:'35',education:'本科',role:'顾问'},summary:'已有经验',questions:[]})}});};
+const health=await api(new Request(origin+'/api/ai/status',{headers:{'oai-authenticated-user-id':'owner'}}),env);
+assert.equal((await health.json()).reachable,true);assert.equal(calls.length,1,'连接状态应实际检查本地服务，且不发送个人资料');calls=[];
+const result=await api(req(),env);assert.equal(result.status,200);assert.equal((await result.json()).provider,'DGX 私有模型');assert.equal(calls.length,2);
+calls=[];globalThis.fetch=async url=>{calls.push(url);return Response.json({remote_model:'test',remote_host:'https://ollama.com'})};
+assert.equal((await api(req(),env)).status,502);assert.equal(calls.length,1,'发现远程模型后不能发送自述到chat');
+calls=[];globalThis.fetch=async url=>{calls.push(url);throw Error('offline')};
+assert.equal((await api(req(),env)).status,502);assert.equal(calls.length,1,'故障不得回退外部API');
+globalThis.fetch=realFetch;
+assert.throws(()=>createDGXServer({},{}),'缺少本地口令不得启动');
+let forwarded;
+const server=createDGXServer({fetch:async(request,config)=>{forwarded={request,config};return Response.json({ok:true});}},{DGX_APP_PASSWORD:'test-password-123456',DGX_APP_PORT:'18787'});
+await new Promise(resolve=>server.listen(18787,'127.0.0.1',resolve));
+try{
+ const url='http://127.0.0.1:'+server.address().port+'/api/ai/status';
+ assert.equal((await fetch(url,{headers:{host:'localhost:18787','oai-authenticated-user-id':'spoof'}})).status,401,'伪造身份不能绕过认证');
+ const response=await fetch(url,{headers:{host:'localhost:18787',Authorization:'Basic '+Buffer.from('owner:test-password-123456').toString('base64'),'oai-authenticated-user-id':'spoof'}});
+ assert.equal(response.status,200);assert.equal(forwarded.request.headers.get('oai-authenticated-user-id'),'dgx-owner');assert.equal(forwarded.request.headers.get('authorization'),null);assert.equal(forwarded.config.OLLAMA_BASE_URL,'http://127.0.0.1:11434');
+}finally{await new Promise(resolve=>server.close(resolve));}
+console.log('通过：Ollama本地调用、远程模型拦截、禁止外部回退、私网地址校验、本地服务鉴权与身份伪造拦截。尚未连接实际DGX。');

@@ -1,0 +1,137 @@
+{
+  "at": "2026-10-31T12:44:38.957Z",
+  "patchLog": [
+    {
+      "field": "story.chapters.3.narrative",
+      "from": "那就是上市那天的场面，旁人看着我们敲，我让别人替我按下了按钮。",
+      "to": "我把手收回来，朝小陈点了点头，是他替我按下去的。",
+      "why": "G4敲钟：删「那就是…场面」元词+统一谁按",
+      "applied": true,
+      "occurrences": 1
+    },
+    {
+      "field": "story.chapters.3.gateScenes.0.scene",
+      "from": "那就是上市那天的场面，旁人看着我们敲，我让别人替我按下了按钮。",
+      "to": "我把手收回来，朝小陈点了点头，是他替我按下去的。",
+      "why": "G4 gateScenes 同步",
+      "applied": true,
+      "occurrences": 1
+    },
+    {
+      "field": "story.chapters.3.highlights.0",
+      "from": "那就是上市那天的场面，旁人看着我们敲，我让别人替我按下了按钮。",
+      "to": "我把手收回来，朝小陈点了点头，是他替我按下去的。",
+      "why": "highlights[0] 同步",
+      "applied": true,
+      "occurrences": 1
+    },
+    {
+      "field": "story.chapters.3.action",
+      "from": "敲钟那天，我让小陈站在旁边，自己抬手时手有点抖，最后让别人替我按下了按钮。台下有人鼓掌，我听见的却是自己的心跳。",
+      "to": "敲钟那天，小陈站在我旁边。我抬手时手有点抖，随后把手收回来，朝小陈点了点头，是他替我按下去的。台下有人鼓掌，我听见的却是自己的心跳。",
+      "why": "action 敲钟说法与 narrative 一致",
+      "applied": true,
+      "occurrences": 1
+    },
+    {
+      "field": "story.chapters.3.narrative",
+      "from": "小陈把那张图转给我",
+      "to": "小陈把那张对比图转给我",
+      "why": "顺手：G6 那张图→那张对比图",
+      "applied": true,
+      "occurrences": 1
+    },
+    {
+      "field": "story.chapters.3.gateScenes.2.scene",
+      "from": "小陈把那张图转给我",
+      "to": "小陈把那张对比图转给我",
+      "why": "顺手：G6 那张图→那张对比图",
+      "applied": true,
+      "occurrences": 1
+    },
+    {
+      "field": "story.chapters.3.highlights.1",
+      "from": "小陈把那张图转给我",
+      "to": "小陈把那张对比图转给我",
+      "why": "顺手：G6 那张图→那张对比图",
+      "applied": true,
+      "occurrences": 1
+    },
+    {
+      "field": "perNode.3.action",
+      "from": "敲钟那天，你让小陈站在旁边，抬手时手有点抖，最后让别人替你按下了按钮。台下有人鼓掌，你听见的却是自己的心跳。",
+      "to": "敲钟那天，小陈站在你旁边。你抬手时手有点抖，随后把手收回来，朝小陈点了点头，是他替你按下去的。台下有人鼓掌，你听见的却是自己的心跳。",
+      "why": "proj action 敲钟说法一致",
+      "applied": true,
+      "occurrences": 1
+    },
+    {
+      "field": "proj.perNode.3.change",
+      "from": "上市当天，旁人看着你让别人敲钟，台下有人鼓掌。",
+      "to": "(deleted)",
+      "why": "删规则回声+与action重复",
+      "applied": true,
+      "occurrences": 1,
+      "afterSnippet": "公司上了市，站到一个公开的台面上，水数据资产的边界被监管认可，海外业务虽然剥离了一部分，留下的算法参数反而更清楚地能复制。后来榜单发布，老同学和老业主发来截图，你进福布斯富豪榜这件事安安静静地发生了。再往后，财经媒体第一次把你和榜首放在同一"
+    },
+    {
+      "field": "proj.longForm",
+      "from": "(rebuilt)",
+      "to": "(rebuilt from perNode)",
+      "why": "change/action 改后重拼",
+      "applied": true,
+      "longFormChars": 2299,
+      "oldChars": 2820
+    },
+    {
+      "field": "ruleFactsProj.stages.3.planBeat",
+      "from": "敲钟那天，我让小陈站在旁边，自己抬手时手有点抖，最后让别人替我按下了按钮。台下有人鼓掌，我听见的却是自己的心跳。",
+      "to": "敲钟那天，小陈站在我旁边。我抬手时手有点抖，随后把手收回来，朝小陈点了点头，是他替我按下去的。台下有人鼓掌，我听见的却是自己的心跳。",
+      "why": "ruleFactsProj planBeat 同步",
+      "applied": true,
+      "occurrences": 1
+    }
+  ],
+  "metaScans": [
+    {
+      "label": "plan.narrative",
+      "hits": [],
+      "count": 0
+    },
+    {
+      "label": "plan.gateScenes0",
+      "hits": [],
+      "count": 0
+    },
+    {
+      "label": "plan.highlights0",
+      "hits": [],
+      "count": 0
+    },
+    {
+      "label": "plan.action",
+      "hits": [],
+      "count": 0
+    },
+    {
+      "label": "proj.action",
+      "hits": [],
+      "count": 0
+    },
+    {
+      "label": "proj.change",
+      "hits": [],
+      "count": 0
+    },
+    {
+      "label": "proj.longForm",
+      "hits": [],
+      "count": 0
+    },
+    {
+      "label": "plan.fullBody",
+      "hits": [],
+      "count": 0
+    }
+  ]
+}

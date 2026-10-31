@@ -1,0 +1,179 @@
+{
+  "tip": "653dfda",
+  "contractVersion": "p0-29-s2-isomorphic-v1+beyond-water-1",
+  "baseContract": "p0-29-s2-isomorphic-v1",
+  "persona": {
+    "name": "Micheal Li（Michael Li）",
+    "age": "42",
+    "role": "逸泓水务环境创始人/负责人（约5人：水利、供排水、环保咨询）；同时持有逸泓智能（智能科技，目前无员工，产品上线主体挂此）",
+    "education": "环境方向专业训练背景",
+    "major": "环境（水生态/水动力/排水）",
+    "experience": "带领约5人团队做水利、供排水、环保（含环评）咨询；团队建模能力强：SWMM、XP-SWMM2D、EFDC、SWAT、HSPF、InfoWorks ICM；理解水生态、水动力、排水为一体",
+    "skills": "城市排水与内涝建模、水环境与水动力建模、流域面源与水文建模、环保咨询与环评、团队管理",
+    "resources": "两家公司主体（逸泓水务环境、逸泓智能）；约5人环境技术团队；跨水循环全覆盖能力（水利+水务/工业排水+环保含环评）；未提供已签约客户与已到账款",
+    "hours": 40,
+    "goal": "成为世界首富",
+    "longGoal": "成为世界首富；水务只是跳板，路径须跨出纯水务进入可支撑全球顶尖财富的竞技场",
+    "dream": "从水循环建模跳到全球资本与基础设施竞技场，冲击世界首富",
+    "constraints": "近景政府预算紧、咨询项目少，紧迫要营收；环保管家赛道拥挤，进入需技术壁垒；不编造已签约客户/已到账款；近端动作须本人/现团队可控；模拟非承诺",
+    "targetCustomer": "需要排水防涝、水环境治理、流域水质与环评支撑的业主（政府平台、园区、工业企业、水务公司）——具体客户待验证",
+    "successMetric": "近端：营收止血、建模本事变跳板；中后段离开纯水务；终局：个人净资产冲击世界首富（非水务龙头即停）"
+  },
+  "ruleFacts": {
+    "version": "p0-29-s2-isomorphic-v1+beyond-water-1",
+    "beyondWater": true,
+    "novelLogic": false,
+    "storyArc": false,
+    "goalText": "成为世界首富",
+    "deadlineDays": 3640,
+    "deadlineWeeks": 520,
+    "hoursPerWeek": 40,
+    "act4MinHan": 700,
+    "emotionSource": "rule-layer",
+    "dipAct": 3,
+    "stages": [
+      {
+        "key": "near",
+        "label": "跳板：营收止血，并第一次看清水务天花板（第0–13周）",
+        "weekLo": 0,
+        "weekHi": 13,
+        "wealthStep": "先用建模本事换结果付费，稳住现金流；同时意识到：只靠水务合同做不大到世界首富量级",
+        "gate": "本人可控：演示放给业主看过；并在故事里感到水务赛道的天花板",
+        "emotion": "-1→+1",
+        "emotionValue": -1,
+        "emotionEnd": 1,
+        "projMood": "窘迫→回暖但心里发紧",
+        "tier": "日常→转折",
+        "beatHint": "窘迫起步；跨 G1；天花板感",
+        "isDip": false,
+        "callbackHere": true
+      },
+      {
+        "key": "moat",
+        "label": "最后一程水务产品化，同时探路非水务入口（约第1–2年）",
+        "weekLo": 13,
+        "weekHi": 104,
+        "wealthStep": "咨询养产品仍可做，但把系统建模能力朝算力冷却/气候基础设施等入口试单；心里清楚水务 ARR 撑不起终局",
+        "gate": "有续费产品客户；同时摸到第一笔非纯水务意向或试点",
+        "emotion": "+1",
+        "emotionValue": 1,
+        "emotionEnd": 1,
+        "projMood": "两头烧，目光已离开纯水务",
+        "tier": "转折",
+        "beatHint": "产品化；跨 G2；为离开纯水务埋伏笔",
+        "isDip": false,
+        "callbackHere": false
+      },
+      {
+        "key": "scale",
+        "label": "跨出纯水务：第一笔非水务主业合同/股权（约第3–5年）",
+        "weekLo": 104,
+        "weekHi": 260,
+        "wealthStep": "以系统建模+市政信任+物理世界数据为可迁移能力，拿下第一笔算力能源冷却或气候基础设施主业合同/股权；身份开始离开「水务创始人」",
+        "gate": "可查的第一笔非水务主业合同或股权交割；合并/控股叙事不再以水务营收为主",
+        "emotion": "-2→+1",
+        "emotionValue": -2,
+        "emotionEnd": 1,
+        "projMood": "最暗→缓过来",
+        "tier": "转折（最低处在此）",
+        "beatHint": "钱快断；用场面写清跨行业换来的东西；跨 G3（leaveWater）",
+        "isDip": true,
+        "callbackHere": true
+      },
+      {
+        "key": "capital",
+        "label": "全球资本池与科技控股→冲击世界首富（约第6–10年）",
+        "weekLo": 260,
+        "weekHi": 520,
+        "wealthStep": "财富主叙事落到科技控股/全球资产配置/主权级基础设施运营商等资本池；水务背景只作可迁移能力回扣；冲击富豪榜顶端",
+        "gate": "公开可查阶梯：入榜→前100→前10→世界首富朝向——模拟非承诺；终局解释不得仍是水务公司做大",
+        "emotion": "+3(峰)→+1(安静收束)",
+        "emotionValue": 3,
+        "emotionEnd": 1,
+        "projMood": "最亮→安静收束",
+        "tier": "终局",
+        "beatHint": "跨 G4–G6（含 leaveWater）；停在 G7 朝向；回扣开头物件",
+        "isDip": false,
+        "callbackHere": true
+      }
+    ],
+    "gateChain": [
+      {
+        "id": "G1",
+        "act": 1,
+        "name": "第一位业主为「看得懂的结果」付钱，并意识到水务天花板",
+        "blockType": "市场",
+        "leverageHint": "水循环建模（SWMM/EFDC/ICM）把暴雨做成领导会上能讲的画面——这是跳板，不是终局",
+        "worldShiftHint": "从卖人天变成有人愿为结果付钱；同时心里清楚：只靠水务合同到不了世界首富",
+        "proof": "业主用你的演示讲给他的领导听；你夜里算账感到天花板"
+      },
+      {
+        "id": "G2",
+        "act": 2,
+        "name": "逸泓智能有续费客户，同时摸到非水务入口",
+        "blockType": "人",
+        "leverageHint": "两公司：咨询现金流养智能空壳；把系统建模能力朝冷却/气候等入口试探——同行缺一体建模，但水务赛道本身撑不起终局",
+        "worldShiftHint": "有订阅续费与专职同事；目光已转向可支撑全球财富的竞技场入口",
+        "proof": "客户续约说离不开；你同时记下第一份非水务试点意向"
+      },
+      {
+        "id": "G3",
+        "act": 3,
+        "leaveWater": true,
+        "name": "第一笔非水务主业合同或股权交割",
+        "blockType": "钱",
+        "leverageHint": "可迁移能力：系统建模+市政信任+物理世界数据——业主/资方买的是跨行业基础设施能力，不是再多一间水务咨询所",
+        "worldShiftHint": "身份开始离开「水务创始人」；业务版图出现算力能源冷却或气候基础设施等非纯水务主业",
+        "proof": "合同或股权文件落章；会议室里第一次不再只谈管网与环评"
+      },
+      {
+        "id": "G4",
+        "act": 4,
+        "leaveWater": true,
+        "name": "科技控股/全球资本平台成型（离开纯水务营收主叙事）",
+        "blockType": "监管",
+        "leverageHint": "把可审计的物理世界数据与系统边界叙事带进全球资本与合规台面——交易所/LP 买的是平台与资本池，不是水务龙头故事",
+        "worldShiftHint": "公开台面的主叙事变成科技控股或主权级基础设施运营商；水务变成能力回扣",
+        "proof": "控股或平台交割日，旁人问起你「还做水吗」，你说那是出身不是主业"
+      },
+      {
+        "id": "G5",
+        "act": 4,
+        "name": "个人净资产进入福布斯全球亿万富豪榜（非水资产独撑）",
+        "blockType": "钱",
+        "leverageHint": "控股权落在跨行业平台/全球资产配置上；水基础设施若仍在组合里只是能力与信任背书，不是入榜主因",
+        "worldShiftHint": "名声进入公开榜单；财富解释已离开「水务公司做大」",
+        "proof": "榜单日有人发截图，你更在意股权与资本池报表，而不是截图本身"
+      },
+      {
+        "id": "G6",
+        "act": 4,
+        "name": "进入彭博亿万富翁指数前10",
+        "blockType": "对手",
+        "leverageHint": "在全球资本与基础设施竞技场赢标/扩表/抬估值；本地化与可审计模型是迁移能力，不是水务营收",
+        "worldShiftHint": "媒体对比图只是后果；离世界首富仍差一步，约束更紧",
+        "proof": "财经媒体把你和榜首放进对比图——你清楚那不是原因"
+      },
+      {
+        "id": "G7",
+        "act": 4,
+        "terminal": true,
+        "name": "全球富豪榜第1（世界首富）——冲击方向",
+        "blockType": "市场",
+        "leverageHint": "终局只写朝向，不写已跨过",
+        "worldShiftHint": "离最高处还差一步的安静收束",
+        "proof": "离它还差一步的一个安静场面；不写成已经跨过"
+      }
+    ],
+    "terminalGates": [
+      "个人净资产进入福布斯全球亿万富豪榜（公开入榜门槛约10亿美元）",
+      "进入彭博亿万富翁指数前500→前100（公开排名可查）",
+      "进入全球富豪榜前10",
+      "全球富豪榜第1（世界首富）——终局冲击方向"
+    ],
+    "note": "模拟非承诺。起点=水务跳板；中后段≥2道离开纯水务；终局主叙事禁止仍落在水务/水数据公司做大。文学层=小说章节；每门三问。",
+    "disclaimer": "模拟非承诺",
+    "terminalOriented": true
+  },
+  "note": "beyond-water：起点跳板+跨出纯水务+真冲世界首富；与 novelLogic/storyArc 独立"
+}
